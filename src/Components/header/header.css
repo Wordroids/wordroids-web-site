@@ -1,0 +1,87 @@
+header {
+  height: 110vh;
+  padding-top: 7rem;    /*space inside the top of the header*/
+  overflow: hidden;     /*Hides any overflowing content*/
+}
+
+.header_container {
+  text-align: left;
+  height: 100%;
+  position: relative;
+}
+
+.header_text{
+    padding-top: 11rem;
+    padding-left: -20rem;
+}
+
+/* Set header text color to orange */
+.header_container h1,
+.header_container h4 {
+  color: orange;
+}
+
+
+/*============= CTA =============== */
+.welcome_button{
+    margin-top: 2.5rem;
+    padding-left: -20rem;
+    display: flex;
+}
+
+
+/*======= IMAGE STYLING =======*/
+.man {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 50%;
+  right: -12rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.man img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Scroll down (currently unused transform value) */
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+
+  .me {
+    height: 60rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+
+  .me {
+    height: 45rem;
+  }
+}

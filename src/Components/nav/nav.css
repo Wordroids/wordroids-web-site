@@ -1,0 +1,96 @@
+/* Horizontal tube above nav */
+.nav-tube {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85rem;
+  height: 2.5rem;
+  background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
+  backdrop-filter: blur(10px);           /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border-radius: 1rem;
+  border: 0.002px solid orange;              /* Make sure the border is visible */
+  z-index: 9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+/*Nav Icons*/
+.nav-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+
+/* Navigation container */
+.button-nav {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 5rem;               /* leave space for tube above */
+  left: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(15px);
+  z-index: 10;
+}
+
+/* Individual nav buttons */
+.nav-btn {
+  
+  background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
+  backdrop-filter: blur(10px);           /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border-radius: 1rem;
+  border: 0.002px solid orange; 
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: orange;
+  transition: all 0.3s ease;
+
+  display: inline-flex;         /* Make content align inline */
+  align-items: center;          /* Vertically align center */
+  gap: 0.4rem;                  /* Small space between text and icon */
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+/*======Logo=====*/
+.logo {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

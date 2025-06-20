@@ -1,11 +1,11 @@
-.experience_container{
+.service_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
 }
 
-.experience_container > div {
+.service_container > div {
     
   background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
   backdrop-filter: blur(10px);           /* Blur effect */
@@ -17,41 +17,41 @@
 }
 
 
-.experience_intro {
+.service_intro {
   padding-left: 12rem;
   padding-bottom: 2rem;
 }
 
-.experience_intro h1,
-.experience_intro h4,
-.experience_intro p {
+.service_intro h1,
+.service_intro h4,
+.service_intro p {
   text-align: left;
 }
 
-.experience_intro h1{
+.service_intro h1{
     color: orange;
 }
 
-.experience_container > div:hover {
+.service_container > div:hover {
     background: transparent;
     border-color: orange;
     cursor: default;
 }
 
-.experience_container > div h3 {
+.service_container > div h3 {
    text-align: center;
    margin-bottom: 2rem;
    color: var(--color-primary);
 }
 
-.experience_container {
+.service_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* ✅ 3 columns per row */
   gap: 2rem;
   width: 100%;
 }
 
-.experience_details{
+.service_details{
     display: flex;
     gap: 1rem;
     color: var(--color-primary);
@@ -64,33 +64,35 @@
   margin: 0 auto;
 }
 
-
-
+.highlight {
+  color: orange; /* or any color you prefer */
+  font-weight: bold; /* optional */
+}
 
 /*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
 @media screen and (max-width: 1024px){
-    .experience_container{
+    .service_container{
         grid-template-columns: 1fr;
     }
 
-    .experience_container > div {
+    .service_container > div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
 
-    .experience_content{
+    .service_content{
         padding: 1rem;
     }
 }
 
 /*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
 @media screen and (max-width: 600px){
-    .experience_container{
+    .service_container{
         gap: 1rem;
     }
 
-    .experience_container > div {
+    .service_container > div {
         width: 100%;
         padding: 2rem 1rem;
         

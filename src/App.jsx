@@ -5,7 +5,7 @@
 import React from 'react';
 import Header from './Components/header/header';
 import Nav from './Components/nav/nav';
-import About from './Components/about/about'
+import Service from './Components/service/service'
 import Footer from './Components/footer/footer';
 
 
@@ -14,7 +14,7 @@ const App = () => {
     <>
       <Nav />
       <Header />
-      <About/>
+      <Service/>
       <Footer />
     </>
   );

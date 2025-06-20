@@ -1,11 +1,11 @@
 import React from 'react'
-import './about.css'
+import './service.css'
 
-const About = () => {
+const Service = () => {
     return(
-        <section id = 'experience'>
-            <div className="experience_intro">
-                <h4>COMPREHENSIVE SERVICES FOR EVERY BUSINESS</h4>
+        <section id = 'service'>
+            <div className="service_intro">
+                <h4>COMPREHENSIVE <span className="highlight">SERVICES</span> FOR EVERY BUSINESS</h4>
                 <h1>Drive Innovation and Achive</h1>
                 <h1>Your Goals</h1>
                 <p>
@@ -15,28 +15,28 @@ const About = () => {
             </div>
 
             
-            <div className="container experience_container">
+            <div className="container service_container">
 
  
-                <div className="experience_frontend">   
+                <div className="service_web">   
                     <h3>BUILD YOUR WEB APPLICATION</h3>
-                    <div className="experience_content">
+                    <div className="service_content">
 
-                        <article className='experience_details'>
+                        <article className='service_details'>
                         <div>
                             <h4>SEO FRIENDLY</h4>
                             <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
                         </div>
                         </article>
 
-                         <article className='experience_details'>
+                         <article className='service_details'>
                          <div>
                             <h4>SEO FRIENDLY</h4>
                             <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
                          </div>
                         </article>
 
-                         <article className='experience_details'>
+                         <article className='service_details'>
                          <div>
                             <h4>SEO FRIENDLY</h4>
                             <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -46,26 +46,26 @@ const About = () => {
                      </div>
                 </div>
 
-                  <div className='experience_backend'>
+                  <div className='service_mobile'>
 
           <h3>CRAFT YOUR MOBILE APPLICATION</h3>
-          <div className = "experience_content">
+          <div className = "service_content">
 
-             <article className='experience_details'>
+             <article className='service_details'>
              <div>
                 <h4>SEO FRIENDLY</h4>
                 <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
             </div>
             </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -77,26 +77,26 @@ const About = () => {
 
 
 
-         <div className='experience_backend'>
+         <div className='service_artificial'>
 
           <h3>ARTIFICIAL INTELLIGENCE</h3>
-          <div className = "experience_content">
+          <div className = "service_content">
 
-             <article className='experience_details'>
+             <article className='service_details'>
              <div>
                 <h4>SEO FRIENDLY</h4>
                 <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
             </div>
             </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -108,26 +108,26 @@ const About = () => {
 
 
 
-        <div className='experience_backend'>
+        <div className='service_interface'>
 
           <h3>USER INTERFACES AND EXPERIENCES</h3>
-          <div className = "experience_content">
+          <div className = "service_content">
 
-             <article className='experience_details'>
+             <article className='service_details'>
              <div>
                 <h4>SEO FRIENDLY</h4>
                 <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
-            </div>
+             </div>
             </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -138,26 +138,26 @@ const About = () => {
         </div>
 
 
-        <div className='experience_backend'>
+        <div className='service_cloud'>
 
           <h3>CLOUD HOSTING SOLUTIONS</h3>
-          <div className = "experience_content">
+          <div className = "service_content">
 
-             <article className='experience_details'>
+             <article className='service_details'>
              <div>
                 <h4>SEO FRIENDLY</h4>
                 <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
             </div>
             </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -168,26 +168,26 @@ const About = () => {
         </div>
 
 
-         <div className='experience_backend'>
+         <div className='service_graphic'>
 
           <h3>GRAPHIC DESIGNING</h3>
-          <div className = "experience_content">
+          <div className = "service_content">
 
-             <article className='experience_details'>
+             <article className='service_details'>
              <div>
                 <h4>SEO FRIENDLY</h4>
                 <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
             </div>
             </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
 
-              <article className='experience_details'>
+              <article className='service_details'>
               <div>
                  <h4>SEO FRIENDLY</h4>
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
@@ -218,7 +218,7 @@ const About = () => {
   )
 }
 
-export default About
+export default Service
 
 
 

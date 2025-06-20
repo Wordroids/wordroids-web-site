@@ -78,7 +78,7 @@
 .logo {
   width: 5rem;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   top: 8rem;
   left: 4rem;
   transform: translateY(-50%);

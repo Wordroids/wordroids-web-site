@@ -1,65 +1,107 @@
-.about__container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+/* ============ Outer Container ============ */
+.container {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
+/* ============ Outer Orange Border ============ */
+.about__outer-wrapper {
+  border: 1px solid orange;       /* Outer orange border */
+  padding:0.2rem;
+  border-radius: 1.5rem;
+}
+
+/* ============ Inner Brown Background with Content ============ */
+.about__content-wrapper {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  gap: 5%;
+  align-items: center;
+  background-color: rgba(94, 63, 9, 0.4); /* Semi-transparent brown */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* ============ Image Container ============ */
 .about__checker {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    display: grid;
-    place-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: grid;
+  place-items: center;
 }
 
 .about__checker-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transition: var(--transition);
+  width: 100%;
+  height: auto;
+  border: 1px solid orange; /* Orange border around image */
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: var(--transition);
 }
 
-
-
-
-.about__content p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+.about__checker-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
-@media screen and (max-width: 1024px){
-    .about_container{
-        grid-template-columns: 1fr;
-        gap:0;
-    }
-
-    .about_checker{
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-
-    .about_content p{
-        margin: 1rem 0 1.5rem;
-    }
+/* ============ Intro Content ============ */
+.about_intro {
+  padding-left: 0;
+  padding-top: 1rem;
 }
 
-/*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
-@media screen and (max-width: 600px){
-    .about_checker{
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
+.about_intro h1,
+.about_intro h4 {
+  text-align: left;
+}
 
-    .about_cards{
-        grid-template-columns: 1fr 1fr;
-        gap:1rem;
-    }
+.about_intro h1 {
+  color: orange;
+}
 
-    .about_content{
-        text-align: center;;
-    }
+.about_intro p {
+  text-align: justify;
+}
 
-    .about_content p{
-        margin: 1.5rem 0; 
-    }
-    
+/* ============ Highlight Text ============ */
+.highlight {
+  color: orange;
+  font-weight: bold;
+}
+
+/* ============ Media Queries ============ */
+@media screen and (max-width: 1024px) {
+  .about__content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about__checker {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about_intro {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__checker {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about_intro {
+    text-align: center;
+  }
+
+  .about_intro p {
+    margin: 1.5rem 0;
+  }
 }

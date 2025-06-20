@@ -7,7 +7,9 @@ import Header from './Components/header/header';
 import Nav from './Components/nav/nav';
 import Service from './Components/service/service';
 import About from './Components/about/about';
+import Projects from './Components/projects/projects';
 import Footer from './Components/footer/footer';
+
 
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
       <Header/>
       <Service/>
       <About/>
+      <Projects/>
       <Footer/>
     </>
   );

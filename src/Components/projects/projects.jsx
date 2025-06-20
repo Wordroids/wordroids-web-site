@@ -64,17 +64,17 @@ const projects = () => {
 
                 <h3>{title}</h3>
 
+               <div className='project__item-cta'>
+                 <span className='project__role'>Wordpress Development</span>
+               </div>
+
+               <div className='project__item-cta'>
+                <span className='project__role'>UI/UX Designing</span>
+               </div>
+
                 <div className='project__item-cta'>
-                  <a href={position1} className='btn' target='_blank'>Wordpress Development</a>
-                 </div>
-
-                 <div className='project__item-cta'>
-                  <a href={position2} className='btn' target='_blank'>UI/UX Designing</a>
-                 </div>
-
-                 <div className='project__item-cta'>
-                  <a href={position3} className='btn' target='_blank'>Web Hosting</a>
-                 </div>
+                <span className='project__role'>Web Hosting</span>
+                </div>
 
 
 

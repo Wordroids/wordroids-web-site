@@ -5,17 +5,15 @@
 }
 
 .project__item {
+   
   background:  rgba(94, 63, 9, 0.4);
   padding: 1.2rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
+  border: 1px solid orange;
   transition: var(--transition);
 }
 
-.project__item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
-}
+
 
 .project_item-image{
     border-radius: 1.5rem;
@@ -24,14 +22,35 @@
 
 .project_item h3{
     margin: 1.2rem 0 2rem;
+    
 }
 
 .project__item-cta {
   display:flex ; 
   gap: 1rem;
   margin-bottom:1rem ;
-
 }
+
+.project__role {
+  color: white;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  border: 1px solid orange;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+
+.project__item h3 {
+  margin: 1.2rem 0 2rem;
+  color: orange; /* <-- Change to any color you prefer */
+  font-size: 1.1rem;
+}
+
+
+
+/*introduction part*/
 
 .project_intro {
   padding-left: 4rem;
@@ -45,7 +64,7 @@
 }
 
 .project_intro h1{
-    color: orange;
+    color: white;
 }
 
 

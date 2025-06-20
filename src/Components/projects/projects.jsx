@@ -10,7 +10,7 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'car_smash',
+    title: 'Car Smash Repair Website',
     position1: 'Wordpress Development',
     position2: 'UI/UX Designing',
     position3: 'Web Hosting'
@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: 'car_melbourne',
+    title: 'Car Care Melbourne Website',
     position1: 'UI/UX',
     position2: 'UI/UX Designing',
     position3: 'Web Hosting'
@@ -27,7 +27,7 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: 'car_revolution',
+    title: 'Import Revolution Website',
     position1: 'UI/UX',
     position2: 'UI/UX Designing',
     position3: 'Web Hosting'
@@ -37,13 +37,21 @@ const data = [
 const projects = () => {
   return (
     <section id='project'>
-      <div className="project_intro">
-                <h4>EXPLORE OUR<span className="highlight">PORTFOLIO</span> OF INNOVATIVE PROJECTS  </h4>
-                <h1>Building Impactful Solutions for businesses Worldwide</h1>
-                <p>
-                   Explore our diverse portfolio of successful projects showcasing innovation, creativity and client-focused solutions.Each project reflects our dedication to delivering impactful results toilored to unique business needs   
-                </p>
-      </div>
+               <div className="project_header">
+                    <div className="project_intro">
+                        <h4>EXPLORE OUR<span className="highlight"> PORTFOLIO</span> OF INNOVATIVE PROJECTS</h4>
+                        <h1>Building Impactful Solutions <br />for businesses Worldwide</h1>
+                    </div>
+
+                    <div className="project_para">
+                        <p>
+                        Explore our diverse portfolio of successful projects showcasing innovation,
+                        creativity and client-focused solutions. Each project reflects our dedication
+                        to delivering impactful results tailored to unique business needs.
+                        </p>
+                    </div>
+               </div>
+
 
       <div className='container project__container'>
         {

@@ -33,9 +33,49 @@
 
 }
 
+.project_intro {
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  flex: 1;
+}
+
+.project_intro h1,
+.project_intro h4 {
+  text-align: left;
+}
+
+.project_intro h1{
+    color: orange;
+}
+
+
+/*hi*/
+.project_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 7rem 1rem;
+}
+
+
+.project_para {
+  flex: 1;
+}
+
+.project_para p {
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-top: 5rem;
+}
+
+
+
+
+
 /*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
 @media screen and (max-width: 1024px){
-    .portfolio__container{
+    .project__container{
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
 
@@ -44,7 +84,7 @@
 
 /*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
 @media screen and (max-width: 600px){
-  .portfolio__container {
+  .project__container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

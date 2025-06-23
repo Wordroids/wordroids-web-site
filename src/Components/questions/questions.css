@@ -1,0 +1,43 @@
+.conatiner{
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+
+/*introduction part*/
+
+.questions_intro {
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  flex: 1;
+}
+
+.questions_intro h1,
+.questions_intro h4 {
+  text-align: left;
+}
+
+.questions_intro h1{
+    color: orange;
+}
+
+
+.qustions_intro p {
+  text-align: left;
+}
+
+
+
+/*hi*/
+.questions_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0 7rem 1rem;
+}
+
+
+
+

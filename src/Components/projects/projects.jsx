@@ -12,16 +12,16 @@ const data = [
     image: IMG1,
     title: 'Car Smash Repair Website',
     position1: 'Wordpress Development',
-    position2: 'UI/UX Designing',
-    position3: 'Web Hosting'
+    // position2: 'UI/UX Designing',
+    // position3: 'Web Hosting'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Car Care Melbourne Website',
     position1: 'UI/UX',
-    position2: 'UI/UX Designing',
-    position3: 'Web Hosting'
+    // position2: 'UI/UX Designing',
+    // position3: 'Web Hosting'
 
   },
   {
@@ -29,8 +29,8 @@ const data = [
     image: IMG3,
     title: 'Import Revolution Website',
     position1: 'UI/UX',
-    position2: 'UI/UX Designing',
-    position3: 'Web Hosting'
+    // position2: 'UI/UX Designing',
+    // position3: 'Web Hosting'
   }
 ]
 
@@ -55,7 +55,7 @@ const projects = () => {
 
       <div className='container project__container'>
         {
-          data.map(({id, image,title,position1,position2,position3}) => {
+          data.map(({id, image,title,position1}) => {
             return(
               <article key={id} className='project__item'>
                 <div className='project__item-image'>
@@ -68,13 +68,13 @@ const projects = () => {
                  <span className='project__role'>Wordpress Development</span>
                </div>
 
-               <div className='project__item-cta'>
+               {/* <div className='project__item-cta'>
                 <span className='project__role'>UI/UX Designing</span>
                </div>
 
                 <div className='project__item-cta'>
                 <span className='project__role'>Web Hosting</span>
-                </div>
+                </div> */}
 
 
 

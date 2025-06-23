@@ -16,7 +16,11 @@ const Footer = () => {
 
   return (
     <footer>
-      <a href="#" className='footer_logo'></a>   
+       <div className="footer_intro">
+            
+            <h1>Let's Collaborate to turn your Boldest <br></br>Ideas into Impactful Solutions</h1>
+          
+      </div> 
 
       <div className="footer_socials">
         info@wordroids.com

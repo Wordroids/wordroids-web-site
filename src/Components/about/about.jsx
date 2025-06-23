@@ -21,7 +21,7 @@ const About = () => {
                 <p>
                 We are a passionate team of innovators, creators, and problem-solvers dedicated to empowering businesses with cutting-edge digital solutions. With a focus on quality, creativity and functionality, we aim to transform your ideas into impactful realities.
                 </p>
-            </div>
+            </div> 
         </div>
     </div>
 </section>

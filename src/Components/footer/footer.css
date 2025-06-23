@@ -25,6 +25,23 @@ footer a{
 }
 
 
+
+/* ============ Intro Content ============ */
+.footer_intro {
+  padding-left: 0;
+  padding-top: 1rem;
+}
+
+.footer_intro h1{
+  text-align: center;
+}
+
+.footer_intro h1 {
+  color: orange;
+}
+
+
+
 /* Navigation container */
 .button-footer {
   background: rgba(0, 0, 0, 0.3);

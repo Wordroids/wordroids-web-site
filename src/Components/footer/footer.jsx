@@ -77,9 +77,14 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small>&copy; All rights reserved.</small>
+        <small>&copy; Copyright 2024 by Wordroids.com</small>
       </div>
+
+
+     
+
     </footer>
+
   )
 }
 

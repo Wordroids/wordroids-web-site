@@ -130,10 +130,15 @@ footer a{
 
 /*=====================copy-right======================*/
 
-.footer_copyright{
-    margin-bottom: 4rem;
-    color: var(--color-bg);
+.footer_copyright {
+  width: 100%;
+  height: 40px; /* thickness of the line */
+  background-color: orange;
+  margin-top: 2rem; /* optional spacing above the line */
+  border: none;
+  padding: 0;
 }
+
 
 
 

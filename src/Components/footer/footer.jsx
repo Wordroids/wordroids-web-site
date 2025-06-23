@@ -22,11 +22,17 @@ const Footer = () => {
           
       </div> 
 
-      <div className="footer_socials">
-        info@wordroids.com
-        Washinton, DC Greenville, Colombo
-        077 656 9740
+
+      <div className='welcome1_button'>
+           <a href= "#contact" className ='btn btn-primary'>GET STARTED TODAY!</a>
       </div>
+
+     <div className="footer_socials">
+        <span className="footer_item">info@wordroids.com</span>
+        <span className="footer_item">Washington, DC Greenville, Colombo</span>
+        <span className="footer_item">077 656 9740</span>
+      </div>
+
 
       <div className="button-footer">
         <button

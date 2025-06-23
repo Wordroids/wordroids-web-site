@@ -25,6 +25,13 @@ footer a{
 }
 
 
+/*============= CTA =============== */
+.welcome1_button{
+    margin-top: 1rem;
+    padding-left: 40rem;
+    display: flex;
+}
+
 
 /* ============ Intro Content ============ */
 .footer_intro {
@@ -87,32 +94,47 @@ footer a{
 }
 
 
-.footer_socials{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
+/*======================contact details================*/
+
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  color: orange;
 }
 
-.footer_socials a{
-    background: var(--color-bg);
-    color: var(--color-white);
-    padding : 0.8rem;
-    border-radius: 0.7rem;
-    display: flex;
-    border: 1px solid transparent
+
+.footer_item:not(:last-child) {
+  border-right: 2px solid orange;
 }
-   
-.footer_socials a:hover{
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+
+.footer_item {
+  padding: 0 1rem;
+  position: relative;
+  display: inline-block;
+  line-height: 3.5; /* Adjust text spacing if needed */
 }
+
+.footer_item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%; /* Match the full height of the parent */
+  width: 1px;
+  background-color: orange;
+}
+
+/*=====================copy-right======================*/
 
 .footer_copyright{
     margin-bottom: 4rem;
     color: var(--color-bg);
 }
+
 
 
 /*=============MEDIA QUERIES(SMALL DEVICES) ===============*/

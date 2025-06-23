@@ -1,5 +1,5 @@
 footer{
-    background: var(--color-primary);
+    background: black;
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -17,13 +17,58 @@ footer a{
     display: inline-block;
 }
 
-.permalinks{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+
+/*Nav Icons*/
+.footer-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
+
+
+/* Navigation container */
+.button-footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* Increased gap between buttons */
+  border-radius: 2rem;
+  backdrop-filter: blur(15px);
+}
+
+/* Individual nav buttons */
+.footer-btn {
+  
+  background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
+  backdrop-filter: blur(10px);           /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border-radius: 1rem;
+  border: 0.002px solid orange; 
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: orange;
+  transition: all 0.3s ease;
+
+  display: inline-flex;         /* Make content align inline */
+  align-items: center;          /* Vertically align center */
+  gap: 0.4rem;                  /* Small space between text and icon */
+}
+
+.footer-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
 
 .footer_socials{
     display: flex;

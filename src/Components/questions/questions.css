@@ -1,59 +1,23 @@
-/* .conatiner{
-  width: 95%;
-  max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 8rem;
+/* Main container for the FAQ section */
+#questions {
+  width: 100%;
 }
 
-
-
-.questions_intro {
-  padding-left: 4rem;
-  padding-bottom: 2rem;
-  flex: 1;
-}
-
-.questions_intro h1,
-.questions_intro h4 {
-  text-align: left;
-}
-
-.questions_intro h1{
-    color: orange;
-}
-
-
-.qustions_intro p {
-  text-align: left;
-}
-
-
-
+/* Header: two-column layout */
 .questions_header {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 3rem;
   padding: 0 7rem 1rem;
+  justify-content: center;
 }
 
-
-
- */
-
-
-
- .container {
-  width: 95%;
-  max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 8rem;
-}
-
-/* Introduction part */
 .questions_intro {
-  padding-left: 4rem;
+  flex: 1 1 340px;
+  min-width: 300px;
+  max-width: 520px;
+  padding-left: 0;
   padding-bottom: 2rem;
-  flex: 1;
 }
 
 .questions_intro h1,
@@ -69,24 +33,19 @@
   text-align: left;
 }
 
-/* Header styling */
-.questions_header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0 7rem 1rem;
-}
-
-/* FAQ Section */
+/* FAQ Section: right column */
 .faq_container {
-  max-width: 800px;
-  margin: 0 auto;
+  flex: 1 1 400px;
+  max-width: 600px;
+  min-width: 320px;
   background: #23201a;
   border-radius: 10px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 2rem 0;
+  padding: 1rem 0;
+  margin-top: 0;
 }
 
+/* FAQ Items */
 .faq_item {
   border-bottom: 1px solid #3b362b;
   transition: background 0.2s;
@@ -99,8 +58,8 @@
 .faq_question {
   cursor: pointer;
   padding: 1.3rem 2.5rem 1.3rem 2.5rem;
-  font-size: 1.18rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -143,3 +102,16 @@
   to { opacity: 1; transform: translateY(0);}
 }
 
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .questions_header {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem 1rem;
+  }
+  .faq_container, .questions_intro {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+}

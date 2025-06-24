@@ -21,6 +21,16 @@ import { FaJs } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
+// CMS Icons (popular CMS platforms)
+import { SiWordpress } from "react-icons/si";
+import { SiDrupal } from "react-icons/si";
+import { SiJoomla } from "react-icons/si";
+import { SiMagento } from "react-icons/si";
+import { SiShopify } from "react-icons/si";
+import { SiGhost } from "react-icons/si";
+import { SiSquarespace } from "react-icons/si";
+import { SiWix } from "react-icons/si";
+
 const backendIcons = [
   { component: FaPython, name: "Python", className: "icon-py" },
   { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
@@ -43,26 +53,51 @@ const frontendIcons = [
   { component: FaHtml5, name: "HTML5", className: "icon-html" }
 ];
 
+const cmsIcons = [
+  { component: SiWordpress, name: "WordPress", className: "icon-wordpress" },
+  { component: SiDrupal, name: "Drupal", className: "icon-drupal" },
+  { component: SiJoomla, name: "Joomla", className: "icon-joomla" },
+  { component: SiMagento, name: "Magento", className: "icon-magento" },
+  { component: SiShopify, name: "Shopify", className: "icon-shopify" },
+  { component: SiGhost, name: "Ghost", className: "icon-ghost" },
+  { component: SiSquarespace, name: "Squarespace", className: "icon-squarespace" },
+  { component: SiWix, name: "Wix", className: "icon-wix" }
+];
+
 const iconPositions = [
   { top: '-5%', left: '45%' },      // Top
   { top: '18%', left: '85%' },     // Top Right
   { top: '50%', left: '100%' },    // Right
   { top: '82%', left: '85%' },     // Bottom Right
-  { top: '95%', left: '45%' },    // Bottom
-  { top: '84%', left: '5%' },     // Bottom Left
-  { top: '50%', left: '-10%' },      // Left
-  { top: '18%', left: '0%' },     // Top Left
+  { top: '95%', left: '45%' },     // Bottom
+  { top: '84%', left: '5%' },      // Bottom Left
+  { top: '50%', left: '-10%' },    // Left
+  { top: '18%', left: '0%' },      // Top Left
 ];
 
 const Technology = () => {
   const [currentView, setCurrentView] = useState('backend');
   
   const getCurrentIcons = () => {
-    return currentView === 'backend' ? backendIcons : frontendIcons;
+    switch(currentView) {
+      case 'frontend':
+        return frontendIcons;
+      case 'cms':
+        return cmsIcons;
+      default:
+        return backendIcons;
+    }
   };
   
   const getCenterText = () => {
-    return currentView === 'backend' ? 'Back End\nDevelopment' : 'Front End\nDevelopment';
+    switch(currentView) {
+      case 'frontend':
+        return 'Front End\nDevelopment';
+      case 'cms':
+        return 'CMS\nPlatforms';
+      default:
+        return 'Back End\nDevelopment';
+    }
   };
 
   return (
@@ -70,7 +105,7 @@ const Technology = () => {
       <div className="technology-left">
         <div className="circle-container">
           <div className="circle-center">
-            <span>{getCenterText()}</span>
+            <span style={{ whiteSpace: 'pre-line' }}>{getCenterText()}</span>
           </div>
           {getCurrentIcons().map((icon, idx) => {
             const IconComponent = icon.component;
@@ -79,8 +114,9 @@ const Technology = () => {
                 key={icon.name}
                 className={`circle-icon ${icon.className}`}
                 style={iconPositions[idx]}
+                title={icon.name}
               >
-                <IconComponent size={24} />
+                <IconComponent size={28} />
               </div>
             );
           })}

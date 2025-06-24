@@ -1,27 +1,34 @@
 import React from 'react';
 import './technology.css';
+import { BiLogoDjango } from "react-icons/bi";
+import { FaPython } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { SiDotnet } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { GiFizzingFlask } from "react-icons/gi";
 
-
-const icons = [
-  { name: "Django", className: "icon-dj" },
-  { name: "Python", className: "icon-py" },
-  { name: "Laravel", className: "icon-laravel" },
-  { name: "Node.js", className: "icon-node" },
-  { name: "PHP", className: "icon-php" },
-  { name: "ASP.NET", className: "icon-dotnet" },
-  { name: "SQL", className: "icon-sql" },
-  { name: "Flask", className: "icon-flask" }
+const iconComponents = [
+  { component: FaPython, name: "Python", className: "icon-py" },
+  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
+  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
+  { component: FaPhp, name: "PHP", className: "icon-php" },
+  { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
+  { component: TbSql, name: "SQL", className: "icon-sql" },
+  { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
+  { component: BiLogoDjango, name: "Django", className: "icon-dj" }
 ];
 
 const iconPositions = [
-  { top: '0%', left: '50%' },      // Top (Python)
+  { top: '-5%', left: '45%' },      // Top (Python)
   { top: '18%', left: '85%' },     // Top Right (Laravel)
   { top: '50%', left: '100%' },    // Right (Node.js)
   { top: '82%', left: '85%' },     // Bottom Right (PHP)
-  { top: '100%', left: '50%' },    // Bottom (ASP.NET)
-  { top: '82%', left: '15%' },     // Bottom Left (SQL)
-  { top: '50%', left: '0%' },      // Left (Flask)
-  { top: '18%', left: '15%' },     // Top Left (Django)
+  { top: '95%', left: '45%' },    // Bottom (ASP.NET)
+  { top: '82%', left: '0%' },     // Bottom Left (SQL)
+  { top: '50%', left: '-10%' },      // Left (Flask)
+  { top: '18%', left: '0%' },     // Top Left (Django)
 ];
 
 const Technology = () => (
@@ -31,16 +38,18 @@ const Technology = () => (
         <div className="circle-center">
           <span>Back End<br />Development</span>
         </div>
-        {icons.map((icon, idx) => (
-          <div
-            key={icon.name}
-            className={`circle-icon ${icon.className}`}
-            style={iconPositions[idx]}
-          >
-            {/* Replace below with actual icons */}
-            <span>{icon.name}</span>
-          </div>
-        ))}
+        {iconComponents.map((icon, idx) => {
+          const IconComponent = icon.component;
+          return (
+            <div
+              key={icon.name}
+              className={`circle-icon ${icon.className}`}
+              style={iconPositions[idx]}
+            >
+              <IconComponent size={24} />
+            </div>
+          );
+        })}
       </div>
       <div className="nav-arrows">
         <span className="arrow">← CMS</span>

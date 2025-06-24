@@ -1,0 +1,31 @@
+/* ============ Outer Container ============ */
+.container {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ============ Intro Content ============ */
+.technology_intro {
+  padding-left: 45rem;
+  padding-top: 1rem;
+}
+
+.technology_intro h1,
+.technology_intro h4 {
+  text-align: left;
+}
+
+.technology_intro h1 {
+  color: orange;
+}
+
+.technology_intro p {
+  text-align: justify;
+}
+
+/* ============ Highlight Text ============ */
+.highlight {
+  color: orange;
+  font-weight: bold;
+}

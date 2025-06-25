@@ -21,9 +21,9 @@
 
 /* Outer Orange Border */
 .clients__outer-wrapper {
-  border: 1.5px black;
+  border: 1.5px solid black;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 0.1rem;
   background: transparent;
 }
 
@@ -35,10 +35,18 @@
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.09);
   border: 1px solid orange;
 }
 
+/* Wrapper for images to keep them grouped */
+.clients__images-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Images row */
 .clients__images-row {
   display: flex;
   flex-direction: row;
@@ -46,24 +54,24 @@
   gap: 1.2rem;
 }
 
+/* Diamond shapes */
 .clients__diamond {
   width: 90px;
   height: 90px;
-  background: orange;
+  background:  #ef9815;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: rotate(45deg);
   overflow: hidden;
   border-radius: 12px;
-  border: 3px solid #fff;
-  box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
 }
 
 .clients__diamond-large {
-  width: 120px;
-  height: 120px;
-  background: #ffb84d;
+  width: 140px;
+  height: 140px;
+  background: #ef9815;
 }
 
 .clients__diamond img {
@@ -73,6 +81,19 @@
   transform: rotate(-45deg);
 }
 
+/* Vertical orange line */
+.clients__vertical-line {
+  width: 2px; /* Thickness */
+  background-color: orange;
+  height: 80px; /* Adjust as needed */
+  border-radius: 1px;
+  align-self: stretch; /* Fill container height */
+  margin: 0 1.5rem;
+  margin-top: 4rem;
+  padding-top:12rem ;
+}
+
+/* Testimonial content */
 .clients__testimonial-content {
   flex: 1;
   display: flex;
@@ -80,13 +101,27 @@
   justify-content: center;
 }
 
-.clients__quote-icon {
-  color: orange;
-  font-size: 2.8rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
+/* Quotation mark circle */
+.clients__quote-circle {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.clients__quote-mark {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Testimonial paragraph */
 .clients__testimonial-content p {
   color: #fff;
   font-size: 1.1rem;
@@ -95,6 +130,7 @@
   line-height: 1.7;
 }
 
+/* Author info */
 .clients__testimonial-author {
   display: flex;
   flex-direction: column;
@@ -103,8 +139,8 @@
 
 .clients__testimonial-name {
   color: orange;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
 .clients__testimonial-role {
@@ -116,9 +152,13 @@
 @media screen and (max-width: 900px) {
   .clients__testimonial-box {
     flex-direction: column;
-    align-items: flex-start;
     gap: 2rem;
     padding: 2rem 1rem;
+  }
+  .clients__vertical-line {
+    width: 100%;
+    height: 4px;
+    margin: 1rem 0;
   }
   .clients__images-row {
     justify-content: center;

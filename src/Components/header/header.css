@@ -1,87 +1,194 @@
-header {
-  height: 110vh;
-  padding-top: 7rem;    /*space inside the top of the header*/
-  overflow: hidden;     /*Hides any overflowing content*/
+/* Main header background */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 7rem;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 60% 40%, #4d3206 0%, #1a140a 100%);
 }
 
+header {
+  position: relative;
+  height: 110vh;
+  padding-top: 7rem;
+  overflow: hidden;
+
+  /* Radial gradient background: warm brown to dark */
+  background: radial-gradient(circle at 60% 40%, #4d3206 0%, #1a140a 100%);
+}
+
+/* Abstract orange shape */
+.hero-bg-shape {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+  width: 320px;
+  height: 350px;
+  background: #d98908;
+  opacity: 0.28;
+  border-radius: 55% 45% 60% 40% / 60% 40% 60% 40%;
+  z-index: 1;
+  filter: blur(4px);
+}
+
+/* Container and layout */
 .header_container {
-  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   height: 100%;
   position: relative;
+  z-index: 2;
+ 
 }
 
-.header_text{
-    padding-top: 11rem;
-    padding-left: -20rem;
+/* Header text styles */
+.header_text {
+  max-width: 540px;
+  padding-top: 12rem;
+  z-index: 2;
+ 
 }
 
-/* Set header text color to orange */
-.header_container h1,
-.header_container h4 {
+.header_text h1 {
+  color:orange;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.header_text h4 {
   color: orange;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem
+}
+
+.header_text p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 1.5rem 0 0 0;
+  line-height: 1.6;
+}
+
+.projects-icon {
+  font-size: 2.2rem;
+  color: #f7a623;
 }
 
 
-/*============= CTA =============== */
-.welcome_button{
-    margin-top: 2.5rem;
-    padding-left: -20rem;
-    display: flex;
+/* CTA Button */
+.welcome_button {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.btn.btn-primary {
+  background: radial-gradient(circle at center, #815718 25%, orange 70%);
+  color: #222;
+  border: none;
+  padding: 1rem 2.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(247,166,35,0.10);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.btn-primary:hover {
+  background: radial-gradient(circle at center, #f7a623 0%, #ffb84d 70%);
+  box-shadow: 0 6px 32px rgba(247,166,35,0.16);
 }
 
 
-/*======= IMAGE STYLING =======*/
+/* Image and overlay card */
 .man {
   width: 50rem;
   height: 50rem;
   position: absolute;
-  top: 50%;
+  top: -4%;
   right: -12rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2;
 }
 
 .man img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.16);
 }
 
-/* Scroll down (currently unused transform value) */
-.scroll_down {
+/* Projects card overlay */
+.projects-card {
   position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
-  font-weight: 300;
-  font-size: 0.9rem;
+  top: 18%;
+  left: 50px;
+  background: rgba(40, 30, 10, 0.96);
+  border-radius: 1rem;
+  border: 1.5px solid #f7a623;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(247,166,35,0.15);
+  min-width: 180px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
-  }
+.projects-icon {
+  font-size: 2.2rem;
+  color: #f7a623;
+}
 
-  .me {
-    height: 60rem;
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header_container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 4vw 0 4vw;
+  }
+  .man {
+    width: 220px;
+    height: 270px;
+    margin-top: 2rem;
+  }
+  .projects-card {
+    left: 0;
+    top: -70px;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+  .header_text h1 {
+    font-size: 2.2rem;
   }
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
+@media (max-width: 600px) {
+  .header_container {
+    padding: 2rem 2vw 0 2vw;
   }
-
-  .header_socials,
-  .scroll_down {
-    display: none;
+  .header_text h1 {
+    font-size: 1.4rem;
   }
-
-  .me {
-    height: 45rem;
+  .man {
+    width: 120px;
+    height: 140px;
+  }
+  .projects-card {
+    left: 0;
+    top: -40px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
   }
 }

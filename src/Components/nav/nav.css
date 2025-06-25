@@ -31,13 +31,13 @@
 /* Navigation container */
 .button-nav {
   background: rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
+  padding: 0.3rem 0.6rem;
   position: fixed;
   top: 5rem;               /* leave space for tube above */
   left: 70%;
   transform: translateX(-50%);
   display: flex;
-  gap: 1rem;
+  gap: 0rem;
   border-radius: 2rem;
   backdrop-filter: blur(15px);
   z-index: 10;
@@ -49,7 +49,7 @@
   background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
   backdrop-filter: blur(10px);           /* Blur effect */
   -webkit-backdrop-filter: blur(10px);   /* Safari support */
-  border-radius: 1rem;
+  border-radius: 0rem;
   border: 0.002px solid orange; 
   padding: 0.6rem 1.2rem;
   border-radius: 1.5rem;

@@ -46,6 +46,28 @@
   justify-content: center;
 }
 
+.clients__stats-bar {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+
+  /* Horizontal brown borders only */
+  border-top: 2px solid #5e3f09;    /* brown top border */
+  border-bottom: 2px solid #5e3f09; /* brown bottom border */
+  padding: 1rem 0;                   /* vertical padding only */
+  border-radius: 0;                  /* no rounding for horizontal borders */
+  box-sizing: border-box;
+}
+
+
 /* Images row */
 .clients__images-row {
   display: flex;

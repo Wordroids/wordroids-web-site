@@ -1,107 +1,142 @@
-/* ============ Outer Container ============ */
-.container {
-  width: 95%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-/* ============ Outer Orange Border ============ */
-.clients__outer-wrapper {
-  border: 1px solid orange;       /* Outer orange border */
-  padding:0.2rem;
-  border-radius: 1.5rem;
-}
-
-/* ============ Inner Brown Background with Content ============ */
-.clients__content-wrapper {
-  display: grid;
-  grid-template-columns: 45% 50%;
-  gap: 5%;
+/* Stats Bar */
+.clients__stats-bar {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: rgba(94, 63, 9, 0.4); /* Semi-transparent brown */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 1rem;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+.clients__stats-sep {
+  color: orange;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+
+/* Outer Orange Border */
+.clients__outer-wrapper {
+  border: 1.5px black;
+  border-radius: 1.5rem;
   padding: 2rem;
+  background: transparent;
 }
 
-/* ============ Image Container ============ */
-.clients__checker {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: grid;
-  place-items: center;
+/* Testimonial Box */
+.clients__testimonial-box {
+  background: rgba(94, 63, 9, 0.4);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.09);
+  border: 1px solid orange;
 }
 
-.clients__checker-image {
-  width: 100%;
-  height: auto;
-  border: 1px solid orange; /* Orange border around image */
-  border-radius: 2rem;
+.clients__images-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.clients__diamond {
+  width: 90px;
+  height: 90px;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
   overflow: hidden;
-  transition: var(--transition);
+  border-radius: 12px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.08);
 }
 
-.clients__checker-image img {
+.clients__diamond-large {
+  width: 120px;
+  height: 120px;
+  background: #ffb84d;
+}
+
+.clients__diamond img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  transform: rotate(-45deg);
 }
 
-/* ============ Intro Content ============ */
-.clients_intro {
-  padding-left: 0;
-  padding-top: 1rem;
+.clients__testimonial-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.clients_intro h1,
-.clients_intro h4 {
+.clients__quote-icon {
+  color: orange;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.clients__testimonial-content p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   text-align: left;
+  line-height: 1.7;
 }
 
-.clients_intro h1 {
+.clients__testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.clients__testimonial-name {
   color: orange;
-}
-
-.clients_intro p {
-  text-align: justify;
-}
-
-/* ============ Highlight Text ============ */
-.highlight {
-  color: orange;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-/* ============ Media Queries ============ */
-@media screen and (max-width: 1024px) {
-  .clients__content-wrapper {
-    grid-template-columns: 1fr;
+.clients__testimonial-role {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .clients__testimonial-box {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 2rem;
+    padding: 2rem 1rem;
   }
-
-  .clients__checker {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .clients_intro {
-    text-align: center;
+  .clients__images-row {
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .clients__checker {
-    width: 65%;
-    margin: 0 auto 3rem;
+  .clients__stats-bar {
+    font-size: 1.1rem;
+    gap: 0.8rem;
   }
-
-  .clients_intro {
-    text-align: center;
+  .clients__testimonial-box {
+    padding: 1.2rem 0.5rem;
+    gap: 1.2rem;
   }
-
-  .clients_intro p {
-    margin: 1.5rem 0;
+  .clients__diamond,
+  .clients__diamond-large {
+    width: 65px;
+    height: 65px;
   }
 }

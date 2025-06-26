@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import checker from '../../assets/Checker.jpg'
+import { TbCircleLetterIFilled } from "react-icons/tb" 
 
 
 
@@ -15,13 +16,29 @@ const About = () => {
                     </div>
                 </div>
 
-            <div className="about_intro">
-                <h4>YOUR <span className="highlight">PARTNER</span> IN DIGITAL TRANSFORMATION </h4>
-                <h1>Empowering Businesses Through Innovative Digital Solutions</h1>
-                <p>
+          <div className="about_intro">
+            <h4>YOUR <span className="highlight">PARTNER</span> IN DIGITAL TRANSFORMATION </h4>
+            <h1>Empowering Businesses Through Innovative Digital Solutions</h1>
+            <p>
                 We are a passionate team of innovators, creators, and problem-solvers dedicated to empowering businesses with cutting-edge digital solutions. With a focus on quality, creativity and functionality, we aim to transform your ideas into impactful realities.
-                </p>
-            </div> 
+            </p>
+
+            <div className="browse_button_wrapper">
+                <button
+                className="browse_button"
+                onClick={() => {
+                    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                >
+                <TbCircleLetterIFilled className="browse_icon" />
+                READ ABOUT US
+                </button>
+            </div>
+</div>
+  
+
+           
+            
         </div>
     </div>
 </section>

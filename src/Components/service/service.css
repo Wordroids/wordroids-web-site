@@ -109,9 +109,13 @@
 
 .browse_button_wrapper {
   display: flex;
-  justify-content: center;
   margin-top: 3rem;
+  margin-left: 20rem;
+  justify-content: flex-start;
 }
+
+
+
 
 .browse_button {
   background-color:  rgba(94, 63, 9, 0.4);

@@ -5,6 +5,7 @@ import { GiOpenBook } from "react-icons/gi"
 import { AiFillMessage } from "react-icons/ai"
 import { SiBlueprint } from "react-icons/si"
 import { TbCircleLetterIFilled } from "react-icons/tb"
+import { IoIosBulb } from "react-icons/io";
 
 const Footer = () => {
   const [activeNav, setActiveNav] = useState('#welcome')
@@ -16,23 +17,26 @@ const Footer = () => {
 
   return (
     <footer>
-       <div className="footer_intro">
-            
-            <h1>Let's Collaborate to turn your Boldest <br></br>Ideas into Impactful Solutions</h1>
-          
-      </div> 
-
-
-      <div className='welcome1_button'>
-           <a href= "#contact" className ='btn btn-primary'>GET STARTED TODAY!</a>
+      <div className="footer_intro">
+        <h1>Let's Collaborate to turn your Boldest <br></br>Ideas into Impactful Solutions</h1>
       </div>
 
-     <div className="footer_socials">
+       <div className="browse_button_wrapper5" >
+               <button className="browse_button5"onClick={() => {
+                        // Example: scroll to services or navigate
+                        document.getElementById('header')?.scrollIntoView({ behavior: 'smooth' })
+                      }}>
+                   <SiBlueprint className="browse_icon5" />     
+                  GET STARTED TODAY!
+               </button>
+        </div>
+
+
+      <div className="footer_socials">
         <span className="footer_item">info@wordroids.com</span>
         <span className="footer_item">Washington, DC Greenville, Colombo</span>
         <span className="footer_item">077 656 9740</span>
       </div>
-
 
       <div className="button-footer">
         <button
@@ -79,12 +83,7 @@ const Footer = () => {
       <div className="footer_copyright">
         <small>&copy; Copyright 2024 by Wordroids.com</small>
       </div>
-
-
-     
-
     </footer>
-
   )
 }
 

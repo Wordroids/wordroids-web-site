@@ -40,40 +40,40 @@ const Footer = () => {
 
       <div className="button-footer">
         <button
-          onClick={() => handleNavClick('#welcome')}
-          className={activeNav === '#welcome' ? 'footer-btn active' : 'footer-btn'}
+          onClick={() => handleNavClick('#header')}
+          className={activeNav === '#header' ? 'footer-btn active' : 'footer-btn'}
         >
           <MdHome className="footer-icon" />
           <span className="footer-text">WELCOME</span>
         </button>
 
         <button
-          onClick={() => handleNavClick('#wordroids')}
-          className={activeNav === '#wordroids' ? 'footer-btn active' : 'footer-btn'}
+          onClick={() => handleNavClick('#about')}
+          className={activeNav === '#about' ? 'footer-btn active' : 'footer-btn'}
         >
           <SiBlueprint className="footer-icon" />
           <span className="footer-text">WORDROIDS</span>
         </button>
 
         <button
-          onClick={() => handleNavClick('#blueprints')}
-          className={activeNav === '#blueprints' ? 'footer-btn active' : 'footer-btn'}
+          onClick={() => handleNavClick('#service')}
+          className={activeNav === '#service' ? 'footer-btn active' : 'footer-btn'}
         >
           <GiOpenBook className="footer-icon" />
           <span className="footer-text">BLUEPRINTS</span>
         </button>
 
         <button
-          onClick={() => handleNavClick('#innovations')}
-          className={activeNav === '#innovations' ? 'footer-btn active' : 'footer-btn'}
+          onClick={() => handleNavClick('#projects')}
+          className={activeNav === '#projects' ? 'footer-btn active' : 'footer-btn'}
         >
           <TbCircleLetterIFilled className="footer-icon" />
           <span className="footer-text">INNOVATIONS</span>
         </button>
 
         <button
-          onClick={() => handleNavClick('#support')}
-          className={activeNav === '#support' ? 'footer-btn active' : 'footer-btn'}
+          onClick={() => handleNavClick('#questions')}
+          className={activeNav === '#questions' ? 'footer-btn active' : 'footer-btn'}
         >
           <AiFillMessage className="footer-icon" />
           <span className="footer-text">SUPPORT</span>

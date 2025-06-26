@@ -5,7 +5,7 @@ import { GiJetpack } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <header>
+    <header id="header"> {/* ✅ ADDED ID TO MATCH NAVIGATION */}
       {/* Orange abstract shape */}
       <div className="hero-bg-shape"></div>
 
@@ -26,7 +26,6 @@ const Header = () => {
         <div className="man">
           <img src={Businessman} alt="man" />
           <div className="projects-card">
-            {/* Use the GiJetpack icon component here */}
             <GiJetpack className="projects-icon" />
             <span>
               <strong>18+</strong><br />

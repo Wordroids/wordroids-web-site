@@ -37,7 +37,7 @@ const data = [
 
 const projects = () => {
   return (
-    <section id='project'>
+    <section id='projects'>
                <div className="project_header">
                     <div className="project_intro">
                         <h4>EXPLORE OUR<span className="highlight"> PORTFOLIO</span> OF INNOVATIVE PROJECTS</h4>

@@ -5,7 +5,7 @@
   position: relative;
   padding-top: 7rem;
   overflow: hidden;
-  background: radial-gradient(ellipse at 60% 40%, #4d3206 0%, #1a140a 100%);
+  background:radial-gradient(ellipse at 60% 40%, #4d3206 0%, #1a140a 100%);
 }
 
 header {
@@ -15,7 +15,7 @@ header {
   overflow: hidden;
 
   /* Radial gradient background: warm brown to dark */
-  background: radial-gradient(circle at 60% 40%, #4d3206 0%, #1a140a 100%);
+  background: black;/*radial-gradient(circle at 60% 40%, #4d3206 0%, #1a140a 100%);*/
 }
 
 /* Abstract orange shape */

@@ -216,12 +216,19 @@ const Service = () => {
 
             </div>
         </div>
+   </div>
 
 
-        
 
+   <div className="browse_button_wrapper" >
+         <button className="browse_button"onClick={() => {
+                  // Example: scroll to services or navigate
+                  document.getElementById('service')?.scrollIntoView({ behavior: 'smooth' })
+                }}>
+            BROWSE SERVICES
+         </button>
+   </div>
 
-         </div>
 
 
 
@@ -239,7 +246,6 @@ const Service = () => {
 }
 
 export default Service
-
 
 
 

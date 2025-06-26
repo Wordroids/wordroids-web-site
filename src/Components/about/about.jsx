@@ -23,14 +23,14 @@ const About = () => {
                 We are a passionate team of innovators, creators, and problem-solvers dedicated to empowering businesses with cutting-edge digital solutions. With a focus on quality, creativity and functionality, we aim to transform your ideas into impactful realities.
             </p>
 
-            <div className="browse_button_wrapper">
+            <div className="browse_button_wrapper2">
                 <button
-                className="browse_button"
+                className="browse_button2"
                 onClick={() => {
                     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 >
-                <TbCircleLetterIFilled className="browse_icon" />
+                <TbCircleLetterIFilled className="browse_icon2" />
                 READ ABOUT US
                 </button>
             </div>

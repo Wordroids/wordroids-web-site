@@ -107,17 +107,14 @@
   }
 }
 
-.browse_button_wrapper {
+.browse_button_wrapper1 {
   display: flex;
   margin-top: 3rem;
-  margin-left: 20rem;
+  margin-left: 40rem;
   justify-content: flex-start;
 }
 
-
-
-
-.browse_button {
+.browse_button1 {
   background-color:  rgba(94, 63, 9, 0.4);
   border: 0.002px solid orange;
   color: orange;
@@ -129,13 +126,13 @@
   box-shadow: 0 0 8px rgba(255, 165, 0, 0.3);
 }
 
-.browse_button:hover {
+.browse_button1:hover {
   background-color: orange;
   color: #0b0b0b;
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
 }
 
-.browse_icon {
+.browse_icon1 {
   font-size: 1.2rem;
   margin-right: 0.6rem;
   vertical-align: middle;

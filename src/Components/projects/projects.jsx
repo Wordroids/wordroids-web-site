@@ -3,6 +3,7 @@ import './projects.css';
 import IMG1 from '../../assets/project1.png';
 import IMG2 from '../../assets/project2.png';
 import IMG3 from '../../assets/project3.png';
+import { GiOpenBook } from "react-icons/gi"
 
 //DO NOT USE IMAGE IN PRODUCTION
 
@@ -84,6 +85,18 @@ const projects = () => {
        
 
      </div>
+
+     <div className="browse_button_wrapper3" >
+              <button className="browse_button3"onClick={() => {
+                       // Example: scroll to services or navigate
+                       document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+                     }}>
+                  <GiOpenBook className="browse_icon3" />     
+                 REVIEW PROJECTS
+              </button>
+      </div>
+
+
     </section>
   );
 };

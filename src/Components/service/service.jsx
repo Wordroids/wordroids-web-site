@@ -221,12 +221,12 @@ const Service = () => {
 
 
 
-   <div className="browse_button_wrapper" >
-         <button className="browse_button"onClick={() => {
+   <div className="browse_button_wrapper1" >
+         <button className="browse_button1"onClick={() => {
                   // Example: scroll to services or navigate
                   document.getElementById('service')?.scrollIntoView({ behavior: 'smooth' })
                 }}>
-             <SiBlueprint className="browse_icon" />     
+             <SiBlueprint className="browse_icon1" />     
             BROWSE SERVICES
          </button>
    </div>

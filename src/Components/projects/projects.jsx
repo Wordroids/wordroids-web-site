@@ -52,7 +52,6 @@ const projects = () => {
                     </div>
                </div>
 
-
       <div className='container project__container'>
         {
           data.map(({id, image,title,position1}) => {

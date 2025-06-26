@@ -1,5 +1,13 @@
 import React from 'react'
 import './service.css'
+import { SiAngular } from "react-icons/si";
+import { IoLogoFigma } from "react-icons/io5";
+import { SiNuxtdotjs } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import {FaPhp} from 'react-icons/fa'
+import { FaHtml5 } from "react-icons/fa";
+import {FaWordpress} from 'react-icons/fa'
+
 
 const Service = () => {
     return(
@@ -12,6 +20,18 @@ const Service = () => {
                 We provided tailored solutions, from apps to marketing, ensuring your business stands out. Our <br />
                 expert team focuses on delivering exceptional results to help you grow and succeed.
                 </p>
+            </div>
+
+            {/* ICON GROUP - add this block */}
+            <div className="service_icons">
+                <SiAngular className="service_icon" title="Angular" />
+                <IoLogoFigma className="service_icon" title="Figma" />
+                <SiNuxtdotjs className="service_icon" title="js" />
+                <FaReact className="service_icon" title="React" />
+                <FaPhp className="service_icon" title="php" />
+                <FaHtml5 className = "service_icon" title="html5"/>
+                <FaWordpress className="service_icon" title="WordPress" />
+                
             </div>
 
             

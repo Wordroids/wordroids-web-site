@@ -146,7 +146,16 @@ header {
 .projects-icon {
   font-size: 2.2rem;
   color: #f7a623;
+  border: 1px solid #f7a623;  /* Orange border */
+  border-radius: 50%;            /* Make it a circle */
+  padding: 0.3rem;               /* Space between icon and border */
+  box-sizing: content-box;       /* Ensure padding adds space inside border */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 166, 35, 0.1); /* Optional subtle background for better contrast */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {

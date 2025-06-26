@@ -5,10 +5,10 @@ import logo from '../../assets/logo.png'
 // Icons
 
 import { MdHome } from "react-icons/md"
-import { GiOpenBook } from "react-icons/gi"
-import { AiFillMessage } from "react-icons/ai"
+import { TbCircleLetterIFilled } from "react-icons/tb" 
 import { SiBlueprint } from "react-icons/si"
-import { TbCircleLetterIFilled } from "react-icons/tb"
+import { GiOpenBook } from "react-icons/gi" 
+import { AiFillMessage } from "react-icons/ai" 
 
 
 const Nav = () => {
@@ -39,7 +39,7 @@ const Nav = () => {
           onClick={() => handleNavClick('#wordroids')}
           className={activeNav === '#wordroids' ? 'nav-btn active' : 'nav-btn'}
         >
-          <SiBlueprint className="nav-icon" />
+          <TbCircleLetterIFilled className="nav-icon" />
           <span className="nav-text">WORDROIDS</span>
         </button>
 
@@ -47,7 +47,7 @@ const Nav = () => {
           onClick={() => handleNavClick('#blueprints')}
           className={activeNav === '#blueprints' ? 'nav-btn active' : 'nav-btn'}
         >
-          < GiOpenBook className="nav-icon" />
+          < SiBlueprint className="nav-icon" />
           <span className="nav-text">BLUEPRINTS</span>
         </button>
 
@@ -55,7 +55,7 @@ const Nav = () => {
           onClick={() => handleNavClick('#innovations')}
           className={activeNav === '#innovations' ? 'nav-btn active' : 'nav-btn'}
         >
-          <TbCircleLetterIFilled className="nav-icon" />
+          < GiOpenBook className="nav-icon" />
           <span className="nav-text">INNOVATIONS</span>
         </button>
 

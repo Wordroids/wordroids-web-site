@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import {FaPhp} from 'react-icons/fa'
 import { FaHtml5 } from "react-icons/fa";
 import {FaWordpress} from 'react-icons/fa'
+import { SiBlueprint } from "react-icons/si"
 
 
 const Service = () => {
@@ -225,6 +226,7 @@ const Service = () => {
                   // Example: scroll to services or navigate
                   document.getElementById('service')?.scrollIntoView({ behavior: 'smooth' })
                 }}>
+             <SiBlueprint className="browse_icon" />     
             BROWSE SERVICES
          </button>
    </div>

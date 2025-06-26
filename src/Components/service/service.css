@@ -131,6 +131,14 @@
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
 }
 
+.browse_icon {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  color: orange;
+}
+
+
 
 
 /*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/

@@ -1,35 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './technology.css';
 
 // Backend Icons
 import { BiLogoDjango } from "react-icons/bi";
 import { FaPython } from "react-icons/fa6";
-import { FaLaravel } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaPhp } from "react-icons/fa";
-import { SiDotnet } from "react-icons/si";
+import { FaLaravel, FaNodeJs, FaPhp, FaReact, FaVuejs, FaJs, FaHtml5 } from "react-icons/fa";
+import { SiDotnet, SiAngular, SiNuxtdotjs, SiTypescript, SiWordpress, SiDrupal, SiJoomla, SiMagento, SiShopify, SiGhost, SiSquarespace, SiWix } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { GiFizzingFlask } from "react-icons/gi";
-
-// Frontend Icons
-import { FaReact } from "react-icons/fa";
-import { FaVuejs } from "react-icons/fa";
-import { SiAngular } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiNuxtdotjs } from "react-icons/si";
-import { FaJs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
-
-// CMS Icons (popular CMS platforms)
-import { SiWordpress } from "react-icons/si";
-import { SiDrupal } from "react-icons/si";
-import { SiJoomla } from "react-icons/si";
-import { SiMagento } from "react-icons/si";
-import { SiShopify } from "react-icons/si";
-import { SiGhost } from "react-icons/si";
-import { SiSquarespace } from "react-icons/si";
-import { SiWix } from "react-icons/si";
 
 const backendIcons = [
   { component: FaPython, name: "Python", className: "icon-py" },
@@ -64,41 +43,41 @@ const cmsIcons = [
   { component: SiWix, name: "Wix", className: "icon-wix" }
 ];
 
-const iconPositions = [
-  { top: '-5%', left: '45%' },      // Top
-  { top: '18%', left: '85%' },     // Top Right
-  { top: '50%', left: '100%' },    // Right
-  { top: '82%', left: '85%' },     // Bottom Right
-  { top: '95%', left: '45%' },     // Bottom
-  { top: '84%', left: '5%' },      // Bottom Left
-  { top: '50%', left: '-10%' },    // Left
-  { top: '18%', left: '0%' },      // Top Left
-];
+const CIRCLE_RADIUS = 180; // px, radius of the icon circle
+const CENTER_OFFSET = 170; // px, center of the container
 
 const Technology = () => {
   const [currentView, setCurrentView] = useState('backend');
-  
+  const [angle, setAngle] = useState(0);
+  const requestRef = useRef();
+
+  // Animate the rotation
+  useEffect(() => {
+    const animate = () => {
+      setAngle(prev => prev + 0.005); // Adjust speed here
+      requestRef.current = requestAnimationFrame(animate);
+    };
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
+
   const getCurrentIcons = () => {
     switch(currentView) {
-      case 'frontend':
-        return frontendIcons;
-      case 'cms':
-        return cmsIcons;
-      default:
-        return backendIcons;
+      case 'frontend': return frontendIcons;
+      case 'cms': return cmsIcons;
+      default: return backendIcons;
     }
   };
-  
+
   const getCenterText = () => {
     switch(currentView) {
-      case 'frontend':
-        return 'Front End\nDevelopment';
-      case 'cms':
-        return 'CMS\nPlatforms';
-      default:
-        return 'Back End\nDevelopment';
+      case 'frontend': return 'Front End\nDevelopment';
+      case 'cms': return 'CMS\nPlatforms';
+      default: return 'Back End\nDevelopment';
     }
   };
+
+  const icons = getCurrentIcons();
 
   return (
     <section id="technology" className="technology-section">
@@ -107,13 +86,20 @@ const Technology = () => {
           <div className="circle-center">
             <span style={{ whiteSpace: 'pre-line' }}>{getCenterText()}</span>
           </div>
-          {getCurrentIcons().map((icon, idx) => {
+          {icons.map((icon, idx) => {
             const IconComponent = icon.component;
+            // Calculate angle for each icon
+            const theta = angle + (2 * Math.PI * idx / icons.length);
+            const x = CENTER_OFFSET + CIRCLE_RADIUS * Math.cos(theta) - 25; // -25 to center the icon (icon is 50x50)
+            const y = CENTER_OFFSET + CIRCLE_RADIUS * Math.sin(theta) - 25;
             return (
               <div
                 key={icon.name}
                 className={`circle-icon ${icon.className}`}
-                style={iconPositions[idx]}
+                style={{
+                  left: `${x}px`,
+                  top: `${y}px`
+                }}
                 title={icon.name}
               >
                 <IconComponent size={28} />

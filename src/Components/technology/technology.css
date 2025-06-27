@@ -85,6 +85,7 @@ body, .technology-section {
   font-weight: bold;
   text-align: center;
   box-shadow: 0 0 40px #00000050;
+  z-index: 2;
 }
 
 .circle-icon {
@@ -101,12 +102,21 @@ body, .technology-section {
   font-size: 1rem;
   box-shadow: 0 0 10px #00000030;
   text-align: center;
+  transition: background 0.2s, color 0.2s, left 0.1s linear, top 0.1s linear;
+  z-index: 1;
   /* You can use background-image or icon fonts here */
 }
 
 /* Example positions, adjust as needed for your icons */
-.circle-icon { transition: background 0.2s; }
-.circle-icon:hover { background: orange; color: #191512; }
+.circle-icon { 
+  transition: background 0.2s; 
+}
+
+
+.circle-icon:hover { 
+  background: orange; 
+  color: #191512; 
+}
 
 .nav-arrows {
   display: flex;

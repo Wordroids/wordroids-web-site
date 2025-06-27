@@ -2,6 +2,9 @@ import React from 'react'
 import './header.css'
 import Businessman from '../../assets/Businessman.png'
 import { GiJetpack } from "react-icons/gi";
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../variants'
+
 
 const Header = () => {
   return (
@@ -11,8 +14,26 @@ const Header = () => {
 
       <div className="container header_container">
         <div className="header_text">
-          <h1>Crafting Digital</h1>
-          <h1>Masterpieces</h1>
+          <motion.h1
+              variants={fadeIn('right', 0.3)}  // ✅ CORRECT SPELLING
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              Crafting Digital
+            </motion.h1>
+
+            <motion.h1
+              variants={fadeIn('left', 0.5)}  // You can vary delay for staggered effect
+              initial="hidden"
+              animate="show"
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              Masterpieces
+            </motion.h1>
+
+
+
           <p>
             From visionary web solutions to stunning designs, Wordroids <br />
             transforms your digital dreams into reality.

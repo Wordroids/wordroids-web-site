@@ -26,7 +26,7 @@ const Nav = () => {
         <span>Book a Free Consultation - Let's Discuss Your Digital Needs!</span>
       </div>
 
-      <nav className="button-nav">
+      {/* <nav className="button-nav">
         <button
           onClick={() => handleNavClick('#header')}
           className={activeNav === '#header' ? 'nav-btn active' : 'nav-btn'}
@@ -66,7 +66,7 @@ const Nav = () => {
           <AiFillMessage className="nav-icon" />
           <span className="nav-text">SUPPORT</span>
         </button>
-      </nav>
+      </nav> */}
 
       <div className="logo">
         <img src={logo} alt="logo" />

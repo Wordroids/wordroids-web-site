@@ -4,15 +4,25 @@ import image1 from '../../assets/image1.png';
 import image2 from '../../assets/image2.png';
 import image3 from '../../assets/image3.png';
 
+const statsContent = (
+  <>
+    <span><strong>5+ Years of Experience</strong></span>
+    <span className="clients__stats-sep">*</span>
+    <span><strong>15+ Happy Clients</strong></span>
+    <span className="clients__stats-sep">*</span>
+    <span><strong>50+ Projects</strong></span>
+
+  </>
+);
+
 const Clients = () => {
   return (
     <section id="clients">
-      <div className="clients__stats-bar" border="brown">
-        <span><strong>5+ Years of Experience</strong></span>
-        <span className="clients__stats-sep">*</span>
-        <span><strong>15+ Happy Clients</strong></span>
-        <span className="clients__stats-sep">*</span>
-        <span><strong>50+ Projects</strong></span>
+      <div className="clients__stats-bar">
+        <div className="clients__stats-bar-track">
+          {statsContent}
+          {statsContent}
+        </div>
       </div>
       <div className="container clients__outer-wrapper">
         <div className="clients__testimonial-box">

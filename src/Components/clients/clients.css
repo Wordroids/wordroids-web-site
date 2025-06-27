@@ -1,16 +1,41 @@
 /* Stats Bar */
 .clients__stats-bar {
   width: 100%;
+  overflow: hidden; /* Hide anything outside the bar */
   background: transparent;
+  position: relative; /* Needed for absolute positioning of track if used, or just for context */
+  border-top: 2px solid #5e3f09;
+  border-bottom: 2px solid #5e3f09;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  margin-bottom: 2.5rem;
+}
+
+.clients__stats-bar-track {
+  display: flex; /* Use flex to control children and allow wrapping */
+  /* Remove white-space: nowrap; - not needed with flex, and can cause issues */
+  align-items: center;
+  gap: 2.5rem; /* Space between individual stat items */
   color: #ccc;
   font-size: 2.2rem;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
   letter-spacing: 0.5px;
+
+  /* Important for continuous loop: */
+  /* Ensure the content itself stretches enough to fill two "screens" */
+  width: max-content; /* Allow the content to determine its width */
+  animation: clientsStatsMarquee 18s linear infinite; /* Adjust time for speed */
+}
+
+@keyframes clientsStatsMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  /* The trick: move exactly half the width of the doubled content */
+  /* This ensures the second copy slides into place seamlessly */
+  100% {
+    transform: translateX(-50%); /* Move left to bring the second copy into view */
+  }
 }
 
 .clients__stats-sep {
@@ -46,29 +71,6 @@
   justify-content: center;
 }
 
-.clients__stats-bar {
-  width: 100%;
-  background: transparent;
-  color: #ccc;
-  font-size: 2.2rem;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.5px;
-
-  /* Horizontal brown borders only */
-  border-top: 2px solid #5e3f09;    /* brown top border */
-  border-bottom: 2px solid #5e3f09; /* brown bottom border */
-  padding: 1rem 0;                   /* vertical padding only */
-  border-radius: 0;                  /* no rounding for horizontal borders */
-  box-sizing: border-box;
-}
-
-
-/* Images row */
 .clients__images-row {
   display: flex;
   flex-direction: row;
@@ -105,11 +107,11 @@
 
 /* Vertical orange line */
 .clients__vertical-line {
-  width: 2px; /* Thickness */
+  width: 2px;
   background-color: orange;
-  height: 80px; /* Adjust as needed */
+  height: 80px;
   border-radius: 1px;
-  align-self: stretch; /* Fill container height */
+  align-self: stretch;
   margin: 0 1.5rem;
   margin-top: 4rem;
   padding-top:12rem ;
@@ -188,7 +190,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .clients__stats-bar {
+  /* Adjusted font size and gap for smaller screens for the marquee content */
+  .clients__stats-bar-track {
     font-size: 1.1rem;
     gap: 0.8rem;
   }

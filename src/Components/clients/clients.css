@@ -54,7 +54,7 @@
 
 /* Testimonial Box */
 .clients__testimonial-box {
-  background: rgba(94, 63, 9, 0.4);
+  background:  radial-gradient(ellipse at 30% 60%, #4d3206 10%, #1a140a 100%);
   border-radius: 1rem;
   padding: 2.5rem 2rem;
   display: flex;

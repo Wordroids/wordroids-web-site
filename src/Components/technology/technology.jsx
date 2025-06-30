@@ -24,7 +24,7 @@ const backendIcons = [
 const frontendIcons = [
   { component: FaReact, name: "React", className: "icon-react" },
   { component: FaVuejs, name: "Vue.js", className: "icon-vue" },
-  { component: SiAngular, name: "Angular", className: "icon-angular" },
+  { component: SiAngular, name: "Angular", classNzame: "icon-angular" },
   { component: RiNextjsFill, name: "Next.js", className: "icon-next" },
   { component: SiNuxtdotjs, name: "Nuxt.js", className: "icon-nuxt" },
   { component: FaJs, name: "JavaScript", className: "icon-js" },

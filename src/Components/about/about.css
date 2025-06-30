@@ -18,7 +18,7 @@
   grid-template-columns: 45% 50%;
   gap: 5%;
   align-items: center;
-  background-color: rgba(94, 63, 9, 0.4); /* Semi-transparent brown */
+  background:  radial-gradient(ellipse at 30% 60%, #4d3206 10%, #1a140a 100%);; /* Semi-transparent brown */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;

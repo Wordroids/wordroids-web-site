@@ -1,19 +1,30 @@
-import React from 'react'
-import './header.css'
-import Businessman from '../../assets/Businessman.png'
-import Logo from '../../assets/logo.png' 
+import React from 'react';
+import './header.css';
+
+import Businessman from '../../assets/Businessman.png';
+import Logo from '../../assets/logo.png'; 
 import { GiJetpack } from "react-icons/gi";
-import { motion } from 'framer-motion'
-import { fadeIn } from '../../variants'
-import { MdHome } from "react-icons/md"
-import { TbCircleLetterIFilled } from "react-icons/tb" 
-import { SiBlueprint } from "react-icons/si"
-import { GiOpenBook } from "react-icons/gi" 
-import { AiFillMessage } from "react-icons/ai" 
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
+
+import { MdHome } from "react-icons/md";
+import { TbCircleLetterIFilled } from "react-icons/tb"; 
+import { SiBlueprint } from "react-icons/si";
+import { GiOpenBook } from "react-icons/gi"; 
+import { AiFillMessage } from "react-icons/ai"; 
+
+import bg1 from '../../assets/Ellipse 12.png';
+import vector from '../../assets/Vector.png';
+import vector1 from '../../assets/Vector1.png';
 
 const Header = () => {
   return (
     <header id="header">
+      {/* Background layers */}
+      <img src={bg1} alt="Background" className="header-bg" />
+      <img src={vector} alt="Vector" className="header-wave" />
+      <img src={vector1} alt="Vector Overlay" className="header-wave-overlay" />
+
       {/* Navigation Bar */}
       <nav className="main-navbar">
         <div className="logo-box">
@@ -21,28 +32,24 @@ const Header = () => {
         </div>
         <div className="navbar-links">
           <a href="#welcome" className="nav-btn active">
-            <MdHome className="nav-icon" />
-            WELCOME
+            <MdHome className="nav-icon" />WELCOME
           </a>
           <a href="#wordroids" className="nav-btn">
-            <TbCircleLetterIFilled className="nav-icon" />
-            WORDROIDS
+            <TbCircleLetterIFilled className="nav-icon" />WORDROIDS
           </a>
           <a href="#blueprints" className="nav-btn">
-            <SiBlueprint className="nav-icon" />
-            BLUEPRINTS
+            <SiBlueprint className="nav-icon" />BLUEPRINTS
           </a>
           <a href="#innovations" className="nav-btn">
-            <GiOpenBook className="nav-icon" />
-            INNOVATIONS
+            <GiOpenBook className="nav-icon" />INNOVATIONS
           </a>
           <a href="#support" className="nav-btn">
-            <AiFillMessage className="nav-icon" />
-            SUPPORT
+            <AiFillMessage className="nav-icon" />SUPPORT
           </a>
         </div>
       </nav>
-      {/* Abstract orange shape */}
+
+      {/* Hero Content */}
       <div className="hero-bg-shape"></div>
       <div className="container header_container">
         <div className="header_text">
@@ -71,8 +78,10 @@ const Header = () => {
             <a href="#contact" className='btn btn-primary'>GET STARTED TODAY!</a>
           </div>
         </div>
+
+        {/* Businessman Image with Project Card */}
         <div className="man">
-          <img src={Businessman} alt="man" />
+          <img src={Businessman} alt="Businessman" />
           <div className="projects-card">
             <GiJetpack className="projects-icon" />
             <span>
@@ -83,7 +92,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,6 @@
 /* ===== Navigation Bar ===== */
 .main-navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -9,42 +9,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .logo-box {
   display: flex;
   align-items: center;
   margin-right: 5rem;
-  margin-top: 6rem;
+  margin-top: 4.5rem;
 }
 
 .logo-img {
   height: 70px;
   width: 70px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 12px #00000060);
-  margin-top: -1rem;
   margin-left: 3rem;
 }
-
-.nav-icon {
-  vertical-align: middle;
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-  color: orange;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  /* Optional: smooth transition on hover */
-  transition: color 0.3s ease;
-}
-
-.nav-btn:hover .nav-icon,
-.nav-btn.active .nav-icon {
-  color: #3b2607; /* Matches text hover color */
-}
-
 
 .navbar-links {
   display: flex;
@@ -61,7 +41,6 @@
   border-radius: 0.7rem;
   font-weight: 600;
   font-size: 1rem;
-  letter-spacing: 0.5px;
   text-decoration: none;
   transition: all 0.22s;
 }
@@ -70,18 +49,43 @@
 .nav-btn:hover {
   background: orange;
   color: #3b2607;
-  border-color: orange;
 }
 
-/* ===== Hero Section ===== */
+/* ===== Hero Section Layout ===== */
 header {
   position: relative;
-  min-height: 100vh;
-  width: 100vw;
-  padding-top: 6.5rem;
+  height: 100vh; /* Full screen height */
+  width: 100%;
   overflow: hidden;
-  /* Elliptical gradient background */
-  background: radial-gradient(ellipse at 60% 40%, #4d3206 0%, #1a140a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.header-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-wave-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .hero-bg-shape {
@@ -97,37 +101,36 @@ header {
   filter: blur(4px);
 }
 
+/* ===== Content ===== */
 .container.header_container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 100%;
   position: relative;
-  z-index: 2;
-  padding-top: 7.5rem;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Move image to bottom */
   max-width: 1400px;
   margin: 0 auto;
+  height: 100%;
+  padding: 0 3vw 2rem 3vw;
 }
 
 .header_text {
   max-width: 540px;
-  padding-top: 2.5rem;
-  z-index: 2;
+  z-index: 5;
+  margin-top: 6rem;
 }
 
 .header_text h1 {
   color: orange;
   font-size: 3.1rem;
-  font-weight: 700;
-  margin: 0;
+  font-weight: 400;
+  margin-top: 0rem;
   line-height: 1.05;
-  letter-spacing: 0.5px;
 }
 
 .header_text h4 {
   color: orange;
   font-size: 1.25rem;
-  font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -135,29 +138,25 @@ header {
 .header_text p {
   color: white;
   font-size: 1.08rem;
-  margin: 1.5rem 0 0 0;
+  margin-top: 1.5rem;
   line-height: 1.6;
 }
 
 .welcome_button {
   margin-top: 2.5rem;
-  display: flex;
-
 }
 
 .btn.btn-primary {
   background: radial-gradient(circle at center, #815718 25%, orange 70%);
   color: #222;
-  border: none;
   padding: 1rem 2.2rem;
   border-radius: 0.5rem;
   font-size: 1.1rem;
   font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 4px 24px rgba(247,166,35,0.10);
-  transition: background 0.3s, box-shadow 0.3s;
   text-decoration: none;
   display: inline-block;
+  box-shadow: 0 4px 24px rgba(247,166,35,0.10);
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .btn.btn-primary:hover {
@@ -165,26 +164,21 @@ header {
   box-shadow: 0 6px 32px rgba(247,166,35,0.16);
 }
 
-/* ===== Businessman Image & Projects Card ===== */
-
+/* ===== Businessman & Card ===== */
 .man {
-  width: 50rem;
-  height: 50rem;
-  position: absolute;
-  top: -4%;
-  right: -12rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  z-index: 2;
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  z-index: 6;
+  margin-bottom: 0;
 }
 
 .man img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.16);
+ 
+  margin-top: 3rem;
+  margin-right: 10rem;
 }
 
 .projects-card {
@@ -202,6 +196,7 @@ header {
   gap: 1rem;
   box-shadow: 0 2px 12px rgba(247,166,35,0.15);
   min-width: 180px;
+  z-index: 7;
 }
 
 .projects-icon {
@@ -210,68 +205,22 @@ header {
   border: 1px solid orange;
   border-radius: 50%;
   padding: 0.3rem;
-  box-sizing: content-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: rgba(247, 166, 35, 0.1);
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .main-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2vw 0.2rem 2vw;
-    gap: 0.7rem;
+  .navbar-links {
+    margin-left: auto;
+    flex-wrap: wrap;
   }
   .container.header_container {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 4vw 0 4vw;
+    padding: 2rem;
   }
   .man {
-    width: 220px;
-    height: 270px;
-    margin-top: 2rem;
-    position: static;
-    max-width: 250px;
-  }
-  .projects-card {
-    left: 0;
-    top: -70px;
-    font-size: 1rem;
-    padding: 0.7rem 1rem;
-  }
-  .header_text h1 {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.7rem 1vw 0.2rem 1vw;
-    gap: 0.5rem;
-  }
-  .container.header_container {
-    padding: 1rem 2vw 0 2vw;
-  }
-  .header_text h1 {
-    font-size: 1.4rem;
-  }
-  .man {
-    width: 120px;
-    height: 140px;
-    min-width: 90px;
-    max-width: 140px;
-    position: static;
-  }
-  .projects-card {
-    left: 0;
-    top: -40px;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.7rem;
+    width: 100%;
+    height: auto;
   }
 }

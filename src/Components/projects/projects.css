@@ -1,81 +1,59 @@
-.project__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+/* ==== Background & Overlay Setup ==== */
+.project_background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Fix to one screen */
+  overflow: hidden;
 }
 
-.project__item {
-   
-  background:  rgba(94, 63, 9, 0.4);
-  padding: 1.2rem;
-  border-radius: 2rem;
-  border: 1px solid orange;
-  transition: var(--transition);
+.wave3-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-
-
-.project_item-image{
-    border-radius: 1.5rem;
-    overflow: hidden;
+.project_overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow-y: auto;
 }
 
-.project_item h3{
-    margin: 1.2rem 0 2rem;
-    
+/* ==== Header Section ==== */
+.project_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
-
-.project__item-cta {
-  display:flex ; 
-  gap: 1rem;
-  margin-bottom:1rem ;
-}
-
-.project__role {
-  color: white;
-  background-color: transparent;
-  padding: 0.4rem 1rem;
-  border: 1px solid orange;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-  display: inline-block;
-}
-
-
-.project__item h3 {
-  margin: 1.2rem 0 2rem;
-  color: orange; /* <-- Change to any color you prefer */
-  font-size: 1.1rem;
-}
-
-
-
-/*introduction part*/
 
 .project_intro {
-  padding-left: 4rem;
-  padding-bottom: 2rem;
   flex: 1;
+}
+
+.project_intro h1 {
+  color: orange;
 }
 
 .project_intro h1,
 .project_intro h4 {
   text-align: left;
+  color: white;
 }
-
-.project_intro h1{
-    color: orange;
-}
-
-
-/*hi*/
-.project_header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0 7rem 1rem;
-}
-
 
 .project_para {
   flex: 1;
@@ -83,25 +61,70 @@
 
 .project_para p {
   text-align: justify;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  padding-top: 5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: white;
+  padding-top: 1rem;
 }
 
+/* ==== Project Cards ==== */
+.project__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
 
+.project__item {
+  background: rgba(94, 63, 9, 0.6);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid orange;
+  transition: var(--transition);
+}
+
+.project__item-image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.project__item h3 {
+  margin: 1rem 0 1.2rem;
+  color: orange;
+  font-size: 1rem;
+}
+
+.project__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project__role {
+  color: white;
+  background-color: transparent;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid orange;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+/* ==== Button ==== */
 .browse_button_wrapper3 {
   display: flex;
-  margin-top: 3rem;
-  margin-left: 40rem;
-  justify-content: flex-start;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .browse_button3 {
-  background-color:  rgba(94, 63, 9, 0.4);
+  background-color: rgba(94, 63, 9, 0.4);
   border: 0.002px solid orange;
   color: orange;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -121,21 +144,38 @@
   color: orange;
 }
 
+/* ==== Responsive ==== */
+@media screen and (max-width: 1024px) {
+  .project__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
+  .project_overlay {
+    padding: 2rem;
+  }
 
-/*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
-@media screen and (max-width: 1024px){
-    .project__container{
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-
-    }
+  .project_header {
+    flex-direction: column;
+  }
 }
 
-/*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .project__container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.8rem;
+  }
+
+  .project_overlay {
+    padding: 1rem;
+  }
+
+  .project_intro,
+  .project_para {
+    flex: 1 1 100%;
+  }
+
+  .project_para p {
+    padding-top: 0.5rem;
   }
 }

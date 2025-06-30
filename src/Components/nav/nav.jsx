@@ -68,9 +68,7 @@ const Nav = () => {
         </button>
       </nav> */}
 
-      <div className="logo">
-        <img src={logo} alt="logo" />
-      </div>
+      
     </>
   )
 }

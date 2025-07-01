@@ -124,7 +124,7 @@ header {
   max-width: 540px;
   z-index: 5;
   margin-top: 14rem;
-  margin-left: -7.5rem;
+  margin-left: -3.5rem;
 }
 
 .header_text h1 {
@@ -219,21 +219,113 @@ header {
   background: rgba(247, 166, 35, 0.1);
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 1024px) {
+/* ======== Responsive Header Styles ======== */
+
+/* Large screens (default styles already cover) */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: auto;
+    padding-top: 7rem; /* space for fixed nav */
+  }
+
+  .main-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+  }
+
   .navbar-links {
-    margin-left: auto;
+    margin-left: 0;
+    margin-top: 1rem;
     flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .logo-box {
+    margin: 0;
+    margin-bottom: 1rem;
   }
 
   .container.header_container {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .header_text {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header_text h1 {
+    font-size: 2.2rem;
+  }
+
+  .header_text p {
+    font-size: 1rem;
   }
 
   .man {
-    width: 100%;
+    position: static;
+    width: 80%;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+
+  .man img {
+    margin: 0 auto;
+  }
+
+  .projects-card {
+    position: static;
+    margin: 2rem auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
     height: auto;
+    padding-top: 6rem; /* adjusted for fixed nav */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+
+  .header_text h1 {
+    font-size: 1.8rem;
+  }
+
+  .header_text p {
+    font-size: 0.95rem;
+  }
+
+  .btn.btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .projects-card {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .projects-icon {
+    font-size: 2.5rem;
+  }
+
+  .man {
+    max-width: 320px;
   }
 }

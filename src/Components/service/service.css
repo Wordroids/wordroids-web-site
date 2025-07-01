@@ -110,13 +110,15 @@
 
 .browse_button_wrapper1 {
   display: flex;
+  justify-content: center; /* center horizontally */
   margin-top: 3rem;
-  margin-left: 40rem;
-  justify-content: flex-start;
+  padding: 0 1rem; /* spacing for smaller screens */
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .browse_button1 {
-  background-color:  rgba(94, 63, 9, 0.4);
+  background-color: rgba(94, 63, 9, 0.4);
   border: 0.002px solid orange;
   color: orange;
   padding: 0.8rem 2rem;
@@ -125,6 +127,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px rgba(255, 165, 0, 0.3);
+  text-align: center;
 }
 
 .browse_button1:hover {
@@ -171,6 +174,15 @@
         padding: 2rem 1rem;
         
     }
+
+   
+  .browse_button1 {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+  
+}
+
 }
   
    

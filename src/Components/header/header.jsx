@@ -31,19 +31,19 @@ const Header = () => {
           <img src={Logo} alt="Wordroids Logo" className="logo-img" />
         </div>
         <div className="navbar-links">
-          <a href="#welcome" className="nav-btn active">
+          <a href="#header" className="nav-btn active">
             <MdHome className="nav-icon" />WELCOME
           </a>
-          <a href="#wordroids" className="nav-btn">
+          <a href="#service" className="nav-btn">
             <TbCircleLetterIFilled className="nav-icon" />WORDROIDS
           </a>
-          <a href="#blueprints" className="nav-btn">
+          <a href="#about" className="nav-btn">
             <SiBlueprint className="nav-icon" />BLUEPRINTS
           </a>
-          <a href="#innovations" className="nav-btn">
+          <a href="#projects" className="nav-btn">
             <GiOpenBook className="nav-icon" />INNOVATIONS
           </a>
-          <a href="#support" className="nav-btn">
+          <a href="#questions" className="nav-btn">
             <AiFillMessage className="nav-icon" />SUPPORT
           </a>
         </div>
@@ -82,14 +82,16 @@ const Header = () => {
         {/* Businessman Image with Project Card */}
         <div className="man">
           <img src={Businessman} alt="Businessman" />
-          <div className="projects-card">
+        </div>
+
+        <div className="projects-card">
             <GiJetpack className="projects-icon" />
             <span>
-              <strong>18+</strong><br />
+              <b>18+</b><br />
               Successful Projects
             </span>
-          </div>
         </div>
+       
       </div>
     </header>
   );

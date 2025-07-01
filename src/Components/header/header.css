@@ -1,18 +1,23 @@
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== Navigation Bar ===== */
 .main-navbar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: transparent;
-  padding: 1.2rem 3vw 0.2rem 3vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 100;
 }
 
+
 .logo-box {
+  
   display: flex;
   align-items: center;
   margin-right: 5rem;
@@ -23,7 +28,7 @@
   height: 70px;
   width: 70px;
   object-fit: contain;
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 .navbar-links {
@@ -54,7 +59,7 @@
 /* ===== Hero Section Layout ===== */
 header {
   position: relative;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -107,17 +112,19 @@ header {
   z-index: 5;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Move image to bottom */
+  align-items: flex-start; /* Align top */
   max-width: 1400px;
   margin: 0 auto;
   height: 100%;
-  padding: 0 3vw 2rem 3vw;
+  padding: 2rem 3vw;
+  flex-wrap: wrap;
 }
 
 .header_text {
   max-width: 540px;
   z-index: 5;
-  margin-top: 6rem;
+  margin-top: 14rem;
+  margin-left: -7.5rem;
 }
 
 .header_text h1 {
@@ -166,30 +173,33 @@ header {
 
 /* ===== Businessman & Card ===== */
 .man {
-  position: relative;
-  width: 30rem;
-  height: 30rem;
+  position: absolute;
+ 
+  width: 52rem;
+  height: 52rem;
   z-index: 6;
-  margin-bottom: 0;
+  margin: 2rem;
 }
 
 .man img {
   width: 100%;
-  height: 100%;
- 
-  margin-top: 3rem;
-  margin-right: 10rem;
+  height: auto;
+  object-fit: contain;
+  margin-top: 8.5rem;
+  margin-left:26rem;
 }
 
 .projects-card {
   position: absolute;
-  top: 18%;
-  left: 50px;
+  top: 10%;
+  left: -70px;
   background: rgba(40, 30, 10, 0.96);
   border-radius: 1rem;
   border: 1.5px solid #ffb84d;
   color: #fff;
   padding: 1rem 1.5rem;
+  margin-top: 8rem;
+  margin-left: 41rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
@@ -199,12 +209,13 @@ header {
   z-index: 7;
 }
 
+
 .projects-icon {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: orange;
   border: 1px solid orange;
   border-radius: 50%;
-  padding: 0.3rem;
+  padding: 0.5rem;
   background: rgba(247, 166, 35, 0.1);
 }
 
@@ -214,11 +225,13 @@ header {
     margin-left: auto;
     flex-wrap: wrap;
   }
+
   .container.header_container {
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem;
   }
+
   .man {
     width: 100%;
     height: auto;

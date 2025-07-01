@@ -7,7 +7,7 @@
 
 /* ============ Outer Orange Border ============ */
 .about__outer-wrapper {
-  border: 1px solid orange;       /* Outer orange border */
+  border: 1px solid black;       /* Outer orange border */
   padding:0.2rem;
   border-radius: 1.5rem;
 }
@@ -18,12 +18,15 @@
   grid-template-columns: 45% 50%;
   gap: 5%;
   align-items: center;
-  background:  radial-gradient(ellipse at 30% 60%, #4d3206 10%, #1a140a 100%); /* Semi-transparent brown */
+  background: radial-gradient(ellipse at 30% 60%, #4d3206 10%, #1a140a 100%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  border: 1px solid orange; /* ✅ Add this line */
   border-radius: 1rem;
   padding: 2rem;
+  margin-top: 11rem;
 }
+
 
 /* ============ Image Container ============ */
 .about__checker {

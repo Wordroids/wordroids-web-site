@@ -20,6 +20,7 @@
 .service_intro {
   padding-left: 12rem;
   padding-bottom: 2rem;
+  padding-top: 12rem;
 }
 
 .service_intro h1,
@@ -73,7 +74,7 @@
 
 .service_icons {
   position: absolute;
-  top: 63.5rem; /* Adjust as needed */
+  top: 75rem; /* Adjust as needed */
   right: 6rem;
   display: flex;
   flex-direction: row; /* Use 'column' for vertical */

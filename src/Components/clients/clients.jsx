@@ -11,7 +11,6 @@ const statsContent = (
     <span><strong>15+ Happy Clients</strong></span>
     <span className="clients__stats-sep">*</span>
     <span><strong>50+ Projects</strong></span>
-
   </>
 );
 
@@ -40,21 +39,65 @@ const Clients = () => {
             </div>
           </div>
 
-          {/* Vertical orange line */}
           <div className="clients__vertical-line"></div>
 
-          <div className="clients__testimonial-content">
-            <div className="clients__quote-circle">
-              <span className="clients__quote-mark">“</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, sapien vitae pulvinar gravida, eros eros consectetur nisi, at accumsan metus elit id nulla. Vivamus auctor ultrices turpis, eget feugiat orci fermentum a Vivamus auctor ultrices turpis, eget feugiat orci eget feugiat orci fermentum a Vivamus auctor ultrices turpis, eget feugiat.
+          {/* Slider */}
+          <div className="clients__testimonial-slider">
+            <div className="clients__testimonial-track">
+              <div className="clients__testimonial-content">
+                <div className="clients__quote-circle">
+                  <span className="clients__quote-mark"><b>“</b></span>
+                </div>
+                <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat, <br></br>sapien vitae pulvinar gravida, eros eros consectetur nisi, at accumsan metus <br></br>elit id nulla. Vivamus auctor ultrices turpis, eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat orci eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat.
             </p>
-            <div className="clients__testimonial-author">
-              <span className="clients__testimonial-name">John Doe</span>
-              <span className="clients__testimonial-role">UI/UX Designer</span>
+                <div className="clients__testimonial-author">
+                  <span className="clients__testimonial-name">John Doe</span>
+                  <span className="clients__testimonial-role">UI/UX Designer</span>
+                </div>
+              </div>
+
+              <div className="clients__testimonial-content">
+                <div className="clients__quote-circle">
+                  <span className="clients__quote-mark"><b>“</b></span>
+                </div>
+                 <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat,<br></br> sapien vitae pulvinar gravida, eros eros consectetur nisi, at accumsan metus <br></br>elit id nulla. Vivamus auctor ultrices turpis, eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat orci eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat.
+            </p>
+                <div className="clients__testimonial-author">
+                  <span className="clients__testimonial-name">Kamala Harris</span>
+                  <span className="clients__testimonial-role">Business Owner</span>
+                </div>
+              </div>
+
+              <div className="clients__testimonial-content">
+                <div className="clients__quote-circle">
+                  <span className="clients__quote-mark"><b>“</b></span>
+                </div>
+                 <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat,<br></br> sapien vitae pulvinar gravida, eros eros consectetur nisi, at accumsan metus <br></br>elit id nulla. Vivamus auctor ultrices turpis, eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat orci eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat.
+            </p>
+                <div className="clients__testimonial-author">
+                  <span className="clients__testimonial-name">James Rodrigues</span>
+                  <span className="clients__testimonial-role">Project Manager</span>
+                </div>
+              </div>
+
+              <div className="clients__testimonial-content">
+                <div className="clients__quote-circle">
+                  <span className="clients__quote-mark"><b>“</b></span>
+                </div>
+                 <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat,<br></br> sapien vitae pulvinar gravida, eros eros consectetur nisi, at accumsan metus <br></br>elit id nulla. Vivamus auctor ultrices turpis, eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat orci eget feugiat orci fermentum a <br></br>Vivamus auctor ultrices turpis, eget feugiat.
+            </p>
+                <div className="clients__testimonial-author">
+                  <span className="clients__testimonial-name">Thomas Mullar</span>
+                  <span className="clients__testimonial-role">Graphic Designer</span>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

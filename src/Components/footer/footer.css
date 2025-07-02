@@ -80,48 +80,53 @@ footer {
 }
 
 /* ========== Footer Navigation ========== */
-.button-footer {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
-  margin: 2rem auto;
+
+.footer-navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  border-radius: 2rem;
-  backdrop-filter: blur(15px);
-}
-
-.footer-btn {
-  background: rgba(94, 63, 9, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 1.5rem;
-  border: 0.002px solid orange;
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: orange;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.footer-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-btn.active {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-  border-color: var(--color-primary);
+  margin: 1.5rem 0 2rem;
+  z-index: 1;
 }
 
 .footer-icon {
-  font-size: 1.2rem;
-  vertical-align: middle;
+  font-size: 1.2rem;      /* Increased icon size */
+  margin-right: 0.2rem;   /* Added space between icon and text */
+  vertical-align: middle; /* Align with text */
 }
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.footer-btn {
+  padding: 0.6rem 1.3rem;
+  color: orange;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1.5px solid orange;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.22s;
+  padding: 0.6rem 0.8rem; /* Slightly more horizontal padding */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;            /* Use flex gap as well */
+
+}
+
+.footer-btn.active,
+.footer-btn:hover {
+  background: orange;
+  color: #3b2607;
+}
+
 
 /* ========== Contact Details ========== */
 .footer_socials {

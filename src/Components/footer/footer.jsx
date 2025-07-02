@@ -50,48 +50,27 @@ const Footer = () => {
         <span className="footer_item">077 656 9740</span>
       </div>
 
-      {/* Footer Navigation */}
-      <div className="button-footer">
-        <button
-          onClick={() => handleNavClick('#header')}
-          className={activeNav === '#header' ? 'footer-btn active' : 'footer-btn'}
-        >
-          <MdHome className="footer-icon" />
-          <span className="footer-text">WELCOME</span>
-        </button>
-
-        <button
-          onClick={() => handleNavClick('#about')}
-          className={activeNav === '#about' ? 'footer-btn active' : 'footer-btn'}
-        >
-          <SiBlueprint className="footer-icon" />
-          <span className="footer-text">WORDROIDS</span>
-        </button>
-
-        <button
-          onClick={() => handleNavClick('#service')}
-          className={activeNav === '#service' ? 'footer-btn active' : 'footer-btn'}
-        >
-          <GiOpenBook className="footer-icon" />
-          <span className="footer-text">BLUEPRINTS</span>
-        </button>
-
-        <button
-          onClick={() => handleNavClick('#projects')}
-          className={activeNav === '#projects' ? 'footer-btn active' : 'footer-btn'}
-        >
-          <TbCircleLetterIFilled className="footer-icon" />
-          <span className="footer-text">INNOVATIONS</span>
-        </button>
-
-        <button
-          onClick={() => handleNavClick('#questions')}
-          className={activeNav === '#questions' ? 'footer-btn active' : 'footer-btn'}
-        >
-          <AiFillMessage className="footer-icon" />
-          <span className="footer-text">SUPPORT</span>
-        </button>
-      </div>
+     {/* Navigation Bar */}
+      <nav className="footer-navbar">
+       
+        <div className="footer-links">
+          <a href="#header" className="footer-btn">
+            <MdHome className="footer-icon" />WELCOME
+          </a>
+          <a href="#service" className="footer-btn">
+            <TbCircleLetterIFilled className="footer-icon" />WORDROIDS
+          </a>
+          <a href="#about" className="footer-btn">
+            <SiBlueprint className="footer-icon" />BLUEPRINTS
+          </a>
+          <a href="#projects" className="footer-btn">
+            <GiOpenBook className="footer-icon" />INNOVATIONS
+          </a>
+          <a href="#questions" className="footer-btn">
+            <AiFillMessage className="footer-icon" />SUPPORT
+          </a>
+        </div>
+      </nav>
 
       {/* Copyright */}
       <div className="footer_copyright">

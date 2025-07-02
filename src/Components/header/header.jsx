@@ -31,7 +31,7 @@ const Header = () => {
           <img src={Logo} alt="Wordroids Logo" className="logo-img" />
         </div>
         <div className="navbar-links">
-          <a href="#header" className="nav-btn active">
+          <a href="#header" className="nav-btn">
             <MdHome className="nav-icon" />WELCOME
           </a>
           <a href="#service" className="nav-btn">
@@ -75,8 +75,10 @@ const Header = () => {
           </p>
           <h4>Let's innovate together!</h4>
           <div className='welcome_button'>
-            <a href="#contact" className='btn btn-primary'>GET STARTED TODAY!</a>
+            <a href="#about" className='btn btn-primary'>GET STARTED TODAY!</a>
           </div>
+
+        
         </div>
 
         {/* Businessman Image with Project Card */}

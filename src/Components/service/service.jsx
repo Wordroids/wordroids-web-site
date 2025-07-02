@@ -229,19 +229,7 @@ const Service = () => {
              <SiBlueprint className="browse_icon1" />     
             BROWSE SERVICES
          </button>
-   </div>
-
-
-
-
-
-      
-
-
-
-
-
-        
+   </div>   
         
       </section>
   )

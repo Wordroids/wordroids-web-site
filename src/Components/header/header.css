@@ -15,6 +15,11 @@ html {
   z-index: 100;
 }
 
+.nav-icon {
+  font-size: 1.2rem;      /* Increased icon size */
+  margin-right: 0.2rem;   /* Added space between icon and text */
+  vertical-align: middle; /* Align with text */
+}
 
 .logo-box {
   
@@ -48,6 +53,13 @@ html {
   font-size: 0.8rem;
   text-decoration: none;
   transition: all 0.22s;
+  
+  padding: 0.6rem 0.8rem; /* Slightly more horizontal padding */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;            /* Use flex gap as well */
+
+
 }
 
 .nav-btn.active,

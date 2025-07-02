@@ -36,12 +36,14 @@
   gap: 2rem;
   width: 100%;
   margin-bottom: 2rem;
+
 }
 
 .project_intro {
   flex: 1;
   min-width: 280px;
   margin-top: 8rem;
+  margin-left: 6rem;
 }
 
 .project_intro h1,

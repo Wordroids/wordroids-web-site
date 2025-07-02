@@ -87,16 +87,48 @@
   color: orange;
   background: rgba(94, 63, 9, 0.18);
   border-radius: 50%;
-  padding: 0.7rem;
+  padding: 0.5rem;
   transition: background 0.3s, color 0.3s;
   border: 2px solid #a56c1b;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  min-width: 40px;
 }
 
 .service_icon:hover {
   background: orange;
   color: #0b0b0b;
 }
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Wrapper to contain scrolling icons */
+.service_icons_wrapper {
+  position: absolute;
+  top: 75rem; /* keep your original position */
+  right: 6rem;
+  width: 360px; /* Adjust width based on how many icons you want visible */
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Inner track that scrolls the icons */
+.service_icons_track {
+  display: flex;
+  gap: 1.2rem;
+  animation: scrollLeft 20s linear infinite;
+  width: fit-content;
+}
+
+
 
 /* Responsive: stack icons on smaller screens */
 @media screen and (max-width: 1024px) {

@@ -24,16 +24,26 @@ const Service = () => {
             </div>
 
             {/* ICON GROUP - add this block */}
-            <div className="service_icons">
-                <SiAngular className="service_icon" title="Angular" />
-                <IoLogoFigma className="service_icon" title="Figma" />
-                <SiNuxtdotjs className="service_icon" title="js" />
-                <FaReact className="service_icon" title="React" />
-                <FaPhp className="service_icon" title="php" />
-                <FaHtml5 className = "service_icon" title="html5"/>
-                <FaWordpress className="service_icon" title="WordPress" />
-                
+            <div className="service_icons_wrapper">
+            <div className="service_icons_track">
+               <SiAngular className="service_icon" title="Angular" />
+               <IoLogoFigma className="service_icon" title="Figma" />
+               <SiNuxtdotjs className="service_icon" title="js" />
+               <FaReact className="service_icon" title="React" />
+               <FaPhp className="service_icon" title="php" />
+               <FaHtml5 className="service_icon" title="html5" />
+               <FaWordpress className="service_icon" title="WordPress" />
+               {/* Duplicates for continuous scroll effect */}
+               <SiAngular className="service_icon" />
+               <IoLogoFigma className="service_icon" />
+               <SiNuxtdotjs className="service_icon" />
+               <FaReact className="service_icon" />
+               <FaPhp className="service_icon" />
+               <FaHtml5 className="service_icon" />
+               <FaWordpress className="service_icon" />
             </div>
+            </div>
+
 
             
             <div className="container service_container">
@@ -61,6 +71,13 @@ const Service = () => {
                          <div>
                             <h4>SEO FRIENDLY</h4>
                             <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
+                         </div>
+                         </article>
+
+                         <article className='service_details'>
+                         <div>
+                            <h4>SECURE ARCHITECTURE</h4>
+                            <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
                          </div>
                          </article>
 
@@ -93,6 +110,14 @@ const Service = () => {
               </div>
               </article>
 
+              <article className='service_details'>
+              <div>
+                  <h4>SECURE ARCHITECTURE</h4>
+                  <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
+              </div>
+              </article>
+
+
             </div>
         </div>
 
@@ -123,6 +148,14 @@ const Service = () => {
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
+
+               <article className='service_details'>
+              <div>
+                  <h4>SECURE ARCHITECTURE</h4>
+                  <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
+              </div>
+              </article>
+
 
             </div>
         </div>
@@ -155,6 +188,14 @@ const Service = () => {
               </div>
               </article>
 
+               <article className='service_details'>
+              <div>
+                  <h4>SECURE ARCHITECTURE</h4>
+                  <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
+              </div>
+              </article>
+
+
             </div>
         </div>
 
@@ -184,6 +225,14 @@ const Service = () => {
                  <small className='text-light'>Optimized websites to rank higher on search engines effectively</small>
               </div>
               </article>
+
+               <article className='service_details'>
+              <div>
+                  <h4>SECURE ARCHITECTURE</h4>
+                  <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
+              </div>
+              </article>
+
 
             </div>
         </div>
@@ -215,6 +264,14 @@ const Service = () => {
               </div>
               </article>
 
+               <article className='service_details'>
+              <div>
+                  <h4>SECURE ARCHITECTURE</h4>
+                  <small className='text-light'>Adnanced encryption ensures your data remains protected from threats</small>
+              </div>
+              </article>
+
+
             </div>
         </div>
    </div>
@@ -229,7 +286,13 @@ const Service = () => {
              <SiBlueprint className="browse_icon1" />     
             BROWSE SERVICES
          </button>
-   </div>   
+   </div>
+
+
+
+
+
+   
         
       </section>
   )

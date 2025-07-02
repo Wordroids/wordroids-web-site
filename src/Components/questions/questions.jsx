@@ -33,9 +33,9 @@ const Questions = () => {
           <h4>YOUR GUIDE TO <span className="highlight">FAQ</span> AND KEY INSIGHTS</h4>
           <h1>Clear Answers to Your Most<br />Pressing Questions</h1>
           <p>
-            Find answers to the most common questions about our services,<br />
-            process and expertise. We've compiled these F&Qs to help you<br />
-            understand how we work and how we can bring your ideas to life <br></br>
+            Find answers to the most common questions about our services,
+            process and expertise. We've compiled these F&Qs to help you
+            understand how we work and how we can bring your ideas to life
             with innovative solutions tailored to your needs.
           </p>
         </div>

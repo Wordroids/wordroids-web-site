@@ -12,19 +12,18 @@ html {
   width: 95%;
   max-width: 1360px;
   height: 2.5rem;
-  background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
+  background: rgba(64, 47, 17, 0.4);       /* Semi-transparent brown */
   backdrop-filter: blur(10px);           /* Blur effect */
   -webkit-backdrop-filter: blur(10px);   /* Safari support */
   border-radius: 1rem;
-  border: 0.002px solid orange;
+  border: 1px solid rgb(210, 147, 29);
   z-index: 9;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color:rgb(210, 147, 29);
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 16pex;
   padding: 0 1rem;
   text-align: center;
   box-sizing: border-box;
@@ -72,11 +71,11 @@ html {
 
 .nav-btn {
   padding: 0.6rem 1.3rem;
-  color: orange;
+  color: rgb(210, 147, 29);
   background: rgba(255, 255, 255, 0.01);
-  border: 1.5px solid orange;
+  border: 0.01px solid rgb(210, 147, 29);
   border-radius: 0.7rem;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.8rem;
   text-decoration: none;
   transition: all 0.22s;
@@ -91,8 +90,9 @@ html {
 
 .nav-btn.active,
 .nav-btn:hover {
-  background: orange;
-  color: #3b2607;
+  background: radial-gradient(circle at center, #d19b5d 0%,rgb(131, 101, 45, 0.6));
+  color: orange;
+  border-color: orange;
 }
 
 /* ===== Hero Section Layout ===== */
@@ -155,7 +155,8 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   height: 100%;
-  padding: 2rem 3vw;
+  margin-top: 2rem;
+  margin-left: 9rem;
   flex-wrap: wrap;
 }
 
@@ -167,9 +168,9 @@ header {
 }
 
 .header_text h1 {
-  color: orange;
+  color: #F99420;
   font-size: 3.1rem;
-  font-weight: 400;
+  font-weight: 450;
   margin-top: 0rem;
   line-height: 1.05;
 }
@@ -192,6 +193,9 @@ header {
   margin-top: 2.5rem;
 }
 
+/* Other styles remain unchanged */
+
+/* ===== Welcome Button ===== */
 .btn.btn-primary {
   background: radial-gradient(circle at center, #815718 25%, orange 70%);
   color: #222;
@@ -206,9 +210,11 @@ header {
 }
 
 .btn.btn-primary:hover {
-  background: radial-gradient(circle at center, #f7a623 0%, #ffb84d 70%);
-  box-shadow: 0 6px 32px rgba(247,166,35,0.16);
+  background: rgb(237, 237, 115); /* changed to red on hover */
+  color: #fff;
+  box-shadow: 0 6px 32px rgba(255,0,0,0.35);
 }
+
 
 /* ===== Businessman & Card ===== */
 .man {
@@ -224,8 +230,8 @@ header {
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-top: 8.5rem;
-  margin-left:26rem;
+  margin-top: 7.5rem;
+  margin-left:33rem;
 }
 
 .projects-card {
@@ -237,8 +243,8 @@ header {
   border: 1.5px solid #ffb84d;
   color: #fff;
   padding: 1rem 1.5rem;
-  margin-top: 8rem;
-  margin-left: 41rem;
+  margin-top: 6rem;
+  margin-left: 42rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
@@ -257,6 +263,15 @@ header {
   padding: 0.5rem;
   background: rgba(247, 166, 35, 0.1);
 }
+
+
+/* Orange-colored animated number */
+.orange-number {
+  color: orange;
+  font-size: 1.8rem;
+}
+
+
 
 /* ======== Responsive Header Styles ======== */
 

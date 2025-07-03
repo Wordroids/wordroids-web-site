@@ -1,12 +1,15 @@
-.service_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 10rem;
+.service_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+  width: 98w; /* Nearly full viewport width */
+  padding-left: 5rem; /* Removed left padding */
+  padding-right: 0; /* Removed right padding */
+ margin-left: 5rem;
 }
 
 .service_container > div {
-  background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
+  background: rgba(64, 47, 17, 0.4);       /* Semi-transparent brown */
   backdrop-filter: blur(10px);             /* Blur effect */
   -webkit-backdrop-filter: blur(10px);     /* Safari support */
   border-radius: 1rem;
@@ -16,7 +19,7 @@
 }
 
 .service_intro {
-  padding-left: 12rem;
+  padding-left: 6rem; /* Reduced from 6rem */
   padding-bottom: 2rem;
   padding-top: 12rem;
 }
@@ -27,37 +30,26 @@
   text-align: left;
 }
 
-.service_intro h1{
-    color: orange;
+.service_intro h1 {
+  color: orange;
 }
 
-.service_container > div:hover {
-    background: transparent;
-    border-color: orange;
-    cursor: default;
+.service_details h4{
+  color:  #F99420;
 }
 
 .service_container > div h3 {
-   text-align: left;
-   margin-bottom: 2rem;
-   font-size: 1.rem;
-   color: var(--color-primary);
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-primary);
 }
 
-.service_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ✅ 3 columns per row */
-  gap: 2rem;
-  width: 100%;
+.service_details {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-primary);
 }
-
-.service_details{
-    display: flex;
-    gap: 1rem;
-    color: var(--color-primary);
-}
-
-
 
 /* Vertically scrollable, no visible scrollbar */
 .service_content {
@@ -66,14 +58,15 @@
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
 }
+
 .service_content::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
 /* Service detail hover effect */
 .service_details:hover {
-  background: #5e3f09;
-  border: 2px solid orange;
+  background: rgba(88, 65, 24, 0.4);
+  border: 1px solid orange;
   border-radius: 0.5rem;
   color: orange;
   transition: background 0.3s, border 0.3s, color 0.3s;
@@ -81,9 +74,11 @@
 
 /* Allow full-width container */
 .container {
-  width: 95%;
-  max-width: 1600px; /* increased max width */
+  width: 100vw;
+  max-width: 1700px; /* increased max width */
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .highlight {
@@ -91,7 +86,7 @@
   font-weight: bold; /* optional */
 }
 
-/*service icons*/
+/* Service icons */
 .service_icons {
   position: absolute;
   top: 75rem; /* Adjust as needed */
@@ -157,6 +152,7 @@
   }
 }
 
+/* Browse button styles */
 .browse_button_wrapper1 {
   display: flex;
   justify-content: center; /* center horizontally */
@@ -167,11 +163,11 @@
 }
 
 .browse_button1 {
-  background-color: rgba(94, 63, 9, 0.4);
-  border: 0.002px solid orange;
-  color: orange;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  background-color:  rgba(64, 47, 17, 0.4);
+  border: 0.001px solid rgb(202, 148, 46);
+  color: rgb(171, 134, 66);
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -180,9 +176,9 @@
 }
 
 .browse_button1:hover {
-  background-color: orange;
-  color: #0b0b0b;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+  background-color: none;
+  color: orange;
+  
 }
 
 .browse_icon1 {
@@ -193,36 +189,62 @@
 }
 
 /*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
-@media screen and (max-width: 1024px){
-    .service_container{
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 1024px) {
+  .service_container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .service_container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
+  .service_container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
 
-    .service_content{
-        padding: 1rem;
-    }
+  .service_content {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_intro {
+    padding-left: 1rem;
+  }
 }
 
 /*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
-@media screen and (max-width: 600px){
-    .service_container{
-        gap: 1rem;
-    }
+@media screen and (max-width: 600px) {
+  .service_container {
+    gap: 1rem;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    .service_container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-    }
+  .service_container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
 
   .browse_button1 {
     width: 100%;
     font-size: 0.95rem;
     padding: 0.75rem 1.5rem;
+  }
+
+  .container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_intro {
+    padding-left: 0.5rem;
   }
 }

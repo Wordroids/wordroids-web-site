@@ -6,16 +6,14 @@
 }
 
 .service_container > div {
-    
   background: rgba(94, 63, 9, 0.4);       /* Semi-transparent brown */
-  backdrop-filter: blur(10px);           /* Blur effect */
-  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  backdrop-filter: blur(10px);             /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);     /* Safari support */
   border-radius: 1rem;
   border: 0.002px solid orange; 
   padding: 2rem 2rem;
   transition: var(--transition);
 }
-
 
 .service_intro {
   padding-left: 12rem;
@@ -40,8 +38,9 @@
 }
 
 .service_container > div h3 {
-   text-align: center;
+   text-align: left;
    margin-bottom: 2rem;
+   font-size: 1.rem;
    color: var(--color-primary);
 }
 
@@ -58,6 +57,28 @@
     color: var(--color-primary);
 }
 
+
+
+/* Vertically scrollable, no visible scrollbar */
+.service_content {
+  max-height: 220px; /* adjust as needed */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.service_content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Service detail hover effect */
+.service_details:hover {
+  background: #5e3f09;
+  border: 2px solid orange;
+  border-radius: 0.5rem;
+  color: orange;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
 /* Allow full-width container */
 .container {
   width: 95%;
@@ -71,7 +92,6 @@
 }
 
 /*service icons*/
-
 .service_icons {
   position: absolute;
   top: 75rem; /* Adjust as needed */
@@ -109,7 +129,6 @@
   }
 }
 
-
 /* Wrapper to contain scrolling icons */
 .service_icons_wrapper {
   position: absolute;
@@ -127,8 +146,6 @@
   animation: scrollLeft 20s linear infinite;
   width: fit-content;
 }
-
-
 
 /* Responsive: stack icons on smaller screens */
 @media screen and (max-width: 1024px) {
@@ -175,9 +192,6 @@
   color: orange;
 }
 
-
-
-
 /*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
 @media screen and (max-width: 1024px){
     .service_container{
@@ -204,17 +218,11 @@
     .service_container > div {
         width: 100%;
         padding: 2rem 1rem;
-        
     }
 
-   
   .browse_button1 {
     width: 100%;
     font-size: 0.95rem;
     padding: 0.75rem 1.5rem;
-  
+  }
 }
-
-}
-  
-   

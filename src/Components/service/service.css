@@ -250,3 +250,53 @@
   }
 }
 
+/* ===== Responsive for Tablets (≤ 1024px) ===== */
+@media screen and (max-width: 1024px) {
+  .service_icons_wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+
+  .service_icons_track {
+    justify-content: flex-start; /* Keep them aligned for scrolling */
+    animation: scrollLeft 20s linear infinite; /* Keep animation */
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .service_icon {
+    font-size: 2.4rem;
+    min-width: 35px;
+  }
+}
+
+/* ===== Responsive for Mobile Devices (≤ 600px) ===== */
+@media screen and (max-width: 600px) {
+  .service_icons_wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 0 0.5rem;
+    overflow: hidden;
+  }
+
+  .service_icons_track {
+    justify-content: flex-start;
+    animation: scrollLeft 20s linear infinite; /* Keep animation */
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+  }
+
+  .service_icon {
+    font-size: 2rem;
+    padding: 0.3rem;
+    min-width: 30px;
+  }
+}

@@ -128,7 +128,7 @@
 /* Wrapper to contain scrolling icons */
 .service_icons_wrapper {
   position: absolute;
-  top: 75rem; /* keep your original position */
+  top: 72rem; /* keep your original position */
   right: 6rem;
   width: 360px; /* Adjust width based on how many icons you want visible */
   overflow: hidden;
@@ -249,3 +249,4 @@
     padding-left: 0.5rem;
   }
 }
+

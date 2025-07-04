@@ -272,6 +272,31 @@ header {
 }
 
 
+/* Scrolled state for nav-tube and navbar */
+.nav-tube.scrolled {
+  background: black;
+  border: 1px solid orange;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.main-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid orange;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-navbar.scrolled .nav-btn {
+  background: transparent;
+  color: orange;
+}
+
+.main-navbar.scrolled .nav-btn:hover {
+  background: orange;
+  color: #000;
+}
+
+
 
 /* ======== Responsive Header Styles ======== */
 
@@ -347,7 +372,7 @@ header {
   }
 
   .navbar-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
   }
 
@@ -382,6 +407,11 @@ header {
   .man {
     max-width: 320px;
   }
+
+  .logo {
+    margin: 0;
+    margin-top: 4rem;
+  }
 }
 
 
@@ -405,26 +435,18 @@ header {
   }
 }
 
-/* Scrolled state for nav-tube and navbar */
-.nav-tube.scrolled {
-  background: black;
-  border: 1px solid orange;
-  transition: background 0.3s ease, border 0.3s ease;
+/*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 1024px){
+    .container.header_container{
+        grid-template-columns: ifr;
+        gap:2rem;
+    }
 }
 
-.main-navbar.scrolled {
-  background: rgba(0, 0, 0, 0.95);
-  border-bottom: 1px solid orange;
-  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.1);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
+/*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
+@media screen and (max-width: 600px){
+    .container.header_container{
+        width: var(--container-width-sm);
+    }
 
-.main-navbar.scrolled .nav-btn {
-  background: transparent;
-  color: orange;
-}
-
-.main-navbar.scrolled .nav-btn:hover {
-  background: orange;
-  color: #000;
 }

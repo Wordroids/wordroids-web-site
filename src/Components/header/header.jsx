@@ -71,6 +71,8 @@ const Header = () => {
           <div className='welcome_button'>
             <a href="#about" className='btn btn-primary'>GET STARTED TODAY!</a>
           </div>
+
+          
         </div>
 
         {/* Businessman Image */}

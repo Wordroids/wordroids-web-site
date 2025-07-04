@@ -34,6 +34,8 @@ const About = () => {
                 READ ABOUT US
                 </button>
             </div>
+
+
 </div>
   
 

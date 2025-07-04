@@ -13,12 +13,12 @@ const Questions = () => {
     {
       id: 2,
       question: "How long does it take to complete a project?",
-      answer: "Project timelines vary based on complexity and requirements. We provide a detailed estimate after understanding your needs to ensure timely delivery."
+      answer: "The timeline depends on the scope and complexity of the project. On average, web development projects take 4-8 weeks, while mobile apps and custom software solutions many take longer. We always provide a clear timeline during the planning phase"
     },
     {
       id: 3,
       question: "What services do you offer?",
-      answer: "We offer web development, mobile app development, UI/UX design, consulting, and ongoing support to help your business grow with technology."
+      answer: "We offer web development, software development, mobile app development, UI/UX design and web hosting services. Our goal is to provide comprehensive digital solutions to help your business thrive"
     }
   ];
 

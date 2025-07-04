@@ -43,13 +43,17 @@
   flex: 1;
   min-width: 280px;
   margin-top: 8rem;
-  margin-left: 6rem;
+  margin-left: 1rem;
 }
 
 .project_intro h1,
 .project_intro h4 {
   text-align: left;
+}
+
+.project_intro h1{
   color: orange;
+  font-size: 2rem;
 }
 
 .project_para {
@@ -71,9 +75,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  width: 100%;
-  margin-top: 2rem;
+  width: calc(100% - 1rem); /* subtract the left margin */
+  margin: 4rem 0 2rem 1rem;  /* match intro margin on the left */
 }
+
 
 .project__item {
   background: rgba(94, 63, 9, 0.6);

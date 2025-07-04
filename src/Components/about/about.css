@@ -65,6 +65,7 @@
 
 .about_intro h1 {
   color: orange;
+  font-size: 2rem;
 }
 
 .about_intro p {
@@ -88,11 +89,11 @@
 }
 
 .browse_button2 {
-  background-color:  rgba(94, 63, 9, 0.4);
-  border: 0.002px solid orange;
-  color: orange;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  background-color: rgba(64, 47, 17, 0.4);
+  border: 0.001px solid rgb(202, 148, 46);
+  color:  rgb(171, 134, 66);
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
   border-radius: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -100,9 +101,9 @@
 }
 
 .browse_button2:hover {
-  background-color: orange;
-  color: #0b0b0b;
-  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+  background-color: none;
+  color: orange;
+  
 }
 
 .browse_icon2 {
@@ -111,7 +112,6 @@
   vertical-align: middle;
   color: orange;
 }
-
 
 
 /* ============ Media Queries ============ */

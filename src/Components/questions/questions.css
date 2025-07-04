@@ -1,112 +1,6 @@
 /* Main container for the FAQ section */
 #questions {
   width: 100%;
-}
-
-/* Header: two-column layout */
-.questions_header {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem;
-  padding: 0 7rem 1rem;
-  justify-content: center;
-  
-}
-
-.questions_intro {
-  flex: 1 1 340px;
-  min-width: 300px;
-  max-width: 520px;
-  padding-left: 0;
-  padding-bottom: 2rem;
-  margin-top: 13.5rem;
-}
-
-.questions_intro h1,
-.questions_intro h4 {
-  text-align: left;
-}
-
-.questions_intro h1 {
-  color: orange;
-}
-
-.questions_intro p {
-  text-align: left;
-}
-
-/* FAQ Section: right column */
-.faq_container {
-  flex: 1 1 400px;
-  max-width: 600px;
-  min-width: 320px;
-  background: #23201a;
-  border-radius: 10px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 1rem 0;
-  margin-top: 13.5rem;
-}
-
-/* FAQ Items */
-.faq_item {
-  border-bottom: 1px solid #3b362b;
-  transition: background 0.2s;
-}
-
-.faq_item:last-child {
-  border-bottom: none;
-}
-
-.faq_question {
-  cursor: pointer;
-  padding: 1.3rem 2.5rem 1.3rem 2.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  transition: background 0.2s;
-}
-
-.faq_item.active .faq_question {
-  background: #2c261a;
-  color: orange;
-}
-
-.faq_answer {
-  padding: 1rem 2.5rem 1.5rem 2.5rem;
-  color: #d1c6b1;
-  font-size: 1.08rem;
-  background: #23201a;
-  animation: fadeIn 0.2s;
-}
-
-.arrow {
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  transition: transform 0.2s;
-}
-
-.arrow.open {
-  transform: rotate(180deg);
-  color: orange;
-}
-
-.highlight {
-  color: orange;
-}
-
-/* Animation for answer reveal */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-
-/* Main container for the FAQ section */
-#questions {
-  width: 100%;
   padding: 4rem 1rem;
   box-sizing: border-box;
 }
@@ -116,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between; /* Ensures FAQ stays on right */
   gap: 3rem;
   padding: 0 5vw;
 }

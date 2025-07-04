@@ -52,11 +52,11 @@ const Header = () => {
           <img src={Logo} alt="Wordroids Logo" className="logo-img" />
         </div>
         <div className="navbar-links">
-          <a href="#header" className="nav-btn"><MdHome className="nav-icon" />WELCOME</a>
-          <a href="#service" className="nav-btn"><TbCircleLetterIFilled className="nav-icon" />WORDROIDS</a>
-          <a href="#about" className="nav-btn"><SiBlueprint className="nav-icon" />BLUEPRINTS</a>
-          <a href="#projects" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
-          <a href="#questions" className="nav-btn"><AiFillMessage className="nav-icon" />SUPPORT</a>
+          <a href="####" className="nav-btn"><MdHome className="nav-icon" />WELCOME</a>
+          <a href="#####" className="nav-btn"><TbCircleLetterIFilled className="nav-icon" />WORDROIDS</a>
+          <a href="####" className="nav-btn"><SiBlueprint className="nav-icon" />BLUEPRINTS</a>
+          <a href="####" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
+          <a href="####" className="nav-btn"><AiFillMessage className="nav-icon" />SUPPORT</a>
         </div>
       </nav>
 

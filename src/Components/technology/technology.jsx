@@ -7,7 +7,7 @@ import { FaLaravel, FaNodeJs, FaPhp, FaReact, FaVuejs, FaJs, FaHtml5 } from "rea
 import { SiDotnet, SiAngular, SiNuxtdotjs, SiTypescript, SiWordpress, SiDrupal, SiJoomla, SiMagento, SiShopify, SiGhost, SiSquarespace, SiWix } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { GiFizzingFlask } from "react-icons/gi";
-import { RiNextjsFill } from "react-icons/ri";
+
 
 // Icon sets for each category (6 total)
 const web_dev_icons = [
@@ -81,8 +81,8 @@ const slides = [
   { key: 'devops', label: 'DevOps', icons: devops_icons, center: 'DevOps', anchor: '#devops' }
 ];
 
-const CIRCLE_RADIUS = 145;
-const CENTER_OFFSET = 170;
+const CIRCLE_RADIUS = 155;
+const CENTER_OFFSET = 180;
 
 const Technology = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

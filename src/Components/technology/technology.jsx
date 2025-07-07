@@ -20,7 +20,7 @@ const web_dev_icons = [
   { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
   { component: BiLogoDjango, name: "Django", className: "icon-dj" }
 ];
-
+ 
 const frontend_dev_icons = [
   { component: FaPython, name: "Python", className: "icon-py" },
   { component: FaLaravel, name: "Laravel", className: "icon-laravel" },

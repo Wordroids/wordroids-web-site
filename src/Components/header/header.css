@@ -501,10 +501,10 @@ header {
 /* Tablet screens (≤ 1024px) */
 @media screen and (max-width: 1024px) {
   .hero-bg-shape {
-    top: 30%;
-    right: 5%;
-    width: 250px;
-    height: 280px;
+    top: 52%;
+    right: 43%;
+    width: 180px;
+    height: 180px;
     opacity: 0.25;
     filter: blur(3px);
   }

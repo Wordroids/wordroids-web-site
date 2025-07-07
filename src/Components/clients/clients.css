@@ -164,11 +164,15 @@
 }
 
 .clients__testimonial-content p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
+  line-height: clamp(1.4, 2vw, 1.8);
+  margin-bottom: clamp(0.8rem, 2vw, 1.5rem);
   text-align: left;
+  word-break: break-word;
+  padding-inline: 0.5rem; /* Adds side spacing on small screens */
 }
+
+
 
 .clients__testimonial-author {
   display: flex;
@@ -213,15 +217,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .clients__stats-bar-track {
-    font-size: 1rem;
-    gap: 0.8rem;
-  }
+  
 
-  .clients__testimonial-content p {
-    font-size: 0.95rem;
-  }
-
+  
   .clients__diamond {
     width: 60px;
     height: 60px;
@@ -241,11 +239,44 @@
     font-size: 1.5rem;
   }
 
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .clients__testimonial-box {
+    padding: 1.5rem -5rem;
+  }
+
+  .clients__testimonial-slider {
+    max-width: 100%;
+  }
+
+  .clients__testimonial-content p {
+    font-size: 0.64rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    
+  }
+
+  .clients__stats-bar {
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .clients__stats-bar-track {
+    font-size: 1rem;
+    gap: 0.6rem;
+  }
+
   .clients__testimonial-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .clients__testimonial-role {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
+
+
+

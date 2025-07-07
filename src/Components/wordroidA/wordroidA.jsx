@@ -1,10 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './wordroidA.css';
 import Logo from '../../assets/logo.png'; // Replace with your actual logo image
 
 import { RiCheckboxCircleLine, RiCompass3Line, RiPaletteLine } from "react-icons/ri";
 
+const TABS = [
+  {
+    label: "OVERVIEW",
+    icon: <RiCheckboxCircleLine />,
+    content: (
+      <>
+        <p className="intro-paragraph">
+          We are a multidisciplinary team of thinkers, builders, and creators. At Wordroids, we specialize in transforming abstract ideas into functional, high-performance digital experiences that deliver real value, both creatively and strategically.
+        </p>
+        <p className="intro-paragraph">
+          We collaborate with bold brands that seek more than templates. If you believe in originality and purposeful innovation, we’re ready to say <span className="link">let’s build together.</span>
+        </p>
+      </>
+    )
+  },
+  {
+    label: "WHAT GUIDES US",
+    icon: <RiCompass3Line />,
+    content: (
+      <div className="guides-content">
+        <div className="mission-vision">
+          <div>
+            <h4 className="mission-title">Mission</h4>
+            <p className="mission-desc">
+              We deliver high-performance digital solutions that help businesses grow with purpose and precision in a constantly evolving world.
+            </p>
+          </div>
+          <div>
+            <h4 className="vision-title">Vision</h4>
+            <p className="vision-desc">
+              We aim to become a globally recognized creative-tech partner for visionary companies looking to lead with innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  },
+  {
+    label: "CORE STYLE",
+    icon: <RiPaletteLine />,
+    content: (
+      <p className="intro-paragraph">
+        Our core style blends bold creativity with strategic clarity, ensuring every digital product is as visually stunning as it is purposeful and effective.
+      </p>
+    )
+  }
+];
+
 const WordroidA = () => {
+  const [activeTab, setActiveTab] = useState(1); // Default to "WHAT GUIDES US" as in the screenshot
+
   return (
     <section className="wordroid-intro">
       <div className="intro-left">
@@ -17,25 +67,31 @@ const WordroidA = () => {
       </div>
 
       <div className="intro-right">
-        <h4 className="intro-subtitle">DISCOVER THE MINDS BEHIND <span className="highlight">WORDROIDS</span></h4>
-        <h1 className="intro-title">Bold Team Building Vision<br />Through Creativity</h1>
+        <h4 className="intro-subtitle">
+          DISCOVER THE MINDS BEHIND <span className="highlight">WORDROIDS</span>
+        </h4>
+        <h1 className="intro-title">
+          Bold Team Building Vision<br />Through Creativity
+        </h1>
         <p className="intro-description">
           We don’t just build digital products we build partnerships through experience and strategy.
         </p>
 
         <div className="intro-tabs">
-          <span className="tab active"><RiCheckboxCircleLine /> OVERVIEW</span>
-          <span className="tab"><RiCompass3Line /> WHAT GUIDES US</span>
-          <span className="tab"><RiPaletteLine /> CORE STYLE</span>
+          {TABS.map((tab, idx) => (
+            <span
+              className={`tab${activeTab === idx ? " active" : ""}`}
+              key={tab.label}
+              onClick={() => setActiveTab(idx)}
+            >
+              {tab.icon} {tab.label}
+            </span>
+          ))}
         </div>
 
-        <p className="intro-paragraph">
-          We are a multidisciplinary team of thinkers, builders, and creators. At Wordroids, we specialize in transforming abstract ideas into functional, high-performance digital experiences that deliver real value, both creatively and strategically.
-        </p>
-
-        <p className="intro-paragraph">
-          We collaborate with bold brands that seek more than templates. If you believe in originality and purposeful innovation, we’re ready to say <span className="link">let’s build together.</span>
-        </p>
+        <div className="tab-content">
+          {TABS[activeTab].content}
+        </div>
       </div>
     </section>
   );

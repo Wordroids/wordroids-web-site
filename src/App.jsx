@@ -1,33 +1,17 @@
-
-
-
-
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/header/header';
-
-import Service from './Components/service/service';
-import About from './Components/about/about';
-import Projects from './Components/projects/projects';
-import Technology from './Components/technology/technology';
-import Clients from './Components/clients/clients';
-import Questions from './Components/questions/questions';
-import Footer from './Components/footer/footer';
-
-
+import Wordroid from './Components/wordroid/wordroid';
 
 const App = () => {
   return (
-    <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/wordroid" element={<Wordroid />} />
+      </Routes>
      
-      <Header/>
-      <Service/>
-      <About/>
-      <Projects/>
-      <Technology/>
-      <Clients/>
-      <Questions/>
-      <Footer/>
-    </>
+    </Router>
   );
 };
 

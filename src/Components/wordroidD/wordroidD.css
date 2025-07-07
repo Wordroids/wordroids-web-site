@@ -1,0 +1,85 @@
+.impact-section {
+  
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
+}
+
+.impact-power {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+}
+
+.impact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 18px;
+}
+
+.impact-desc {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 36px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 70px;
+  margin-top: 30px;
+  margin-left: 5rem;
+  margin-right: 3rem;
+}
+
+.impact-card {
+  background: transparent;
+  border-radius: 8px;
+  padding: 28px 2px;
+  box-shadow: none;
+  text-align: center;
+}
+
+.impact-icon {
+  margin-bottom: 14px;
+  margin-left: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(94, 63, 9, 0.18);      /* brown background */
+  border: 2px solid orange;     /* orange border */
+  border-radius: 50%;           /* make it circular */
+  width: 3.5rem;                /* fixed width */
+  height: 3.5rem;               /* fixed height */
+  padding: 0.5rem;              /* padding inside the border */
+  box-sizing: border-box;       
+}
+
+.hand-icon-img {
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+}
+
+.impact-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.impact-card p {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}

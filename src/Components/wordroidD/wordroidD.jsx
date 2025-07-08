@@ -32,14 +32,14 @@ const sections = [
 export default function ImpactSection() {
   return (
     <div className="impact-section">
-      <h5 className="impact-power">
+      <h4 className="impact-power">
         THE <span className="highlight">POWER</span> BEHIND EVERYTHING WE CREATE
-      </h5>
+      </h4>
       <h1 className="impact-title">
         Ideas and Technology Working Together for <br />Impactful Results
       </h1>
       <p className="impact-desc">
-        From thoughtful strategy to sharp design and smart code, our power comes from working with intent, curiosity, and collaborative energy every step forward.
+        From thoughtful strategy to sharp design and smart code, our power comes from working with intent, curiosity, and<br></br> collaborative energy every step forward.
       </p>
       <div className="impact-grid">
         {sections.map((section, idx) => (

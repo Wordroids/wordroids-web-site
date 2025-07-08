@@ -12,10 +12,10 @@
 }
 
 .process-subtitle {
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #ccc;
+  color: white;
   margin-bottom: 0.5rem;
   margin-left: -13rem;
 }
@@ -26,18 +26,18 @@
 
 .process-title {
   font-size: 2rem;
-  font-weight: 700;
   color: orange;
   margin-bottom: 1rem;
   margin-left: -13rem;
 }
 
 .process-description {
-  font-size: 0.95rem;
-  color: #ccc;
+  font-size: 1rem;
+  color: white;
   margin-left: 33rem;
   margin-right: -12rem;
   margin-top: -5rem;
+  font-weight: lighter;
 }
 
 /* Steps Section */
@@ -55,29 +55,31 @@
   align-items: flex-start;
   gap: 1.2rem;
   background: linear-gradient(90deg, rgba(50, 30, 10, 0.4), rgba(30, 20, 10, 0.2));
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid rgba(255, 165, 0, 0.2);
   margin-right: 3rem;
 }
 
 .step-icon {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: orange;
   flex-shrink: 0;
   margin-top: 4px;
 }
 
 .step-content h3 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: orange;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
+  margin-left: 2rem;
 }
 
 .step-content p {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-left: 41.5rem ;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white;
+  margin-left: 41rem ;
   margin-top: -3rem;
 }
 

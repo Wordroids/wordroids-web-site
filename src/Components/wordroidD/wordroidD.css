@@ -1,17 +1,18 @@
 .impact-section {
   
-  color: #fff;
+  color: white;
   padding: 40px 20px;
-  font-family: 'Inter', Arial, sans-serif;
   text-align: center;
+  margin-top: 10rem;
 }
 
 .impact-power {
   font-size: 1rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   margin-bottom: 10px;
-  color: #b3b3b3;
+  color: white;
 }
+
 
 .highlight {
   color: orange;
@@ -20,16 +21,16 @@
 
 .impact-title {
   font-size: 2rem;
-  font-weight: bold;
   color: orange;
   margin-bottom: 18px;
 }
 
 .impact-desc {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
+  font-weight: lighter;
   margin-bottom: 36px;
-  max-width: 700px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -73,13 +74,13 @@
 }
 
 .impact-card h3 {
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
-  font-weight: bold;
 }
 
 .impact-card p {
   font-size: 1rem;
   color: white;
   margin: 0;
+  font-weight: lighter;
 }

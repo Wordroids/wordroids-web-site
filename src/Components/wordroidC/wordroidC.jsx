@@ -1,19 +1,20 @@
 import React from 'react';
 import './wordroidC.css';
 import { FiSearch, FiPenTool, FiCode, FiTrendingUp } from 'react-icons/fi';
+import { RiH1 } from 'react-icons/ri';
 
 
 const WordroidC = () => {
   return (
     <section className="process">
       <div className="process-header">
-        <p className="process-subtitle">
+        <h4 className="process-subtitle">
           A <span className="highlight">PROCESS</span> SHAPED BY COLLABORATION
-        </p>
-        <h2 className="process-title">
+        </h4>
+        <h1 className="process-title">
           We Build With Purpose Across<br></br>
           Every Key Phase
-        </h2>
+        </h1>
         <p className="process-description">
           From planning to launch, our streamlined workflow ensures clarity, speed,
           and measurable outcomes for every client

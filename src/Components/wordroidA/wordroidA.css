@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-left:5rem;
 }
 
 .logo-circle {
@@ -91,7 +92,7 @@
 
 .intro-right {
   flex: 2;
-  padding-left: 7rem;
+  padding-left: 17rem;
   padding-right: 4rem;
   display: flex;
   flex-direction: column;
@@ -99,7 +100,7 @@
 }
 
 .intro-subtitle {
-  color: #ccc;
+  color: white;
   font-size: 1rem;
   letter-spacing: 1.5px;
   margin-bottom: 0.8rem;
@@ -113,17 +114,17 @@
 
 .intro-title {
   color: orange;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 1.2;
-  font-weight: bold;
 }
 
 .intro-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  color: #ccc;
+  color:white;
   max-width: 600px;
+  font-weight: lighter;
 }
 
 .intro-tabs {
@@ -189,7 +190,7 @@
 }
 
 .mission-desc, .vision-desc {
-  color: #eee;
+  color: white;
   font-size: 1.05rem;
   line-height: 1.6;
   max-width: 600px;
@@ -212,11 +213,11 @@
 .core-style-pill {
   background: rgba(30, 20, 10, 0.7);
   border: 1.5px solid orange;
-  color: #eee;
+  color: white;
   border-radius: 2rem;
   padding: 0.6rem 1.3rem;
-  font-size: 1.08rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   box-shadow: 0 2px 12px #0003;
   transition: background 0.2s, color 0.2s;
   display: inline-block;

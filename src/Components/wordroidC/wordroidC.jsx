@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './wordroidC.css';
 import { FiSearch, FiPenTool, FiCode, FiTrendingUp } from 'react-icons/fi';
-import { RiH1 } from 'react-icons/ri';
-
 
 const WordroidC = () => {
+  const [activeStep, setActiveStep] = useState(null);
+
+  const handleStepClick = (index) => {
+    setActiveStep(activeStep === index ? null : index); // toggle on second click
+  };
+
+  const steps = [
+    {
+      icon: <FiSearch className="step-icon" />,
+      title: 'Discover What You Need',
+      description: 'We dive into your business goals, audience, and challenges to craft a clear, effective, and focused digital strategy'
+    },
+    {
+      icon: <FiPenTool className="step-icon" />,
+      title: 'Design for Real Impact',
+      description: 'User-first interfaces, powerful visuals, and functional flows — designed to engage your audience and elevate your brand presence.'
+    },
+    {
+      icon: <FiCode className="step-icon" />,
+      title: 'Develop With Scalable Tech',
+      description: 'We build responsive, secure, high-performance solutions using modern frameworks tailored for growth, flexibility, and future integration'
+    },
+    {
+      icon: <FiTrendingUp className="step-icon" />,
+      title: 'Launch Learn and Grow',
+      description: "Your product goes live but that's just the beginning. We analyze, adapt, and evolve based on real user feedback."
+    }
+  ];
+
   return (
     <section className="process">
       <div className="process-header">
@@ -22,37 +49,19 @@ const WordroidC = () => {
       </div>
 
       <div className="process-steps">
-        <div className="step">
-          <FiSearch className="step-icon" />
-          <div className="step-content">
-            <h3>Discover What You Need</h3>
-            <p>We dive into your business goals, audience, and challenges to craft a clear, effective, and focused digital strategy</p>
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className={`step ${activeStep === index ? 'active-step' : ''}`}
+            onClick={() => handleStepClick(index)}
+          >
+            {step.icon}
+            <div className="step-content">
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="step">
-          <FiPenTool className="step-icon" />
-          <div className="step-content">
-            <h3>Design for Real Impact</h3>
-            <p>User-first interfaces, powerful visuals, and functional flows — designed to engage your audience and elevate your brand presence.</p>
-          </div>
-        </div>
-
-        <div className="step">
-          <FiCode className="step-icon" />
-          <div className="step-content">
-            <h3>Develop With Scalable Tech</h3>
-            <p>We build responsive, secure, high-performance solutions using modern frameworks tailored for growth, flexibility, and future integration</p>
-          </div>
-        </div>
-
-        <div className="step">
-          <FiTrendingUp className="step-icon" />
-          <div className="step-content">
-            <h3>Launch Learn and Grow</h3>
-            <p>Your product goes live but that's just the beginning. We analyze, adapt, and evolve based on real user feedback.</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

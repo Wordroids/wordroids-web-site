@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './wordroidA.css';
-import Logo from '../../assets/logo.png'; // Replace with your actual logo image
+import Logo from '../../assets/logo.png'; 
+import Ellipse1 from '../../assets/Ellipse1.png';
+import Ellipse2 from '../../assets/Ellipse2.png';
 
 import { RiCheckboxCircleLine, RiCompass3Line, RiPaletteLine } from "react-icons/ri";
 
@@ -45,24 +47,41 @@ const TABS = [
     label: "CORE STYLE",
     icon: <RiPaletteLine />,
     content: (
-      <p className="intro-paragraph">
-        Our core style blends bold creativity with strategic clarity, ensuring every digital product is as visually stunning as it is purposeful and effective.
-      </p>
+      <div className="core-style-list">
+        <div className="core-style-row">
+          <span className="core-style-pill"><span className="highlighted">Precision</span> First Thinking</span>
+          <span className="core-style-pill">Minimal with <span className="highlighted">Boldness</span></span>
+        </div>
+        <div className="core-style-row">
+          <span className="core-style-pill">Designed for <span className="highlighted">Scalability</span></span>
+          <span className="core-style-pill">Always <span className="highlighted">Mobile-First</span></span>
+        </div>
+        <div className="core-style-row">
+          <span className="core-style-pill">Built for <span className="highlighted">Tomorrow</span></span>
+          <span className="core-style-pill">Emotionally <span className="highlighted">Engaging</span></span>
+          <span className="core-style-pill">Privacy <span className="highlighted">Respectful</span></span>
+        </div>
+      </div>
     )
   }
 ];
 
 const WordroidA = () => {
-  const [activeTab, setActiveTab] = useState(1); // Default to "WHAT GUIDES US" as in the screenshot
+  const [activeTab, setActiveTab] = useState(1); // Default to "WHAT GUIDES US"
 
   return (
     <section className="wordroid-intro">
       <div className="intro-left">
         <div className="logo-circle">
           <img src={Logo} alt="Wordroids Logo" className="w-logo" />
-          <span className="since">SINCE 2020</span>
-          <div className="circle-decor top"></div>
-          <div className="circle-decor bottom"></div>
+
+          {/* Ellipse wrappers for rotating ellipses */}
+          <div className="ellipse-wrapper ellipse1">
+            <img src={Ellipse1} alt="Ellipse 1" className="ellipse" />
+          </div>
+          <div className="ellipse-wrapper ellipse2">
+            <img src={Ellipse2} alt="Ellipse 2" className="ellipse" />
+          </div>
         </div>
       </div>
 

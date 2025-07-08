@@ -75,14 +75,22 @@ const WordroidA = () => {
         <div className="logo-circle">
           <img src={Logo} alt="Wordroids Logo" className="w-logo" />
 
-          {/* Ellipse wrappers for rotating ellipses */}
-          <div className="ellipse-wrapper ellipse1">
-            <img src={Ellipse1} alt="Ellipse 1" className="ellipse" />
+          {/* Ellipse 1 - Clockwise */}
+          <div className="rotating-container rotate-clockwise">
+            <div className="ellipse-wrapper ellipse1">
+              <img src={Ellipse1} alt="Ellipse 1" className="ellipse" />
+            </div>
           </div>
-          <div className="ellipse-wrapper ellipse2">
-            <img src={Ellipse2} alt="Ellipse 2" className="ellipse" />
+
+          {/* Ellipse 2 - Counter-Clockwise */}
+          <div className="rotating-container rotate-counter">
+            <div className="ellipse-wrapper ellipse2">
+              <img src={Ellipse2} alt="Ellipse 2" className="ellipse" />
+            </div>
           </div>
-        </div>
+
+
+       </div>
       </div>
 
       <div className="intro-right">

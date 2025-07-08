@@ -260,3 +260,72 @@
     text-align: center;
   }
 }
+
+/* Outer rotating container */
+.rotating-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
+/* Clockwise rotation */
+.rotate-clockwise {
+  animation: spinClockwise 60s linear infinite;
+}
+
+/* Counter-clockwise rotation */
+.rotate-counter {
+  animation: spinCounterClockwise 60s linear infinite;
+}
+
+/* Keep your original ellipse-wrapper sizes and positions */
+.ellipse-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+/* Ellipse 1 initial position */
+.ellipse1 {
+  width: 370px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -340px;
+  opacity: 0.85;
+  z-index: 1;
+ 
+}
+
+/* Ellipse 2 initial position */
+.ellipse2 {
+  width: 380px;
+  height: 380px;
+  margin-top: -190px;
+  margin-left: -100px;
+  opacity: 0.85;
+  z-index: 1;
+  
+}
+
+/* Ellipse image styles */
+.ellipse {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Spin keyframes */
+@keyframes spinClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinCounterClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

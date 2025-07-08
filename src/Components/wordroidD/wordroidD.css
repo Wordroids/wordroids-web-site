@@ -1,5 +1,4 @@
 .impact-section {
-  
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -12,7 +11,6 @@
   margin-bottom: 10px;
   color: white;
 }
-
 
 .highlight {
   color: orange;
@@ -37,7 +35,7 @@
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 70px;
   margin-top: 30px;
   margin-left: 5rem;
@@ -50,6 +48,7 @@
   padding: 28px 2px;
   box-shadow: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .impact-icon {
@@ -58,13 +57,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(94, 63, 9, 0.18);      /* brown background */
-  border: 2px solid orange;     /* orange border */
-  border-radius: 50%;           /* make it circular */
-  width: 3.5rem;                /* fixed width */
-  height: 3.5rem;               /* fixed height */
-  padding: 0.5rem;              /* padding inside the border */
-  box-sizing: border-box;       
+  background-color: rgba(94, 63, 9, 0.18);
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .hand-icon-img {
@@ -76,6 +76,7 @@
 .impact-card h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  transition: color 0.3s;
 }
 
 .impact-card p {
@@ -83,4 +84,28 @@
   color: white;
   margin: 0;
   font-weight: lighter;
+}
+
+/* Active styles */
+.impact-card.active .impact-icon {
+  background-color: orange;
+  border-color: orange;
+}
+
+.impact-card.active h3 {
+  color: orange;
+}
+
+/* Optional: Also color the highlight inside the h3 when active */
+.impact-card.active .highlight {
+  color: orange;
+}
+
+/* Optional hover effect */
+.impact-card:hover .impact-icon {
+  background-color: rgba(170, 129, 53, 0.8);
+}
+
+.impact-card:hover h3 {
+  color: orange;
 }

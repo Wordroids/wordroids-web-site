@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './wordroidD.css';
 import hand from '../../assets/hand.png';
 
@@ -30,6 +30,12 @@ const sections = [
 ];
 
 export default function ImpactSection() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleCardClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index); // Toggle active state
+  };
+
   return (
     <div className="impact-section">
       <h4 className="impact-power">
@@ -42,18 +48,27 @@ export default function ImpactSection() {
         From thoughtful strategy to sharp design and smart code, our power comes from working with intent, curiosity, and<br></br> collaborative energy every step forward.
       </p>
       <div className="impact-grid">
-        {sections.map((section, idx) => (
-          <div className="impact-card" key={idx}>
-            <div className="impact-icon">
-              <img src={hand} alt="Hand Icon" className="hand-icon-img" />
+        {sections.map((section, idx) => {
+          const isActive = activeIndex === idx;
+          return (
+            <div
+              className={`impact-card ${isActive ? 'active' : ''}`}
+              key={idx}
+              onClick={() => handleCardClick(idx)}
+            >
+              <div className={`impact-icon ${isActive ? 'active-icon' : ''}`}>
+                <img src={hand} alt="Hand Icon" className="hand-icon-img" />
+              </div>
+              <h3 className={`impact-title-text ${isActive ? 'active-title' : ''}`}>
+                <span className={`highlight ${isActive ? 'active-highlight' : ''}`}>
+                  {section.title.split(' ')[0]}
+                </span>
+                {' '}{section.title.substring(section.title.indexOf(' '))}
+              </h3>
+              <p>{section.description}</p>
             </div>
-            <h3>
-              <span className="highlight">{section.title.split(' ')[0]}</span>
-              {' '}{section.title.substring(section.title.indexOf(' '))}
-            </h3>
-            <p>{section.description}</p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

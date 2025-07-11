@@ -9,6 +9,7 @@ import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
 import BlueprintsA from '../blueprintsA/blueprintsA';
 import BlueprintsB from '../blueprintsB/blueprintsB';
+import Footer from '../footer/footer';
 
 const Blueprints = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +51,7 @@ const Blueprints = () => {
 
       <BlueprintsA />
       <BlueprintsB/>
-
+      <Footer />
   
     </div>
   );

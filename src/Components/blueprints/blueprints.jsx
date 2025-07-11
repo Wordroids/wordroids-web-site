@@ -8,6 +8,7 @@ import { SiBlueprint } from "react-icons/si";
 import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
 import BlueprintsA from '../blueprintsA/blueprintsA';
+import BlueprintsB from '../blueprintsB/blueprintsB';
 
 const Blueprints = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,6 +49,7 @@ const Blueprints = () => {
       </nav>
 
       <BlueprintsA />
+      <BlueprintsB/>
 
   
     </div>

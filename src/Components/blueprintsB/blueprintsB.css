@@ -1,0 +1,156 @@
+.blueprintsB-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* LEFT SECTION */
+.blueprintsB-left {
+  flex: 1 1 50%;
+  padding-right: 2rem;
+}
+
+/* Wrap subtitle & title */
+.blueprintsB-heading {
+  text-align: left;
+}
+
+.blueprintsB-subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #ffa31a;
+}
+
+.blueprintsB-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+/* Description shifted right */
+.blueprintsB-description {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+  max-width: 550px;
+}
+
+/* Service list */
+.blueprintsB-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.blueprintsB-list li {
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blueprintsB-list li span,
+.blueprintsB-list li.active {
+  color: #ffa31a;
+  font-weight: bold;
+}
+
+/* RIGHT SECTION */
+.blueprintsB-right {
+  flex: 1 1 45%;
+}
+
+.blueprintsB-header-right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.blueprintsB-header-right .icon {
+  color: #ffa31a;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.blueprintsB-description-right {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.blueprintsB-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #1b1b1b;
+  padding: 1rem;
+  flex: 1 1 45%;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+  margin-bottom: 2rem;
+}
+
+.tech-stack span {
+  font-size: 0.8rem;
+  color: #ffa31a;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  color: #ffa31a;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.arrow {
+  margin-left: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .blueprintsB-section {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .blueprintsB-left,
+  .blueprintsB-right {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  .blueprintsB-title {
+    font-size: 1.5rem;
+  }
+
+  .blueprintsB-description {
+    margin-left: 100%; /* Reset on small screens */
+    text-align: left;
+  }
+}

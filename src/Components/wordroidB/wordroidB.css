@@ -45,23 +45,31 @@
   font-weight: 500;
   color: orange;
   margin-bottom: 9rem;
-  margin-left: -41.5rem;
+  margin-left: -41.5rem; /* This is fine for desktop */
 }
 
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 1024px) {
+  .aboutus-title {
+    margin-left: -20rem; /* Reduce negative margin for tablets */
+    font-size: 4rem;
+    margin-bottom: 7rem;
+  }
+}
 
-
-/* Optional: Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .aboutus {
+@media screen and (max-width: 768px) {
+  .wordroidB {
     height: 220px;
   }
 
   .aboutus-title {
-    font-size: 2.2rem;
+    margin-left: 0; /* Center it for mobile */
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
   }
 
-  .aboutus-links {
-    gap: 0.5rem;
-    font-size: 0.9rem;
+  .aboutus-content {
+    text-align: center;
   }
 }

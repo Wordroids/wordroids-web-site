@@ -53,7 +53,8 @@
 
 .impact-icon {
   margin-bottom: 14px;
-  margin-left: 9.5rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,16 +97,61 @@
   color: orange;
 }
 
-/* Optional: Also color the highlight inside the h3 when active */
 .impact-card.active .highlight {
   color: orange;
 }
 
-/* Optional hover effect */
+/* Hover effect */
 .impact-card:hover .impact-icon {
   background-color: rgba(170, 129, 53, 0.8);
 }
 
 .impact-card:hover h3 {
   color: orange;
+}
+
+/* RESPONSIVE STYLES */
+
+/* For tablets: 2 columns */
+@media (max-width: 992px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 40px;
+  }
+
+  .impact-title {
+    font-size: 1.8rem;
+  }
+
+  .impact-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* For mobile devices: 1 column */
+@media (max-width: 600px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 30px;
+  }
+
+  .impact-title {
+    font-size: 1.5rem;
+  }
+
+  .impact-desc {
+    font-size: 0.9rem;
+  }
+
+  .impact-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .impact-card p {
+    font-size: 0.9rem;
+  }
 }

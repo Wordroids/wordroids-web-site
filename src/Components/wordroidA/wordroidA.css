@@ -329,3 +329,93 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+@media (max-width: 768px) {
+  .intro-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .tab {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .intro-right {
+    padding: 0 1rem;
+  }
+
+  .intro-title {
+    font-size: 1.5rem;
+  }
+
+  .intro-description {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .wordroid-intro {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .intro-left, .intro-right {
+    padding: 0;
+    width: 100%;
+  }
+  .intro-right {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+  .mission-vision {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-tabs {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .tab {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .core-style-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .core-style-pill {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-right {
+    padding: 0 1rem;
+  }
+
+  .intro-title {
+    font-size: 1.5rem;
+  }
+
+  .intro-description {
+    font-size: 0.95rem;
+  }
+}

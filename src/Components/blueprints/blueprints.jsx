@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './wordroid.css';
+import './blueprints.css';
 import Logo from '../../assets/logo.png';
 import { MdHome } from "react-icons/md";
 import { TbCircleLetterIFilled } from "react-icons/tb";
 import { SiBlueprint } from "react-icons/si";
 import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
-import WordroidB from '../wordroidB/wordroidB';
-import WordroidA from '../wordroidA/wordroidA';
-import WordroidC from '../wordroidC/wordroidC';
-import WordroidD from '../wordroidD/wordroidD';
-import Footer from '../footer/footer';  
+import BlueprintsA from '../blueprintsA/blueprintsA';
 
-const Wordroid = () => {
+const Blueprints = () => {
   const [scrolled, setScrolled] = useState(false);
   const [count, setCount] = useState(1);
 
@@ -51,13 +47,11 @@ const Wordroid = () => {
         </div>
       </nav>
 
-      <WordroidB/>
-      <WordroidA/>
-      <WordroidC/>
-      <WordroidD/>
-      <Footer />
+      <BlueprintsA />
+
+  
     </div>
   );
 };
 
-export default Wordroid;
+export default Blueprints;

@@ -65,7 +65,7 @@ const Header = () => {
             <Link to="/wordroid" className="nav-btn">
               <TbCircleLetterIFilled className="nav-icon" />WORDROIDS
             </Link>
-            <a href="####" className="nav-btn">
+            <a href="/blueprints" className="nav-btn">
               <SiBlueprint className="nav-icon" />BLUEPRINTS
             </a>
             <a href="####" className="nav-btn">

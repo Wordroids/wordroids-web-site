@@ -104,7 +104,7 @@
   padding: 0.8rem;
   width: 120px;
   min-width: 180px;
-  height: 160px;
+  height: 180px;
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -119,9 +119,11 @@
   margin: 0;
 }
 
+/* Scrolling Icons */
 .tech-stack {
   margin-bottom: 2rem;
   margin-left: -5rem;
+  width: 100%;
 }
 
 .tech-stack span {
@@ -131,10 +133,32 @@
   display: block;
 }
 
-.icons {
+.icons-scroll {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
   display: flex;
-  gap: 1rem;
-  font-size: 1.5rem;
+  gap: 2rem;
+  animation: scrollIcons 15s linear infinite;
+}
+
+.tech-icon {
+  font-size: 1.8rem;
+  color: #ffa31a;
+  margin-top: 0rem;
+
+}
+
+/* Animation */
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .explore {

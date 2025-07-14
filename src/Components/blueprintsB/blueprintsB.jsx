@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import './blueprintsB.css';
 import { MdOutlineDesignServices } from "react-icons/md";
-import { SiFigma, SiInvision, SiSketch, SiHtml5, SiCss3 } from "react-icons/si";
 import { IoIosArrowForward } from "react-icons/io";
+
+import { BiLogoDjango } from "react-icons/bi";
+import { FaPython } from "react-icons/fa6";
+import { FaLaravel, FaNodeJs, FaPhp, FaReact, FaVuejs, FaJs, FaHtml5 } from "react-icons/fa";
+import { SiDotnet, SiAngular, SiNuxtdotjs, SiTypescript, SiWordpress, SiDrupal, SiJoomla, SiMagento, SiShopify, SiGhost, SiSquarespace, SiWix } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { GiFizzingFlask } from "react-icons/gi";
+
 
 const SERVICES = [
   {
@@ -73,12 +80,20 @@ const SERVICES = [
   }
 ];
 
+const TECH_STACKS = [
+  [GiFizzingFlask, GiFizzingFlask, GiFizzingFlask, GiFizzingFlask],              // Web
+  [FaPython, FaPython, FaPython, FaPython],            // Mobile
+  [FaLaravel, FaLaravel, FaLaravel],               // AI
+  [TbSql, TbSql, TbSql],                      // UI/UX
+  [ BiLogoDjango,  BiLogoDjango,  BiLogoDjango],              // Cloud
+  [FaPhp, FaPhp, FaPhp]                         // Brand
+];
+
 const BlueprintsB = () => {
   const [selected, setSelected] = useState(0);
 
   return (
     <section className="blueprintsB-section">
-      {/* LEFT SECTION */}
       <div className="blueprintsB-left">
         <h4 className="blueprintsB-subtitle">
           THE <span className="highlight">BLUPRINT</span> TO BUILD ANYTHING
@@ -100,7 +115,6 @@ const BlueprintsB = () => {
         </ul>
       </div>
 
-      {/* RIGHT SECTION */}
       <div className="blueprintsB-right">
         <p className="blueprintsB-description">
           From custom apps to cloud and AI, our service blueprint helps businesses
@@ -130,12 +144,15 @@ const BlueprintsB = () => {
 
         <div className="tech-stack">
           <span>TECHNOLOGY WE USE</span>
-          <div className="icons">
-            <SiFigma />
-            <SiInvision />
-            <SiSketch />
-            <SiHtml5 />
-            <SiCss3 />
+          <div className="icons-scroll">
+            <div className="scroll-wrapper">
+              {TECH_STACKS[selected].map((Icon, i) => (
+                <Icon key={i} className="tech-icon" />
+              ))}
+              {TECH_STACKS[selected].map((Icon, i) => (
+                <Icon key={`clone-${i}`} className="tech-icon" />
+              ))}
+            </div>
           </div>
         </div>
 

@@ -1,13 +1,16 @@
 .blueprintsC-section {
   color: white;
-  padding: 1rem 2rem;
   font-family: 'Poppins', sans-serif;
+  padding-top: 5rem;
+  margin: 0;
+  overflow-x: hidden;
 }
 
+/* Intro Text */
 .intro-text {
   text-align: center;
   margin-bottom: 4rem;
-  margin-top: 10rem;
+  padding: 0 2rem;
 }
 
 .intro-text .highlight {
@@ -35,26 +38,32 @@
   font-size: 1rem;
 }
 
+/* IMAGE CONTAINER */
 .blueprintsC-highlight {
-  width: 100vh;
-  height: 100vh; /* Full screen height */
-  border-radius: 0;
+  width: 100vw;
+  height: 50vh; /* Half screen height */
   position: relative;
-  overflow: hidden;
+  background-size: contain; /* Show the entire image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000; /* fallback background */
+  margin: 0;
+  padding: 0;
 }
 
+/* DARK OVERLAY */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border-radius: 12px;
+  padding: 1rem;
 }
 
+/* Arrows */
 .arrow {
   font-size: 1.5rem;
   color: orange;
@@ -65,6 +74,7 @@
   z-index: 1;
 }
 
+/* Text Content */
 .blueprintsC-content {
   text-align: center;
   max-width: 700px;
@@ -82,6 +92,7 @@
   margin: 0.5rem 0;
 }
 
+/* Tags */
 .platform-buttons {
   margin-top: 2rem;
   display: flex;

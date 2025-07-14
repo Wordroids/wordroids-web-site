@@ -10,6 +10,7 @@ import { AiFillMessage } from "react-icons/ai";
 import BlueprintsA from '../blueprintsA/blueprintsA';
 import BlueprintsB from '../blueprintsB/blueprintsB';
 import BlueprintsC from '../blueprintsC/blueprintsC';
+import BlueprintsD from '../blueprintsD/blueprintsD';
 import Footer from '../footer/footer';
 
 const Blueprints = () => {
@@ -53,6 +54,7 @@ const Blueprints = () => {
       <BlueprintsA />
       <BlueprintsB/>
       <BlueprintsC/>
+      <BlueprintsD />
       <Footer />
   
     </div>

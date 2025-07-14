@@ -1,0 +1,96 @@
+.blueprintsC-section {
+  
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 4rem;
+  margin-top: 10rem;
+}
+
+.intro-text .highlight {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.intro-text .highlight span {
+  color: orange;
+}
+
+.intro-text h1 {
+  color: orange;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.intro-text .sub-text {
+  max-width: 980px;
+  margin: 0 auto;
+  color: white;
+  font-size: 1rem;
+}
+
+.blueprintsC-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: orange;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.blueprintsC-content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.blueprintsC-content h2 {
+  color: orange;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.blueprintsC-content p {
+  color: #ccc;
+  margin: 0.5rem 0;
+}
+
+.platform-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.platform-buttons button {
+  background: #1a1a1a;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  border-bottom: 3px solid orange;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.platform-buttons button:hover {
+  background: orange;
+  color: #000;
+}

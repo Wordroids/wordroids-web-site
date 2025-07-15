@@ -68,7 +68,7 @@ const Header = () => {
             <a href="/blueprints" className="nav-btn">
               <SiBlueprint className="nav-icon" />BLUEPRINTS
             </a>
-            <a href="####" className="nav-btn">
+            <a href="/innovations" className="nav-btn">
               <GiOpenBook className="nav-icon" />INNOVATIONS
             </a>
             <a href="/support" className="nav-btn">

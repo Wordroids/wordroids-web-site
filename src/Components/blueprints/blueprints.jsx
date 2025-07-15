@@ -46,7 +46,7 @@ const Blueprints = () => {
           <Link to="/" className="nav-btn"><MdHome className="nav-icon" />WELCOME</Link>
           <Link to="/wordroid" className="nav-btn"><TbCircleLetterIFilled className="nav-icon" />WORDROIDS</Link>
           <a href="/blueprints" className="nav-btn"><SiBlueprint className="nav-icon" />BLUEPRINTS</a>
-          <a href="####" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
+          <a href="/innovations" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
           <a href="/support" className="nav-btn"><AiFillMessage className="nav-icon" />SUPPORT</a>
         </div>
       </nav>

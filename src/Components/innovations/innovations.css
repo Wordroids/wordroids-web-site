@@ -1,0 +1,302 @@
+.service_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+  width: 98w; /* Nearly full viewport width */
+  padding-left: 5rem; /* Removed left padding */
+  padding-right: 0; /* Removed right padding */
+ margin-left: 5rem;
+}
+
+.service_container > div {
+  background: rgba(64, 47, 17, 0.4);       /* Semi-transparent brown */
+  backdrop-filter: blur(10px);             /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);     /* Safari support */
+  border-radius: 1rem;
+  border: 0.002px solid orange; 
+  padding: 2rem 2rem;
+  transition: var(--transition);
+}
+
+.service_intro {
+  padding-left: 6rem; /* Reduced from 6rem */
+  padding-bottom: 2rem;
+  padding-top: 12rem;
+}
+
+.service_intro h1,
+.service_intro h4,
+.service_intro p {
+  text-align: left;
+}
+
+.service_intro h1 {
+  color: orange;
+  font-size: 2rem;
+}
+
+.service_details h4{
+  color:  orange;
+}
+
+.service_container > div h3 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.service_details {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-primary);
+}
+
+/* Vertically scrollable, no visible scrollbar */
+.service_content {
+  max-height: 220px; /* adjust as needed */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.service_content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Service detail hover effect */
+.service_details:hover {
+  background: rgba(88, 65, 24, 0.4);
+  border: 1px solid orange;
+  border-radius: 0.5rem;
+  color: orange;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+/* Allow full-width container */
+.container {
+  width: 100vw;
+  max-width: 1700px; /* increased max width */
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.highlight {
+  color: orange; /* or any color you prefer */
+  font-weight: bold; /* optional */
+}
+
+/* Service icons */
+.service_icons {
+  position: absolute;
+  top: 75rem; /* Adjust as needed */
+  right: 6rem;
+  display: flex;
+  flex-direction: row; /* Use 'column' for vertical */
+  gap: 1.2rem;
+  z-index: 2;
+}
+
+.service_icon {
+  font-size: 2.7rem;
+  color: orange;
+  background: rgba(94, 63, 9, 0.18);
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+  border: 2px solid #a56c1b;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  min-width: 40px;
+}
+
+.service_icon:hover {
+  background: orange;
+  color: #0b0b0b;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Wrapper to contain scrolling icons */
+.service_icons_wrapper {
+  position: absolute;
+  top: 72rem; /* keep your original position */
+  right: 6rem;
+  width: 360px; /* Adjust width based on how many icons you want visible */
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Inner track that scrolls the icons */
+.service_icons_track {
+  display: flex;
+  gap: 1.2rem;
+  animation: scrollLeft 20s linear infinite;
+  width: fit-content;
+}
+
+/* Responsive: stack icons on smaller screens */
+@media screen and (max-width: 1024px) {
+  .service_icons {
+    position: static;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* Browse button styles */
+.browse_button_wrapper1 {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin-top: 3rem;
+  padding: 0 1rem; /* spacing for smaller screens */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.browse_button1 {
+  background-color:  rgba(64, 47, 17, 0.4);
+  border: 0.001px solid rgb(202, 148, 46);
+  color: rgb(171, 134, 66);
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.3);
+  text-align: center;
+}
+
+.browse_button1:hover {
+  background-color: none;
+  color: orange;
+  
+}
+
+.browse_icon1 {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  color: orange;
+}
+
+/*=============MEDIA QUERIES(MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 1024px) {
+  .service_container {
+    grid-template-columns: 1fr;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .service_content {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_intro {
+    padding-left: 1rem;
+  }
+}
+
+/*=============MEDIA QUERIES(SMALL DEVICES) ===============*/
+@media screen and (max-width: 600px) {
+  .service_container {
+    gap: 1rem;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .browse_button1 {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service_intro {
+    padding-left: 0.5rem;
+  }
+}
+
+/* ===== Responsive for Tablets (≤ 1024px) ===== */
+@media screen and (max-width: 1024px) {
+  .service_icons_wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+
+  .service_icons_track {
+    justify-content: flex-start; /* Keep them aligned for scrolling */
+    animation: scrollLeft 20s linear infinite; /* Keep animation */
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .service_icon {
+    font-size: 2.4rem;
+    min-width: 35px;
+  }
+}
+
+/* ===== Responsive for Mobile Devices (≤ 600px) ===== */
+@media screen and (max-width: 600px) {
+  .service_icons_wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 0 0.5rem;
+    overflow: hidden;
+  }
+
+  .service_icons_track {
+    justify-content: flex-start;
+    animation: scrollLeft 20s linear infinite; /* Keep animation */
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+  }
+
+  .service_icon {
+    font-size: 2rem;
+    padding: 0.3rem;
+    min-width: 30px;
+  }
+}

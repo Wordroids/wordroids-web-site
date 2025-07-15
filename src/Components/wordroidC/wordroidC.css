@@ -42,11 +42,12 @@
 
 /* Steps Section */
 .process-steps {
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
   gap: 1.5rem;
   margin-top: 2rem;
-  margin-left: 4rem;
+  margin-left: -12rem;
+  
 }
 
 /* Individual Step */
@@ -55,7 +56,7 @@
   align-items: flex-start;
   gap: 1.2rem;
   background: linear-gradient(90deg, rgba(50, 30, 10, 0.4), rgba(30, 20, 10, 0.2));
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid rgba(255, 165, 0, 0.2);
   margin-right: 3rem;

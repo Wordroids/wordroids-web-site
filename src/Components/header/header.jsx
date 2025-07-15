@@ -71,7 +71,7 @@ const Header = () => {
             <a href="####" className="nav-btn">
               <GiOpenBook className="nav-icon" />INNOVATIONS
             </a>
-            <a href="####" className="nav-btn">
+            <a href="/support" className="nav-btn">
               <AiFillMessage className="nav-icon" />SUPPORT
             </a>
           </div>

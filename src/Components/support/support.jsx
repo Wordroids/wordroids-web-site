@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './blueprints.css';
+import './support.css';
 import Logo from '../../assets/logo.png';
 import { MdHome } from "react-icons/md";
 import { TbCircleLetterIFilled } from "react-icons/tb";
 import { SiBlueprint } from "react-icons/si";
 import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
-import BlueprintsA from '../blueprintsA/blueprintsA';
-import BlueprintsB from '../blueprintsB/blueprintsB';
-import BlueprintsC from '../blueprintsC/blueprintsC';
-import BlueprintsD from '../blueprintsD/blueprintsD';
 import Footer from '../footer/footer';
+import SupportA from '../supportA/supportA';
 
-const Blueprints = () => {
+const Support = () => {
   const [scrolled, setScrolled] = useState(false);
   const [count, setCount] = useState(1);
 
@@ -46,19 +43,16 @@ const Blueprints = () => {
           <Link to="/" className="nav-btn"><MdHome className="nav-icon" />WELCOME</Link>
           <Link to="/wordroid" className="nav-btn"><TbCircleLetterIFilled className="nav-icon" />WORDROIDS</Link>
           <a href="/blueprints" className="nav-btn"><SiBlueprint className="nav-icon" />BLUEPRINTS</a>
-          <a href="####" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
+          <a href="###" className="nav-btn"><GiOpenBook className="nav-icon" />INNOVATIONS</a>
           <a href="/support" className="nav-btn"><AiFillMessage className="nav-icon" />SUPPORT</a>
         </div>
       </nav>
 
-      <BlueprintsA />
-      <BlueprintsB/>
-      <BlueprintsC/>
-      <BlueprintsD />
+      <SupportA />
       <Footer />
   
     </div>
   );
 };
 
-export default Blueprints;
+export default Support;

@@ -1,0 +1,122 @@
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Horizontal tube above nav */
+.nav-tube {
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1360px;
+  height: 2.5rem;
+  background: rgba(64, 47, 17, 0.4);       /* Semi-transparent brown */
+  backdrop-filter: blur(10px);           /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border-radius: 1rem;
+  border: 1px solid rgb(210, 147, 29);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(210, 147, 29);
+  font-weight: 300;
+  font-size: 16pex;
+  padding: 0 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ===== Navigation Bar ===== */
+.main-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-icon {
+  font-size: 1.2rem;      /* Increased icon size */
+  margin-right: 0.2rem;   /* Added space between icon and text */
+  vertical-align: middle; /* Align with text */
+}
+
+.logo-box {
+  
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+  margin-top: 4.5rem;
+}
+
+.logo-img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: 5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 2rem;
+  margin-left: 30rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 1.3rem;
+  color: rgb(210, 147, 29);
+  background: rgba(255, 255, 255, 0.01);
+  border: 0.01px solid rgb(210, 147, 29);
+  border-radius: 0.7rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.22s;
+  
+  padding: 0.6rem 0.8rem; /* Slightly more horizontal padding */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;            /* Use flex gap as well */
+
+
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background: radial-gradient(circle at center, #d19b5d 0%,rgb(131, 101, 45, 0.6));
+  color: orange;
+  border-color: orange;
+}
+
+/* Scrolled state for nav-tube and navbar */
+.nav-tube.scrolled {
+  background: black;
+  border: 1px solid orange;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.main-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid orange;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-navbar.scrolled .nav-btn {
+  background: transparent;
+  color: orange;
+}
+
+.main-navbar.scrolled .nav-btn:hover {
+  background: orange;
+  color: #000;
+}

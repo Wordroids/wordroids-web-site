@@ -62,6 +62,8 @@
   margin-right: 3rem;
   transition: background-color 0.3s, border-color 0.3s;
   cursor: pointer;
+  width: 115%; 
+  max-width: 5000px;
 }
 
 .step-icon {

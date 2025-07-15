@@ -10,6 +10,7 @@ import { AiFillMessage } from "react-icons/ai";
 import Footer from '../footer/footer';
 import InnovationsA from '../innovationsA/innovationsA';
 import InnovationsC from '../innovationsC/innovationsC';
+import InnovationsB from '../innovationsB/innovationsB';
 
 
 const Innovations = () => {
@@ -52,6 +53,7 @@ const Innovations = () => {
 
 
       <InnovationsA />
+      <InnovationsB/>
       <InnovationsC />
       <Footer />
   

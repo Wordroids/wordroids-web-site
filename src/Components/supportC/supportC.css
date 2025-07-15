@@ -1,0 +1,104 @@
+.quick-access-root {
+  background: #1a1816;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px 0;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
+}
+
+.quick-access-header {
+  margin-bottom: 32px;
+}
+
+.quick-access-help {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #e0e0e0;
+}
+
+.highlight {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.highlight-main {
+  color: #ff9800;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.quick-access-header h1 {
+  margin: 12px 0 10px 0;
+}
+
+.quick-access-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.quick-access-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(60, 50, 40, 0.7);
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 320px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.22);
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  background: rgba(255, 152, 0, 0.13);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9800;
+}
+
+.card h2 {
+  margin: 12px 0 10px 0;
+  font-size: 1.35rem;
+}
+
+.card p {
+  color: #bdbdbd;
+  font-size: 1rem;
+  margin-bottom: 26px;
+}
+
+.card-btn {
+  background: none;
+  border: 1.5px solid #ff9800;
+  color: #ff9800;
+  border-radius: 7px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.14s, color 0.14s;
+}
+
+.card-btn:hover {
+  background: #ff9800;
+  color: #1a1816;
+}

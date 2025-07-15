@@ -9,6 +9,8 @@ import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
 import Footer from '../footer/footer';
 import SupportA from '../supportA/supportA';
+import SupportB from '../supportB/supportB';
+import SupportC from '../supportC/supportC';
 
 const Support = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,6 +51,8 @@ const Support = () => {
       </nav>
 
       <SupportA />
+      <SupportB />
+      <SupportC />
       <Footer />
   
     </div>

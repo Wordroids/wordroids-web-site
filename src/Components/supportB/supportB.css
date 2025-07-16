@@ -57,14 +57,22 @@ body {
 .contact-desc {
   font-size: 1rem;
   color: var(--muted);
-  margin-bottom: 2.5rem;
+  margin: 0;
   line-height: 1.6;
+ 
+}
+
+.contact-desc-wrapper {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 50rem;
+  max-width: 620px;
 }
 
 .section-label {
   font-size: 0.95rem;
   color: var(--label);
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 1.2px;
 }
@@ -75,14 +83,15 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+ 
 }
 
 .type-btn,
 .budget-btn {
   padding: 10px 20px;
   border-radius: 25px;
-  border: none;
-  background: #2b241b;
+  border: 0.001px solid orange;
+  background: rgba(64, 47, 17, 0.4);
   color: var(--muted);
   cursor: pointer;
   font-size: 0.95rem;
@@ -111,7 +120,8 @@ body {
 .input-group label {
   color: var(--label);
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 input,
@@ -121,8 +131,9 @@ textarea {
   border-bottom: 1.5px solid var(--accent);
   padding: 10px 5px;
   color: var(--text);
-  font-size: 1rem;
+  font-size: 0.95rem;
   outline: none;
+  
 }
 
 textarea {
@@ -131,16 +142,17 @@ textarea {
 }
 
 .submit-btn {
-  padding: 12px 30px;
-  background: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
-  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  background: rgba(64, 47, 17, 0.4);
+  color: rgb(171, 134, 66);
+  border:  0.001px solid rgb(202, 148, 46);
+  border-radius: 10px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   margin-top: 20px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .submit-btn:hover {
@@ -148,19 +160,20 @@ textarea {
   color: var(--main-bg);
 }
 
+
 .contact-right {
   flex: 1;
   background: var(--panel-bg);
   padding: 2rem;
   border-radius: 16px;
-  margin-top: 17rem;
-  margin-left: 13rem;
-  max-width: 340px;
+  margin-top: 12rem;
+  margin-left: 8rem;
+  max-width: 400px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
 
 .contact-details h2 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: var(--accent);
   margin-bottom: 1.5rem;
 }
@@ -223,3 +236,4 @@ textarea {
   background: var(--accent);
   color: var(--main-bg);
 }
+

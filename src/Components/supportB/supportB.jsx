@@ -52,10 +52,7 @@ const SupportB = () => {
           {/* Removed <p> here */}
         </div>
 
-         <p className="contact-desc">
-          Whether you’re ready to start, need advice, or just want to say hello — we’re here to chat, collaborate, and create meaningful digital experiences.
-        </p>
-
+       
         
         {/* The form */}
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -123,9 +120,16 @@ const SupportB = () => {
         </form>
       </div>
 
+
+       <div className="contact-desc-wrapper">
+        <p className="contact-desc">
+          Whether you’re ready to start, need advice, or just want to say hello — we’re here to chat, collaborate, and create meaningful digital experiences.
+        </p>
+      </div>
+
+
       {/* Right Side */}
       <div className="contact-right">
-        
 
         <div className="contact-details">
           <h2>Contact Details</h2>

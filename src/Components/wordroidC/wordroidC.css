@@ -1,17 +1,17 @@
-.process {
+.processWC {
   padding: 4rem 2rem;
   color: #fff;
   font-family: 'Poppins', sans-serif;
 }
 
 /* Header Section */
-.process-header {
+.process-headerWC {
   text-align: left;
   max-width: 900px;
   margin: 0 auto 1rem auto;
 }
 
-.process-subtitle {
+.process-subtitleWC {
   font-size: 1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -20,18 +20,18 @@
   margin-left: -13rem;
 }
 
-.highlight {
+.highlightWC {
   color: orange;
 }
 
-.process-title {
+.process-titleWC {
   font-size: 2rem;
   color: orange;
   margin-bottom: 1rem;
   margin-left: -13rem;
 }
 
-.process-description {
+.process-descriptionWC {
   font-size: 1rem;
   color: white;
   margin-left: 33rem;
@@ -41,17 +41,17 @@
 }
 
 /* Steps Section */
-.process-steps {
+.process-stepsWC {
   display:flex;
   flex-direction:column;
   gap: 1.5rem;
   margin-top: 2rem;
-  margin-left: -12rem;
+  margin-left: 0rem;
   
 }
 
 /* Individual Step */
-.step {
+.stepWC {
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
@@ -62,29 +62,30 @@
   margin-right: 3rem;
   transition: background-color 0.3s, border-color 0.3s;
   cursor: pointer;
-  width: 115%; 
-  max-width: 5000px;
+  width: 100%; 
+  max-width: 1800px;
 }
 
-.step-icon {
+.step-iconWC {
   font-size: 2.3rem;
   color: orange;
   flex-shrink: 0;
   margin-top: 4px;
-}
-
-.step-content h3 {
-  font-size: 1.4rem;
-  color: orange;
-  margin-bottom: 0.1rem;
   margin-left: 2rem;
 }
 
-.step-content p {
+.step-contentWC h3 {
+  font-size: 1.4rem;
+  color: orange;
+  margin-bottom: 0.1rem;
+  margin-left: 1rem;
+}
+
+.step-contentWC p {
   font-size: 1rem;
   font-weight: lighter;
   color: white;
-  margin-left: 41rem;
+  margin-left: 43rem;
   margin-top: -3rem;
 }
 
@@ -95,7 +96,7 @@
 }
 
 /* Hover effect */
-.step:hover {
+.stepWC:hover {
   background-color: rgba(255, 165, 0, 0.2);
   border-color: orange;
 }
@@ -104,44 +105,44 @@
 /* Responsive Styles BELOW    */
 /* ========================== */
 @media (max-width: 1024px) {
-  .process-subtitle,
-  .process-title,
-  .process-description {
+  .process-subtitleWC,
+  .process-titleWC,
+  .process-descriptionWC {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
   }
 
-  .process-description {
+  .process-descriptionWC {
     margin-top: 1rem;
   }
 
-  .process-steps {
+  .process-stepsWC {
     margin-left: 0;
   }
 
-  .step-content h3 {
+  .step-contentWC h3 {
     margin-left: 0;
   }
 
-  .step-content p {
+  .step-contentWC p {
     margin-left: 0;
     margin-top: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .process-title {
+  .process-titleWC {
     font-size: 1.5rem;
   }
 
-  .step {
+  .stepWC {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .step-icon {
+  .step-iconWC {
     margin-bottom: 0.8rem;
     margin-top: 0;
   }

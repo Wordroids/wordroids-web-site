@@ -94,35 +94,33 @@ const BlueprintsC = () => {
         </p>
       </div>
 
-      <div
-        className="blueprintsC-highlight"
-        style={{
-          backgroundImage: `url(${current.image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="overlay">
-          <div className="arrow left" onClick={handlePrev}><FaArrowLeft /></div>
+   
+      <div className="blueprintsC-highlight">
+  <img src={current.image} alt={current.title} className="industry-image" />
 
-          {current.title && (
-            <div className="blueprintsC-content">
-              <h2>{current.title}</h2>
-              <p>{current.description1}</p>
-              <p>{current.description2}</p>
-              <div className="platform-buttons">
-                {current.tags?.map((tag, i) => (
-                  <button key={i}>{tag}</button>
-                ))}
-              </div>
-            </div>
-          )}
+  <div className="overlay">
+    <div className="arrow left" onClick={handlePrev}><FaArrowLeft /></div>
 
-          <div className="arrow right" onClick={handleNext}><FaArrowRight /></div>
+    {current.title && (
+      <div className="blueprintsC-content">
+        <h2>{current.title}</h2>
+        <p>{current.description1}</p>
+        <p>{current.description2}</p>
+        <div className="platform-buttons">
+          {current.tags?.map((tag, i) => (
+            <button key={i}>{tag}</button>
+          ))}
         </div>
       </div>
-    </div>
+    )}
+
+    <div className="arrow right" onClick={handleNext}><FaArrowRight /></div>
+  </div>
+</div>
+
+
+
+</div>
   );
 };
 

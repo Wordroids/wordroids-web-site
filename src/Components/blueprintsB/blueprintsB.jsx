@@ -10,8 +10,7 @@ import { SiDotnet, SiAngular, SiNuxtdotjs, SiTypescript, SiWordpress, SiDrupal, 
 import { TbSql } from "react-icons/tb";
 import { GiFizzingFlask } from "react-icons/gi";
 
-
-const SERVICES = [
+const SERVICESB = [
   {
     list: "BUILD YOUR WEB APPLICATION",
     title: "Web Development",
@@ -80,13 +79,13 @@ const SERVICES = [
   }
 ];
 
-const TECH_STACKS = [
-  [GiFizzingFlask, GiFizzingFlask, GiFizzingFlask, GiFizzingFlask],              // Web
-  [FaPython, FaPython, FaPython, FaPython],            // Mobile
-  [FaLaravel, FaLaravel, FaLaravel],               // AI
-  [TbSql, TbSql, TbSql],                      // UI/UX
-  [ BiLogoDjango,  BiLogoDjango,  BiLogoDjango],              // Cloud
-  [FaPhp, FaPhp, FaPhp]                         // Brand
+const TECH_STACKSB = [
+  [GiFizzingFlask, GiFizzingFlask, GiFizzingFlask, GiFizzingFlask],
+  [FaPython, FaPython, FaPython, FaPython],
+  [FaLaravel, FaLaravel, FaLaravel],
+  [TbSql, TbSql, TbSql],
+  [BiLogoDjango, BiLogoDjango, BiLogoDjango],
+  [FaPhp, FaPhp, FaPhp]
 ];
 
 const BlueprintsB = () => {
@@ -103,7 +102,7 @@ const BlueprintsB = () => {
         </h1>
 
         <ul className="blueprintsB-list">
-          {SERVICES.map((service, index) => (
+          {SERVICESB.map((service, index) => (
             <li
               key={index}
               className={selected === index ? "active" : ""}
@@ -124,40 +123,37 @@ const BlueprintsB = () => {
         <div className="blueprintsB-header-right">
           <MdOutlineDesignServices className="icon" />
           <h3>
-            <span className="highlight">{SERVICES[selected].title.split(' ')[0]}</span>{" "}
-            {SERVICES[selected].title.split(' ').slice(1).join(' ')}
+            <span className="highlight">{SERVICESB[selected].title.split(' ')[0]}</span>{" "}
+            {SERVICESB[selected].title.split(' ').slice(1).join(' ')}
           </h3>
         </div>
 
         <p className="blueprintsB-description-right">
-          {SERVICES[selected].description}
+          {SERVICESB[selected].description}
         </p>
 
         <div className="blueprintsB-cards">
-          {SERVICES[selected].cards.map((card, idx) => (
-            <div className="card" key={idx}>
+          {SERVICESB[selected].cards.map((card, idx) => (
+            <div className="cardB" key={idx}>
               <h5 className="highlight">{card.title}</h5>
               <p>{card.text}</p>
             </div>
           ))}
         </div>
 
-        <div className="tech-stack">
+        <div className="tech-stackB">
           <span>TECHNOLOGY WE USE</span>
-          <div className="icons-scroll">
-            <div className="scroll-wrapper">
-              {TECH_STACKS[selected].map((Icon, i) => (
-                <Icon key={i} className="tech-icon" />
-              ))}
-              {TECH_STACKS[selected].map((Icon, i) => (
-                <Icon key={`clone-${i}`} className="tech-icon" />
+          <div className="icons-scrollB">
+            <div className="scroll-wrapperB">
+              {[...TECH_STACKSB[selected], ...TECH_STACKSB[selected]].map((Icon, i) => (
+                <Icon key={i} className="tech-iconB" />
               ))}
             </div>
           </div>
         </div>
 
-        <div className="explore">
-          Explore More <IoIosArrowForward className="arrow" />
+        <div className="exploreB">
+          Explore More <IoIosArrowForward className="arrowB" />
         </div>
       </div>
     </section>

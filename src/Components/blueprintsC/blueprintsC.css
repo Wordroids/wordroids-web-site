@@ -15,20 +15,22 @@
 
 .intro-text .highlight {
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #aaa;
-  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .intro-text .highlight span {
   color: orange;
+  font-weight: bold;
 }
 
 .intro-text h1 {
   color: orange;
   font-size: 2rem;
-  font-weight: 400;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .intro-text .sub-text {
@@ -36,6 +38,7 @@
   margin: 0 auto;
   color: white;
   font-size: 1rem;
+  font-weight: lighter;
 }
 
 .blueprintsC-highlight {

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 /* LEFT SECTION */
@@ -15,21 +15,23 @@
 }
 
 .blueprintsB-subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
   color: #aaa;
 }
 
 .highlight {
-  color: #ffa31a;
+  color: orange;
+  font-weight: bold;
 }
 
 .blueprintsB-title {
   font-size: 2rem;
-  font-weight: 600;
+  line-height: 1.2;
   color: #ffa31a;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .blueprintsB-list {
@@ -62,9 +64,10 @@
 }
 
 .blueprintsB-description {
-  font-size: 0.95rem;
-  color: #bbb;
+  font-size: 1rem;
+  color: white;
   margin-bottom: 2rem;
+  font-weight: lighter;
   margin-left: 8rem;
 }
 
@@ -78,25 +81,27 @@
 }
 
 .blueprintsB-header-right .icon {
-  background: #2d2d2d;
+  background: rgba(30, 20, 10, 0.7);
   padding: 0.6rem;
-  border-radius: 50%;
+  border-radius: 100%;
   color: #ffa31a;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  border: 1px solid orange;
 }
 
 .blueprintsB-header-right h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .blueprintsB-description-right {
-  font-size: 0.95rem;
-  color: #bbb;
+  font-size: 1rem;
+  color: white;
   margin-left: 6rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
   max-width: 600px;
+  font-weight: lighter;
 }
 
 /* Cards */
@@ -110,12 +115,13 @@
 }
 
 .cardB {
-  background: #1b1b1b;
+  background : rgba(30, 20, 10, 0.7) ;
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
+  border: 1px solid orange;
   min-width: 120px;  /* smaller width */
-  max-width: 150px;  /* optional */
-  height: 180px;      /* let height adjust to content */
+  max-width: 170px;  /* optional */
+  height: 200px;      /* let height adjust to content */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   display:block;
   flex-direction: column;
@@ -124,16 +130,20 @@
 
 .cardB h5 {
   color: orange;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  margin-top: 3rem;
   margin-bottom: 0.25rem;
-  font-weight: lighter;
+  font-weight: 600;
+  text-align: center;
 }
 
 .cardB p {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: white;
   line-height: 1.2;
+  text-align: center;
   font-weight: lighter;
+  margin-top: 2rem;
 }
 
 /* Tech Stack */
@@ -143,7 +153,8 @@
 }
 
 .tech-stackB span {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
   color: orange;
   display: block;
   margin-bottom: 0.5rem;
@@ -152,8 +163,8 @@
 .icons-scrollB {
   overflow: hidden;
   width: 50%;
-  margin-left: 10rem;
-  margin-top: -1.5rem;
+  margin-left: 13rem;
+  margin-top: -2rem;
    position: relative;
   height: 3rem;
 }
@@ -172,6 +183,19 @@
   flex-shrink: 0;
 }
 
+.dot-iconB {
+  color: #555;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.dot-iconB.active {
+  color: #ffa31a;
+}
+
+
+
 /* Scroll Animation */
 @keyframes scrollIcons {
   0% { transform: translateX(0%); }
@@ -181,7 +205,7 @@
 .exploreB {
   display: flex;
   align-items: center;
-  color: #ffa31a;
+  color: white;
   cursor: pointer;
   font-weight: bold;
   margin-top: 2rem;
@@ -190,6 +214,12 @@
 
 .arrowB {
   margin-left: 0.3rem;
+  color: white;
+  background: orange;
+  padding: 0.6rem;
+  border-radius: 100%;
+  font-size: 2.5rem;
+ 
 }
 
 /* RESPONSIVE DESIGN */

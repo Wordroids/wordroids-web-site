@@ -18,8 +18,8 @@ import LifeStyle2 from '../../assets/lifestyle2.jpg';
 const INDUSTRIES = [
   {
     title: "Healthcare",
-    description1: "We create healthcare platforms to streamline appointments and patient communication.",
-    description2: "From dashboards to patient portals, we design secure, HIPAA-compliant systems.",
+    description1: "We develop sleek, responsive dealership and service platform that build trust and streamline the vehicle discovery journey.",
+    description2: "Boost engagement, manage inventory and handle bookings all through elegant, optimized interfaces.",
     image: Healthcare1,
     tags: ["APPOINTMENT PLATFORMS", "PATIENT PORTALS", "CLINIC WEBSITES", "MEDICAL DASHBOARDS"]
   },
@@ -27,46 +27,46 @@ const INDUSTRIES = [
 
   {
     title: "Automotive",
-    description1: "We develop sleek, responsive dealership and service platforms that build trust.",
-    description2: "Manage inventory, handle bookings, and boost engagement with elegant interfaces.",
+    description1: "We create secure, easy-to-use platforms that support better communication between patients ans providers across all devices.",
+    description2: "Improving access and digital care quality through customized portals, automation and fast health data visibility.",
     image: Automative1,
-    tags: ["SERVICE PLATFORMS", "DEALER PORTALS", "VEHICLE SHOWCASE", "BOOKING SYSTEMS"]
+    tags: ["DEALERSHIP SITES", "INVENTORY TOOLS", "VEHICLE LANDING PAGES", "BOOKING SYSTEMS"]
   },
   { image: Automative2 },
 
   {
     title: "E-Commerce",
-    description1: "Build scalable e-commerce systems with integrated payments and smart search.",
-    description2: "From B2C storefronts to B2B portals, we help brands convert and retain customers.",
+    description1: "From product discovery to checkout, we optimize every touchpoint for higher conversion and fictionless user experience.",
+    description2: "Build e-commerce platforms that scale, platform fast and drive customer loyalty with personalization.",
     image: ECommerse1,
-    tags: ["PRODUCT PAGES", "CHECKOUT FLOWS", "ADMIN DASHBOARDS", "MOBILE STORES"]
+    tags: ["ONLINE STOREFRONTS", "INVENTORY SYSTEMS", "MOBILE SHOPPING APPS", "LOYALTY INTEGRATIONS"]
   },
   { image: ECommerse2 },
 
   {
     title: "Education",
-    description1: "Deliver knowledge through LMS systems, virtual classrooms, and portals.",
-    description2: "Empower students and educators with clean, intuitive digital experiences.",
+    description1: "We create learning platforms that are scalable, accessible and engaging-supporting students,teachers and institutions alike.",
+    description2: "Whether you're delivering courses or onboarding learners, we make digital education seamless and effective.",
     image: Education1,
-    tags: ["LMS", "EXAM PORTALS", "VIDEO LECTURES", "INSTITUTION SITES"]
+    tags: ["LMS PLATFORMS", "COURSE WEBSITES", "STUDENT PORTALS", "EDUCATION APPS"]
   },
   { image: Education2 },
 
   {
     title: "Enterprise",
-    description1: "Build internal tools, dashboards, and ERPs that scale with your workforce.",
-    description2: "We create modular enterprise-grade systems tailored to your operations.",
+    description1: "We design and build platforms that simplify operations and help growing business track, manage and communication efficiency.",
+    description2: "Custom SaaS tools and admin systems ready to evolve with your workflow and goals.",
     image: Enterprise1,
-    tags: ["ERP SYSTEMS", "DATA VISUALIZATION", "TEAM DASHBOARDS", "INTRANETS"]
+    tags: ["ADMIN PORTALS", "WEB APPS", "SAAS SYSTEMS", "BUSINESS SYSTEMS"]
   },
   { image: Enterprise2 },
 
   {
     title: "Lifestyle",
-    description1: "Support wellness, fashion, travel, and lifestyle brands with inspiring designs.",
-    description2: "Connect with audiences through personalized, media-rich experiences.",
+    description1: "From fitness apps to personal care brands, we deliver feel-good experiences that align with modern lifestyle.",
+    description2: "Empower your audience through design-driven platforms focused on wellness, ease and aesthetic confidence.",
     image: LifeStyle1,
-    tags: ["BLOGS", "PRODUCT LANDING", "PERSONAL JOURNALS", "PORTFOLIO SITES"]
+    tags: ["WELLNESS SITES", "FITNESS APPS", "LIFESTYLE STORES", "SPA/SALON BOOKINGS"]
   },
   { image: LifeStyle2 }
 ];
@@ -117,7 +117,6 @@ const BlueprintsC = () => {
     <div className="arrow right" onClick={handleNext}><FaArrowRight /></div>
   </div>
 </div>
-
 
 
 </div>

@@ -3,13 +3,14 @@ import './form1.css';
 import { FaWordpress, FaFigma, FaLaptopCode, FaMobileAlt, FaMailBulk, FaTools } from 'react-icons/fa';
 import { MdWeb, MdDesignServices } from 'react-icons/md';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import IMG2 from '../../assets/project2.png';
 
 const Form1 = () => {
   return (
     <div className="carcare-container1">
       <div className="project-image1">
         <button className="nav-arrow left1"><FiChevronLeft /></button>
-        <img src="/carcare-mockup.png" alt="Car Care Melbourne Mockup" />
+        <img src={IMG2} alt="Car Care Melbourne Mockup" />
         <button className="nav-arrow right1"><FiChevronRight /></button>
       </div>
 

@@ -1,13 +1,14 @@
 import React, { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './innovationsD.css';
-
+import { FiEye } from "react-icons/fi";
 import IMG2 from '../../assets/project2.png';
+import { IoSearch } from "react-icons/io5";
 
 const categories = [
   "WebApp", "MobileApp", "UIUXDesign", "ECommerce", "BrandIdentity",
   "AIIntegration", "HealthcareTech", "CloudHosting", "AdminDashboard", "SaasPlatform"
 ];
-
 
 const dataD = [
   {
@@ -18,7 +19,6 @@ const dataD = [
     description: "Premium WordPress website for a Melbourne-based mobile car detailing service, optimized for speed, SEO, and smooth booking experiences.",
     tags: ["WordPress", "CarDetailing", "MobileService", "BookingSystem", "UIUXDesign"],
   },
- 
   {
     id: 2,
     image: IMG2,
@@ -26,7 +26,6 @@ const dataD = [
     category: "WordPress Website",
     description: "Premium WordPress website for a Melbourne-based mobile car detailing service, optimized for speed, SEO, and smooth booking experiences.",
     tags: ["WordPress", "CarDetailing", "MobileService", "BookingSystem", "UIUXDesign"],
-   
   },
   {
     id: 3,
@@ -35,7 +34,6 @@ const dataD = [
     category: "WordPress Website",
     description: "Premium WordPress website for a Melbourne-based mobile car detailing service, optimized for speed, SEO, and smooth booking experiences.",
     tags: ["WordPress", "CarDetailing", "MobileService", "BookingSystem", "UIUXDesign"],
-    
   },
   {
     id: 4,
@@ -44,7 +42,6 @@ const dataD = [
     category: "WordPress Website",
     description: "Premium WordPress website for a Melbourne-based mobile car detailing service, optimized for speed, SEO, and smooth booking experiences.",
     tags: ["WordPress", "CarDetailing", "MobileService", "BookingSystem", "UIUXDesign"],
-   
   },
   {
     id: 5,
@@ -61,12 +58,12 @@ const dataD = [
     category: "WordPress Website",
     description: "Premium WordPress website for a Melbourne-based mobile car detailing service, optimized for speed, SEO, and smooth booking experiences.",
     tags: ["WordPress", "CarDetailing", "MobileService", "BookingSystem", "UIUXDesign"],
-       
   }
 ];
 
 const InnovationsD = () => {
   const dragScrollRefs = useRef([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     dragScrollRefs.current.forEach(ref => {
@@ -110,53 +107,67 @@ const InnovationsD = () => {
   return (
     <section id="projectsD">
       <div className="project_backgroundD">
-        
         <div className="project_overlayD">
+          {/* Header Section */}
           <div className="project_headerD">
             <div className="project_introD">
-              <h4>
-                EXPLORE OUR<span className="highlight"> PORTFOLIO</span> OF INNOVATIVE PROJECTS
-              </h4>
-              <h1>
-                Building Impactful Solutions <br />for businesses Worldwide
-              </h1>
+              <h4>CRAFTING <span className="highlight">PROJECTS</span> THAT SPEAK FOR THEMSELVES</h4>
+              <h1>Discover Work That Drives <br />Results and Resonates</h1>
             </div>
             <div className="project_paraD">
               <p>
-                Explore our diverse portfolio of successful projects showcasing innovation,
-                creativity and client-focused solutions. Each project reflects our dedication
-                to delivering impactful results tailored to unique business needs.
+                Browse our curated portfolio of impactful digital solutions crafted with precision,
+                creativity, and purpose to drive growth, elevate brands, and solve real-world business challenges.
               </p>
             </div>
           </div>
 
-          {/* Project cards */}
+          {/* Filter + Search */}
+          <div className="project_filtersD">
+            <div className="categories_wrapperD">
+              {categories.map((cat, index) => (
+                <button key={index} className="category_pillD">{cat}</button>
+              ))}
+            </div>
+            <div className="search_input_wrapperD">
+              <IoSearch className="search_iconD" />
+              <input type="text" placeholder="Search keywords..." className="search_inputD" />
+            </div>
+          </div>
+
+          {/* Project Cards */}
           <div className="container project__containerD">
-            {dataD.map(({ id, image, title, category,description, tags }, index) => (
+            {dataD.map(({ id, image, title, category, description, tags }) => (
               <article key={id} className="project__itemD">
                 <div className="project__item-imageD">
                   <img src={image} alt={title} />
                 </div>
-                 <h3>{category}</h3>
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <p>{tags}</p>
-                
-                
+                <div className="project__item-contentD">
+                  <h3>{category}</h3>
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                  
+                  <div className="project__tagsD">
+                    {tags.map((tag, i) => (
+                      <span key={i} className="tagD">#{tag}</span>
+                    ))}
+                  </div>
+                  <div
+                      className="eye_iconD"
+                      onClick={() => navigate('/form1')}
+                      title="View Project"
+                    >
+                      <FiEye />
+                    </div>
+
+                </div>
               </article>
             ))}
           </div>
 
-          {/* Browse button */}
+          {/* Load More Button */}
           <div className="browse_button_wrapperD">
-            <button
-              className="browse_buttonD"
-              onClick={() => {
-                document.getElementById('projectsD')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              LOAD MORE
-            </button>
+            <button className="browse_buttonD">LOAD MORE</button>
           </div>
         </div>
       </div>

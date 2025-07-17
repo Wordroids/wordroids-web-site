@@ -46,9 +46,11 @@
   flex-wrap: wrap;
 }
 
+
+
 .card {
-  background:  rgba(88, 65, 24, 0.4);
-  border-color: orange;
+  background: rgba(88, 65, 24, 0.4);
+  border: 2px solid #ff9800; /* Ensure border is visible and orange */
   border-radius: 16px;
   padding: 22px 10px;
   width: 420px;
@@ -60,9 +62,21 @@
   transition: transform 0.18s;
 }
 
+
 .card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 28px rgba(0,0,0,0.22);
+}
+
+/* Change icon and h2 to orange on hover */
+.card:hover .card-icon {
+  background-color: #ff9800;
+  color: #1a1816;
+  border-color: #ff9800;
+}
+
+.card:hover h2 {
+  color: #ff9800;
 }
 
 .card-icon {
@@ -76,7 +90,9 @@
   align-items: center;
   justify-content: center;
   color: #ff9800;
+  border: 1.5px solid #ff9800; /* orange border on icon background */
 }
+
 
 .card h2 {
   margin: 12px 0 10px 0;

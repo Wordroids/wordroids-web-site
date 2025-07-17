@@ -85,6 +85,7 @@
 .project__item-imageD {
   border-radius: 1rem;
   overflow: hidden;
+  position: relative;
 }
 
 .project__item-imageD img {
@@ -159,6 +160,137 @@
   vertical-align: middle;
   color: orange;
 }
+
+/* === Filter + Search Bar Section === */
+.project_filtersD {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0 3rem;
+  gap: 1rem;
+}
+
+/* Category text */
+.categoryD {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.categories_wrapperD {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 700px;
+}
+
+.category_pillD {
+  background-color: rgba(255, 165, 0, 0.1);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: orange;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category_pillD:hover {
+  background-color: orange;
+  color: #1a1816;
+}
+
+.search_input_wrapperD {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin-left: 10rem;
+  border: orange;
+}
+
+.search_iconD {
+  position: absolute;
+  left: 12px;
+  font-size: 1.5rem;
+  color: orange;
+}
+
+
+.search_wrapperD {
+  position: relative;
+}
+
+.search_inputD {
+  width: 100%;
+  padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+  border: none;
+  border-radius: 40px;
+  background-color: #292929;
+  color: #fff;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.search_inputD::placeholder {
+  color: white;
+}
+
+/* === Card Tags + Eye Icon === */
+.project__item-contentD {
+  position: relative;
+}
+
+.project__tagsD {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagD {
+  background: rgba(255, 255, 255, 0.08);
+  color: orange;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+}
+
+.eye_iconD {
+  position: absolute;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 165, 0, 0.15);
+  padding: 0.4rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: orange;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
+  z-index: 2;
+
+
+}
+
+.project__item-contentD .eye_iconD {
+  opacity: 1;
+  background: orange;
+  color: #1a1816;
+}
+
+
+.eye_iconD:hover {
+  background: orange;
+  color: orange;
+}
+
 
 /* ==== Responsive Queries ==== */
 

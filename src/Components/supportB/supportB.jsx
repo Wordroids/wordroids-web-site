@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./supportB.css";
+import { MdAlternateEmail, MdPhoneAndroid } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const projectTypes = [
   "Website", "Web App", "Mobile App", "SASS Platform", "AI Integration", "Hostings",
@@ -49,11 +52,8 @@ const SupportB = () => {
           <h1>
             We’d Love To Hear About <br /> Your Project
           </h1>
-          {/* Removed <p> here */}
         </div>
 
-       
-        
         {/* The form */}
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="section-label">PROJECT TYPE</div>
@@ -120,35 +120,32 @@ const SupportB = () => {
         </form>
       </div>
 
-
-       <div className="contact-desc-wrapper">
+      <div className="contact-desc-wrapper">
         <p className="contact-desc">
           Whether you’re ready to start, need advice, or just want to say hello — we’re here to chat, collaborate, and create meaningful digital experiences.
         </p>
       </div>
 
-
       {/* Right Side */}
       <div className="contact-right">
-
         <div className="contact-details">
           <h2>Contact Details</h2>
           <div className="detail-row">
-            <span className="detail-icon">@</span>
+            <span className="detail-icon"><MdAlternateEmail /></span>
             <div>
               <div className="detail-label">EMAIL</div>
               <div className="detail-value">info@wordroids.com</div>
             </div>
           </div>
           <div className="detail-row">
-            <span className="detail-icon">&#128222;</span>
+            <span className="detail-icon"><MdPhoneAndroid /></span>
             <div>
               <div className="detail-label">PHONE</div>
               <div className="detail-value">+94 776 569 740</div>
             </div>
           </div>
           <div className="detail-row">
-            <span className="detail-icon">&#x1f4cd;</span>
+            <span className="detail-icon"><FaLocationDot /></span>
             <div>
               <div className="detail-label">LOCATION</div>
               <div className="detail-value">Washington, DC Greenville, Colombo</div>
@@ -156,9 +153,9 @@ const SupportB = () => {
           </div>
           <div className="social-row">
             <span className="detail-label">SOCIAL :</span>
-            <span className="social-icon">f</span>
-            <span className="social-icon">in</span>
-            <span className="social-icon">X</span>
+            <span className="social-icon"><FaFacebookF /></span>
+            <span className="social-icon"><FaLinkedinIn /></span>
+            <span className="social-icon"><FaXTwitter /></span>
           </div>
         </div>
       </div>

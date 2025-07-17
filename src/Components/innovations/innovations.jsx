@@ -9,9 +9,9 @@ import { GiOpenBook } from "react-icons/gi";
 import { AiFillMessage } from "react-icons/ai";
 import Footer from '../footer/footer';
 import InnovationsA from '../innovationsA/innovationsA';
-import InnovationsC from '../innovationsC/innovationsC';
 import InnovationsD from '../innovationsD/innovationsD';
-import InnovationsB from '../innovationsB/innovationsB';
+import InnovationsC from '../innovationsC/innovationsC';
+
 
 
 const Innovations = () => {
@@ -54,9 +54,10 @@ const Innovations = () => {
 
 
       <InnovationsA />
-      <InnovationsB/>
+     
       <InnovationsD/>
-      <InnovationsC />
+      <InnovationsC/>
+     
       <Footer />
   
     </div>

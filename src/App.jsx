@@ -5,6 +5,7 @@ import Wordroid from './Components/wordroid/wordroid';
 import Blueprints from './Components/blueprints/blueprints';
 import Innovations from './Components/innovations/innovations';
 import Support from './Components/support/support';
+import Form1 from './Components/form1/form1'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/blueprints" element={<Blueprints />} />
         <Route path="/innovations" element={<Innovations />} />
         <Route path="/support" element={<Support />} />
+        <Route path="/form1" element={<Form1/>} />
       </Routes>
      
     </Router>

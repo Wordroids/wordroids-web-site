@@ -3,6 +3,9 @@ import "./supportC.css";
 import { IoRocketSharp } from "react-icons/io5";
 import { FaHandsHoldingCircle } from "react-icons/fa6";
 import { HiSquare2Stack } from "react-icons/hi2";
+import { SiBlueprint } from "react-icons/si";
+import { GiOpenBook } from "react-icons/gi";
+import { TbCircleLetterIFilled } from "react-icons/tb";
 
 const SupportC = () => (
   <div className="quick-access-root">
@@ -26,7 +29,9 @@ const SupportC = () => (
           Dive into our full suite of digital services from apps and branding to AI-powered
           experiences and cloud infrastructure.
         </p>
-        <button className="card-btn">BROWSE SERVICES</button>
+        <button className="card-btn">
+          <SiBlueprint className="card-btn-icon" /> BROWSE SERVICES
+        </button>
       </div>
       <div className="card">
         <div className="card-icon"><HiSquare2Stack /></div>
@@ -35,7 +40,9 @@ const SupportC = () => (
           Browse real-world solutions we’ve crafted for startups, businesses, and global brands—
           each project tells a story of impact.
         </p>
-        <button className="card-btn">REVIEW PROJECTS</button>
+        <button className="card-btn">
+          <GiOpenBook className="card-btn-icon" /> REVIEW PROJECTS
+        </button>
       </div>
       <div className="card">
         <div className="card-icon"><FaHandsHoldingCircle /></div>
@@ -44,7 +51,9 @@ const SupportC = () => (
           Learn about our mindset, values, and mission. Discover who we are and what drives
           everything we create.
         </p>
-        <button className="card-btn">READ ABOUT US</button>
+        <button className="card-btn">
+          <TbCircleLetterIFilled className="card-btn-icon" /> READ ABOUT US
+        </button>
       </div>
     </div>
   </div>

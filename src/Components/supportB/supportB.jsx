@@ -108,7 +108,7 @@ const SupportB = () => {
             <label>TELL US ABOUT YOUR PROJECT</label>
             <textarea
               name="message"
-              rows={3}
+              rows={1}
               value={form.message}
               onChange={handleChange}
               required

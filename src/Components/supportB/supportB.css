@@ -38,27 +38,29 @@ body {
 
 .contact-connect {
   font-size: 0.95rem;
-  color: var(--muted);
-  letter-spacing: 1.2px;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
 }
 
 .highlight {
-  color: var(--accent);
+  color: orange;
   font-weight: bold;
 }
 
 .contact-header h1 {
   font-size: 2.3rem;
-  color: var(--accent);
-  font-weight: bold;
+  color: orange;
+  line-height: 1.2;
   margin: 1rem 0;
 }
 
 .contact-desc {
   font-size: 1rem;
-  color: var(--muted);
+  color: white;
   margin: 0;
-  line-height: 1.6;
+  font-weight: lighter;
  
 }
 
@@ -73,6 +75,7 @@ body {
   font-size: 0.95rem;
   color: var(--label);
   font-weight: 600;
+  margin-top: 3rem;
   margin-bottom: 10px;
   letter-spacing: 1.2px;
 }
@@ -90,7 +93,7 @@ body {
 .budget-btn {
   padding: 10px 20px;
   border-radius: 25px;
-  border: 0.001px solid orange;
+  border: 0.00001px solid orange;
   background: rgba(64, 47, 17, 0.4);
   color: var(--muted);
   cursor: pointer;
@@ -102,7 +105,7 @@ body {
 .budget-btn.selected {
   background: var(--selected-bg);
   color: var(--selected-color);
-  font-weight: bold;
+
 }
 
 .input-row {
@@ -122,6 +125,7 @@ body {
   margin-bottom: 5px;
   font-size: 0.95rem;
   font-weight: 600;
+  margin-top: 2rem; 
 }
 
 input,
@@ -204,7 +208,8 @@ textarea {
 
 
 .detail-label {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--label);
   letter-spacing: 1px;
   margin-bottom: 4px;
@@ -219,7 +224,7 @@ textarea {
 .social-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   margin-top: 1.5rem;
 }
 
@@ -228,8 +233,8 @@ textarea {
   color: var(--accent);
   font-weight: bold;
   font-size: 1.1rem;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -238,8 +243,5 @@ textarea {
   cursor: pointer;
 }
 
-.social-icon:hover {
-  background: var(--accent);
-  color: var(--main-bg);
-}
+
 

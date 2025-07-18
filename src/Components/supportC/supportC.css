@@ -12,20 +12,25 @@
 }
 
 .quick-access-help {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #e0e0e0;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  color: white;
+  text-transform: uppercase;
+   margin-bottom: 0.8rem;
 }
 
 .highlight {
-  color: #ff9800;
+  color: orange;
   font-weight: bold;
+  
 }
 
 .highlight-main {
-  color: #ff9800;
-  font-size: 2.2rem;
-  font-weight: bold;
+  color: orange;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  
 }
 
 .quick-access-header h1 {
@@ -119,4 +124,10 @@
 .card-btn:hover {
   background: #ff9800;
   color: #1a1816;
+}
+
+.card-btn-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  font-size: 1.1rem;
 }

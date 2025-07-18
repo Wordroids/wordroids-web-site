@@ -17,6 +17,23 @@ import { IoMdCloud } from "react-icons/io";
 import { FaPaintBrush } from "react-icons/fa";
 import { BiSolidRightArrowAlt } from "react-icons/bi";
 
+//web
+import { IoLogoReact } from "react-icons/io5";
+import { IoLogoAngular } from "react-icons/io5";
+import { FaSquareJs } from "react-icons/fa6";
+import { RiVuejsLine } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+import { FaShopify } from "react-icons/fa6";
+import { FaMagento } from "react-icons/fa6";
+import { RiPhpLine } from "react-icons/ri";
+import { DiDotnet } from "react-icons/di";
+
+//mobile
+import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandXamarin } from "react-icons/tb";
+import { SiKotlin } from "react-icons/si";
+
+
 const SERVICESB = [
   {
     icon: BsLaptopFill,
@@ -93,7 +110,7 @@ const SERVICESB = [
 ];
 
 const TECH_STACKSB = [
-  [GiFizzingFlask, GiFizzingFlask, GiFizzingFlask, GiFizzingFlask],
+  [IoLogoReact,IoLogoAngular,FaSquareJs, RiVuejsLine,TbBrandTypescript,FaShopify,FaMagento,RiPhpLine,DiDotnet],
   [FaPython, FaPython, FaPython, FaPython],
   [FaLaravel, FaLaravel, FaLaravel],
   [TbSql, TbSql, TbSql],

@@ -24,7 +24,6 @@ const INDUSTRIES = [
     tags: ["APPOINTMENT PLATFORMS", "PATIENT PORTALS", "CLINIC WEBSITES", "MEDICAL DASHBOARDS"]
   },
   { image: Healthcare2 },
-
   {
     title: "Automotive",
     description1: "We create secure, easy-to-use platforms that support better communication between patients ans providers across all devices.",
@@ -33,7 +32,6 @@ const INDUSTRIES = [
     tags: ["DEALERSHIP SITES", "INVENTORY TOOLS", "VEHICLE LANDING PAGES", "BOOKING SYSTEMS"]
   },
   { image: Automative2 },
-
   {
     title: "E-Commerce",
     description1: "From product discovery to checkout, we optimize every touchpoint for higher conversion and fictionless user experience.",
@@ -42,7 +40,6 @@ const INDUSTRIES = [
     tags: ["ONLINE STOREFRONTS", "INVENTORY SYSTEMS", "MOBILE SHOPPING APPS", "LOYALTY INTEGRATIONS"]
   },
   { image: ECommerse2 },
-
   {
     title: "Education",
     description1: "We create learning platforms that are scalable, accessible and engaging-supporting students,teachers and institutions alike.",
@@ -51,7 +48,6 @@ const INDUSTRIES = [
     tags: ["LMS PLATFORMS", "COURSE WEBSITES", "STUDENT PORTALS", "EDUCATION APPS"]
   },
   { image: Education2 },
-
   {
     title: "Enterprise",
     description1: "We design and build platforms that simplify operations and help growing business track, manage and communication efficiency.",
@@ -60,7 +56,6 @@ const INDUSTRIES = [
     tags: ["ADMIN PORTALS", "WEB APPS", "SAAS SYSTEMS", "BUSINESS SYSTEMS"]
   },
   { image: Enterprise2 },
-
   {
     title: "Lifestyle",
     description1: "From fitness apps to personal care brands, we deliver feel-good experiences that align with modern lifestyle.",
@@ -73,53 +68,65 @@ const INDUSTRIES = [
 
 const BlueprintsC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animate, setAnimate] = useState(false);
   const current = INDUSTRIES[currentIndex];
 
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % INDUSTRIES.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + INDUSTRIES.length) % INDUSTRIES.length);
+  const changeSlide = (direction) => {
+    setAnimate(true);
+    setTimeout(() => {
+      setCurrentIndex((prev) =>
+        direction === 'next'
+          ? (prev + 1) % INDUSTRIES.length
+          : (prev - 1 + INDUSTRIES.length) % INDUSTRIES.length
+      );
+      setAnimate(false);
+    }, 300);
   };
 
   return (
     <div className="blueprintsC-section">
       <div className="intro-text">
-        <p className="highlight">INNOVATING ACROSS EVERY <span>INDUSTRY</span> WE TOUCH</p>
-        <h1>Adapting Digital Solutions to Match Each <br />Industry’s Unique Pulse</h1>
+        <p className="highlight">
+          INNOVATING ACROSS EVERY <span>INDUSTRY</span> WE TOUCH
+        </p>
+        <h1>
+          Adapting Digital Solutions to Match Each <br />
+          Industry’s Unique Pulse
+        </h1>
         <p className="sub-text">
-          We empower diverse industries with custom digital products that solve real problems, deliver measurable results,
-          and scale with purpose — all shaped by deep understanding of their domain.
+          We empower diverse industries with custom digital products that solve
+          real problems, deliver measurable results, and scale with purpose —
+          all shaped by deep understanding of their domain.
         </p>
       </div>
 
-   
       <div className="blueprintsC-highlight">
-  <img src={current.image} alt={current.title} className="industry-image" />
+        <img src={current.image} alt={current.title} className="industry-image" />
 
-  <div className="overlay">
-    <div className="arrow left" onClick={handlePrev}><FaArrowLeft /></div>
+        <div className="overlay">
+          <div className="arrow left" onClick={() => changeSlide('prev')}>
+            <FaArrowLeft />
+          </div>
 
-    {current.title && (
-      <div className="blueprintsC-content">
-        <h2>{current.title}</h2>
-        <p>{current.description1}</p>
-        <p>{current.description2}</p>
-        <div className="platform-buttons">
-          {current.tags?.map((tag, i) => (
-            <button key={i}>{tag}</button>
-          ))}
+          {current.title && (
+            <div className={`blueprintsC-content ${animate ? 'content-up' : ''}`}>
+              <h2>{current.title}</h2>
+              <p>{current.description1}</p>
+              <p>{current.description2}</p>
+              <div className={`platform-buttons ${animate ? 'tags-down' : ''}`}>
+                {current.tags?.map((tag, i) => (
+                  <button key={i}>{tag}</button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="arrow right" onClick={() => changeSlide('next')}>
+            <FaArrowRight />
+          </div>
         </div>
       </div>
-    )}
-
-    <div className="arrow right" onClick={handleNext}><FaArrowRight /></div>
-  </div>
-</div>
-
-
-</div>
+    </div>
   );
 };
 

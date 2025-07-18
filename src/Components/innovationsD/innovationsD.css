@@ -38,6 +38,20 @@
   margin-left: 1rem;
 }
 
+.project_introD h4{
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+}
+
+
 .project_introD h1,
 .project_introD h4 {
   text-align: left;
@@ -46,6 +60,8 @@
 .project_introD h1{
   color: orange;
   font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .project_paraD {
@@ -57,7 +73,7 @@
 .project_paraD p {
   text-align: justify;
   font-size: 1rem;
-  line-height: 1.6;
+  font-weight: lighter;
   color: white;
 }
 
@@ -193,7 +209,7 @@
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
-  color: orange;
+  color: white;
   font-size: 0.85rem;
   cursor: pointer;
   transition: background 0.3s ease;

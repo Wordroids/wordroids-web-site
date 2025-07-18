@@ -196,8 +196,8 @@
 }
 
 .cardD {
-  background: linear-gradient(to bottom right, #1a1a1a, #111);
-  border: 1px solid #444;
+  background: rgba(94, 63, 9, 0.18);;
+  border: 1px solid orange;
   padding: 1.5rem;
   border-radius: 10px;
   width: 320px;
@@ -244,12 +244,15 @@
 
 .top-row {
   margin-bottom: 3rem;
-  margin-left: -14rem;
+  justify-content: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
 }
 
 .bottom-row {
   margin-top: 4rem;
-  margin-left: -2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .step1 {
@@ -287,9 +290,9 @@
 }
 
 .step3 {
-  width:400px;
+  width:300px;
   text-align: center;
-  margin-left: 15rem;
+  margin-left: auto;
 }
 
 .step3 h4 {
@@ -306,7 +309,7 @@
 .step4 {
   width:320px;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: auto;
 }
 
 .step4 h4 {
@@ -352,3 +355,17 @@
   position: relative;
   z-index: 1;
 }
+
+/* Highlight h4 when active */
+.active-h4 {
+  color: red !important;
+}
+
+/* Highlight dot when active */
+.active-dot {
+  background-color: red !important;
+  color: white !important;
+  border-color: red !important;
+}
+
+

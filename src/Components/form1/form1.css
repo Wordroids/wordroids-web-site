@@ -59,29 +59,64 @@
 }
 
 .tags {
-  color: #bbb;
-  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
   margin-bottom: 1.5rem;
 }
 
-.preview1, .section1 {
+
+.tags span {
+
+  font-size: 0.85rem;
+  color: white;
+}
+
+
+.tags span::before {
+  content: "#";
+  color: orange;
+  margin-right: 0.2rem;
+}
+
+
+/* Shared Flex Layout */
+.section1.row,
+.preview1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   margin: 1.5rem 0;
 }
 
+/* Label styling */
 .preview1 span,
-.section1 span {
-  display: block;
+.section1.row span {
   font-weight: bold;
-  margin-bottom: 0.5rem;
   color: orange;
   font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 150px;
+}
+
+/* Link styling */
+.preview1 a {
+  color: #ffd580;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  border-bottom: 1px solid #ffd580;
+  padding-bottom: 2px;
+  word-break: break-word;
 }
 
 .preview1 a {
   color: #ffd580;
   font-size: 0.9rem;
-  text-decoration: none;
+  padding-bottom: 2px;
+  margin-top: 5rem;
+  margin-left: 10rem;
 }
+
 
 .badges1 {
   display: flex;
@@ -110,11 +145,12 @@
   color: #ccc;
   font-size: 0.9rem;
   line-height: 1.6;
+  max-width: 800px;
 }
 
 .deliverables1 {
   color: #eee;
-  padding-left: 1.2rem;
+  padding-left: 1rem;
   font-size: 0.9rem;
   line-height: 1.8;
 }

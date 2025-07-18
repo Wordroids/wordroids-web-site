@@ -4,6 +4,7 @@ import { FaWordpress, FaFigma, FaLaptopCode, FaMobileAlt, FaMailBulk, FaTools } 
 import { MdWeb, MdDesignServices } from 'react-icons/md';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import IMG2 from '../../assets/project2.png';
+import { TbWorld } from "react-icons/tb";
 
 const Form1 = () => {
   return (
@@ -17,41 +18,58 @@ const Form1 = () => {
       <div className="project-details1">
         <p className="project-type1">WORDPRESS WEBSITE</p>
         <h1>Car Care Melbourne</h1>
-        <p className="tags">#WordPress  #CarDetailing  #AutoWebsite  #BookingSystem  #UIUXDesign</p>
+        <div className="tags">
+          <span>WordPress</span>
+          <span>CarDetailing</span>
+          <span>AutoWebsite</span>
+          <span>BookingSystem</span>
+          <span>UIUXDesign</span>
+        </div>
 
+
+       {/* PREVIEW Section */}
         <div className="preview1">
           <span>PREVIEW :</span>
-          <a href="https://www.carcaremelbourne.com.au" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.carcaremelbourne.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             www.carcaremelbourne.com.au
           </a>
         </div>
 
-        <div className="section1">
-          <span>WHAT WE DID :</span>
-          <div className="badges1">
-            <span>UI/UX Designing</span>
-            <span>WordPress Development</span>
-            <span>Booking</span>
-            <span>Digital Marketing</span>
-            <span>Support</span>
-          </div>
+       
+      {/* WHAT WE DID */}
+      <div className="section1 row">
+        <span>WHAT WE DID :</span>
+        <div className="badges1">
+          <span>UI/UX Designing</span>
+          <span>WordPress Development</span>
+          <span>Booking</span>
+          <span>Digital Marketing</span>
+          <span>Support</span>
         </div>
+      </div>
 
-        <div className="section1">
-          <span>TECHNOLOGY WE USED :</span>
-          <div className="tech-icons1">
-            <FaWordpress title="WordPress" />
-            <FaFigma title="Figma" />
-            <MdWeb title="Elementor" />
-            <FaLaptopCode title="HTML/CSS/JS" />
-            <FaMobileAlt title="Responsive Design" />
-            <FaMailBulk title="Email Notifications" />
-            <MdDesignServices title="UI/UX Design" />
-            <FaTools title="Optimization" />
-          </div>
+      {/* TECHNOLOGY WE USED */}
+      <div className="section1 row">
+        <span>TECHNOLOGY WE USED :</span>
+        <div className="tech-icons1">
+          <FaWordpress title="WordPress" />
+          <FaFigma title="Figma" />
+          <MdWeb title="Elementor" />
+          <FaLaptopCode title="HTML/CSS/JS" />
+          <FaMobileAlt title="Responsive Design" />
+          <FaMailBulk title="Email Notifications" />
+          <MdDesignServices title="UI/UX Design" />
+          <FaTools title="Optimization" />
         </div>
+      </div>
+        
 
-        <div className="section1">
+       {/* PROJECT OVERVIEW */}
+        <div className="section1 row">
           <span>PROJECT OVERVIEW :</span>
           <p className="overview1">
             CarCareMelbourne required a website that reflected their premium services while staying functional on mobile for on-the-go users. Our goal was to create a seamless booking experience supported by high-performance speed and modern UI/UX design.<br /><br />
@@ -59,7 +77,7 @@ const Form1 = () => {
           </p>
         </div>
 
-        <div className="section1">
+        <div className="section1 row">
           <span>KEY DELIVERABLES :</span>
           <ul className="deliverables1">
             <li>WordPress development using Elementor</li>

@@ -34,7 +34,7 @@ const Form1 = () => {
 
       {/* PREVIEW Section */}
         <div className="preview1">
-          <span>PREVIEW :</span>
+          <span>PREVIEW  <span className="highlight">:</span></span>
           <div className="preview-link">
             <TbWorld className="world-icon" />
             <a
@@ -51,7 +51,7 @@ const Form1 = () => {
        
       {/* WHAT WE DID */}
       <div className="section2 row">
-        <span className="section-title-orange">WHAT WE DID :</span>
+        <span className="section-title-orange">WHAT WE DID  <span className="highlight">:</span></span>
         <div className="badges1">
           <span>UI/UX Designing</span>
           <span>WordPress Development</span>
@@ -63,7 +63,7 @@ const Form1 = () => {
 
       {/* TECHNOLOGY WE USED */}
       <div className="section3 row">
-        <span className="section-title-orange">TECHNOLOGY WE USED :</span>
+        <span className="section-title-orange">TECHNOLOGY WE USED  <span className="highlight">:</span></span>
         <div className="tech-icons1">
           <FaWordpress title="WordPress" />
           <FaFigma title="Figma" />
@@ -79,7 +79,7 @@ const Form1 = () => {
 
        {/* PROJECT OVERVIEW */}
         <div className="section1 row">
-          <span>PROJECT OVERVIEW :</span>
+          <span>PROJECT OVERVIEW  <span className="highlight">:</span></span>
           <p className="overview1">
             CarCareMelbourne required a website that reflected their premium services while staying functional on mobile for on-the-go users. Our goal was to create a seamless booking experience supported by high-performance speed and modern UI/UX design.<br /><br />
             We built the site using WordPress and Elementor, integrated a form-based booking plugin, and structured services with clarity. The result? A strong digital presence with over 47% increase in online bookings post-launch.
@@ -88,7 +88,7 @@ const Form1 = () => {
 
         {/* FEATURES Section */}
           <div className="section4 row">
-            <span className="section-title-orange">FEATURES:</span>
+            <span className="section-title-orange">KEY DELIVERABLES <span className="highlight">:</span></span>
             <ul className="features1">
               <li className="features1">
                 <span className="tick-icon"><TiTick /></span>
@@ -106,7 +106,7 @@ const Form1 = () => {
                 <span className="tick-icon"><TiTick /></span>
                 Responsive design(mobile/tablet/desktop)
               </li>
-              <li className="features1">
+              <li className="features1"> 
                 <span className="tick-icon"><TiTick /></span>
                 On-page SEO for local discovery
               </li>

@@ -17,10 +17,12 @@
 }
 
 .project-image1 img {
-  width: 90%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1200px;
+  height:35rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+
 }
 
 .nav-arrow1 {
@@ -90,7 +92,15 @@
 }
 
 /* Label styling */
-.preview1 span,
+.preview1 span {
+  font-weight: bold;
+  color: orange;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 150px;
+}
+
+
 .section1.row span {
   font-weight: bold;
   color: orange;
@@ -103,18 +113,17 @@
 .preview1 a {
   color: #ffd580;
   font-size: 0.9rem;
-  text-decoration: underline;
   border-bottom: 1px solid #ffd580;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   word-break: break-word;
 }
 
 .preview1 a {
-  color: #ffd580;
+  color: orange;
   font-size: 0.9rem;
   padding-bottom: 2px;
-  margin-top: 5rem;
-  margin-left: 10rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
 }
 
 
@@ -122,16 +131,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  color: white;
+  margin-top: 8.5rem;
+  margin-left: 5rem;
+  align-items: center;
 }
 
 .badges1 span {
-  background: #292929;
-  color: #fff;
+  background: rgba(94, 63, 9, 0.6);
+  color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.75rem;
   border: 1px solid #444;
+ 
 }
+
 
 .tech-icons1 {
   display: flex;
@@ -139,13 +154,28 @@
   gap: 1rem;
   font-size: 1.5rem;
   color: orange;
+  margin-left: 5rem;
+  align-items: center;
+  margin-top: 10rem;
+  margin-left: 3.5rem;
 }
 
+.tech-icons1 svg {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+}
+
+
 .overview1 {
-  color: #ccc;
+  color:  white;
   font-size: 0.9rem;
   line-height: 1.6;
   max-width: 800px;
+  margin-left: 5rem;
 }
 
 .deliverables1 {
@@ -156,5 +186,116 @@
 }
 
 .deliverables1 li {
+  display: flex;
+  align-items: center;
   margin-bottom: 0.5rem;
+  gap: 0.5rem;
 }
+
+
+
+.preview-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 5rem;
+}
+
+.world-icon {
+  color: orange;
+  font-size: 1rem;
+}
+
+
+
+.features1 ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+
+
+
+.features1 li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  color: white;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+.features1 {
+  list-style: none;
+  padding: 0;
+  margin-top:9rem;
+  padding-top: 0rem; /* 🔽 Move the whole list downward slightly */
+  margin-left: 2.5rem;
+}
+
+
+
+.tick-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 16px;
+  background-color: orange;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+
+.section-title-orange {
+  font-weight: bold;
+  color: orange;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 150px;
+  margin-top: 10rem;
+}
+
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -9rem;
+}
+
+
+.image-nav-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(94, 63, 9, 0.6);
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.image-nav-icon:hover {
+  background-color: rgba(80, 55, 12, 0.6);;
+}
+
+.left-icon {
+  left: 3rem;
+}
+
+.right-icon {
+  right: 3rem;
+}
+
+
+

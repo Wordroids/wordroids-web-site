@@ -5,14 +5,19 @@ import { MdWeb, MdDesignServices } from 'react-icons/md';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import IMG2 from '../../assets/project2.png';
 import { TbWorld } from "react-icons/tb";
+import { TiTick } from "react-icons/ti";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const Form1 = () => {
   return (
     <div className="carcare-container1">
       <div className="project-image1">
-        <button className="nav-arrow left1"><FiChevronLeft /></button>
+       <button className="image-nav-icon left-icon"><IoIosArrowBack /></button>
         <img src={IMG2} alt="Car Care Melbourne Mockup" />
-        <button className="nav-arrow right1"><FiChevronRight /></button>
+        <button className="image-nav-icon right-icon"><IoIosArrowForward /></button>
+
       </div>
 
       <div className="project-details1">
@@ -27,22 +32,26 @@ const Form1 = () => {
         </div>
 
 
-       {/* PREVIEW Section */}
+      {/* PREVIEW Section */}
         <div className="preview1">
           <span>PREVIEW :</span>
-          <a
-            href="https://www.carcaremelbourne.com.au"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.carcaremelbourne.com.au
-          </a>
+          <div className="preview-link">
+            <TbWorld className="world-icon" />
+            <a
+              href="https://www.carcaremelbourne.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.carcaremelbourne.com.au
+            </a>
+          </div>
         </div>
+
 
        
       {/* WHAT WE DID */}
-      <div className="section1 row">
-        <span>WHAT WE DID :</span>
+      <div className="section2 row">
+        <span className="section-title-orange">WHAT WE DID :</span>
         <div className="badges1">
           <span>UI/UX Designing</span>
           <span>WordPress Development</span>
@@ -53,8 +62,8 @@ const Form1 = () => {
       </div>
 
       {/* TECHNOLOGY WE USED */}
-      <div className="section1 row">
-        <span>TECHNOLOGY WE USED :</span>
+      <div className="section3 row">
+        <span className="section-title-orange">TECHNOLOGY WE USED :</span>
         <div className="tech-icons1">
           <FaWordpress title="WordPress" />
           <FaFigma title="Figma" />
@@ -66,7 +75,7 @@ const Form1 = () => {
           <FaTools title="Optimization" />
         </div>
       </div>
-        
+              
 
        {/* PROJECT OVERVIEW */}
         <div className="section1 row">
@@ -77,17 +86,36 @@ const Form1 = () => {
           </p>
         </div>
 
-        <div className="section1 row">
-          <span>KEY DELIVERABLES :</span>
-          <ul className="deliverables1">
-            <li>WordPress development using Elementor</li>
-            <li>Service page with pricing breakdown</li>
-            <li>Booking system with email notifications</li>
-            <li>Responsive design (mobile/tablet/desktop)</li>
-            <li>Onpage SEO for local discovery</li>
-            <li>Testimonials & Before-after gallery</li>
-          </ul>
-        </div>
+        {/* FEATURES Section */}
+          <div className="section4 row">
+            <span className="section-title-orange">FEATURES:</span>
+            <ul className="features1">
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                Wordpress development using Elementor
+              </li>
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                Service page with pricing breakdown
+              </li>
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                Booking system with email notifications
+              </li>
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                Responsive design(mobile/tablet/desktop)
+              </li>
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                On-page SEO for local discovery
+              </li>
+              <li className="features1">
+                <span className="tick-icon"><TiTick /></span>
+                Testimonials before the gallery
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
   );

@@ -8,11 +8,11 @@ const blueprintsA = () => {
   return (
     <section className="blueprintsA">
       {/* Wave Backgrounds */}
-      <img src={vector4} alt="Wave 1" className="aboutus-wave wave1" />
-      <img src={vector5} alt="Wave 2" className="aboutus-wave wave2" />
+      <img src={vector4} alt="Wave 1" className="blueprintus-wave wave1" />
+      <img src={vector5} alt="Wave 2" className="blueprintus-wave wave2" />
 
-      <div className="aboutus-content">
-        <h1 className="aboutus-title">Services</h1>
+      <div className="blueprintus-content">
+        <h1 className="blueprintus-title">Services</h1>
 
       
         

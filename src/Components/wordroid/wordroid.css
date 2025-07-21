@@ -23,7 +23,7 @@ html {
   justify-content: center;
   color:rgb(210, 147, 29);
   font-weight: 300;
-  font-size: 16pex;
+  font-size: 16px;
   padding: 0 1rem;
   text-align: center;
   box-sizing: border-box;
@@ -119,4 +119,123 @@ html {
 .main-navbar.scrolled .nav-btn:hover {
   background: orange;
   color: #000;
+}
+
+
+/* --- Responsive Styles --- */
+
+/* General padding and font adjustments */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .navbar-links {
+    margin-left: 12rem;
+  }
+  .logo-box {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar-links {
+    margin-left: 5rem;
+    gap: 0.7rem;
+    font-size: 0.75rem;
+  }
+  .logo-box {
+    margin-right: 1rem;
+  }
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .main-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem 1rem;
+    height: auto;
+  }
+
+  .nav-tube {
+    font-size: 14px;
+    width: 98vw;
+    padding: 0.3rem 0.2rem;
+    height: 2rem;
+  }
+
+  .logo-box {
+    margin-top: 2.3rem;
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
+  .logo-img {
+    width: 49px;
+    margin-left: 0;
+  }
+
+  .navbar-links {
+    margin: 0.5rem 0 0 0;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    font-size: 0.82rem;
+  }
+
+  .nav-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.82rem;
+  }
+}
+
+/* Mobile: hamburger menu, stacked nav items */
+@media (max-width: 540px) {
+  .nav-tube {
+    font-size: 12px;
+    height: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0 4px;
+  }
+  .main-navbar {
+    flex-direction: column;
+    padding: 0.3rem 0.1rem;
+    z-index: 1000;
+  }
+  .logo-box {
+    margin-top: 2.6rem;
+    margin-right: 0;
+    margin-left: 0.1rem;
+  }
+  .logo-img {
+    width: 37px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 0.6rem;
+    margin-left: 0;
+    gap: 0.25rem;
+    width: 98vw;
+    align-items: flex-start;
+  }
+  .nav-btn {
+    display: flex;
+    width: 94vw;
+    justify-content: flex-start;
+    border-radius: 0.5rem;
+    padding: 0.59rem 0.6rem;
+    font-size: 1rem;
+    margin-left: 0.4vw;
+  }
+}
+
+/* Optional: Hide logo text or reduce further on very tiny screens */
+@media (max-width: 400px) {
+  .logo-img {
+    width: 25px;
+  }
+  .navbar-links, .nav-btn {
+    font-size: 0.96rem;
+    padding: 0.31rem 0.41rem;
+  }
 }

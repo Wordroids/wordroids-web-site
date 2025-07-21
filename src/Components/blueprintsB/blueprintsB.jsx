@@ -20,18 +20,29 @@ import { BiSolidRightArrowAlt } from "react-icons/bi";
 //web
 import { IoLogoReact } from "react-icons/io5";
 import { IoLogoAngular } from "react-icons/io5";
+import { TbBrandNuxt } from "react-icons/tb";
 import { FaSquareJs } from "react-icons/fa6";
 import { RiVuejsLine } from "react-icons/ri";
 import { TbBrandTypescript } from "react-icons/tb";
+import { FaWordpress } from "react-icons/fa";
 import { FaShopify } from "react-icons/fa6";
 import { FaMagento } from "react-icons/fa6";
+import { TbBrandLaravel } from "react-icons/tb";
+import { IoLogoNodejs } from "react-icons/io";
 import { RiPhpLine } from "react-icons/ri";
 import { DiDotnet } from "react-icons/di";
+import { PiFileSql } from "react-icons/pi";
 
 //mobile
-import { TbBrandReactNative } from "react-icons/tb";
+import { FaFlutter } from "react-icons/fa6";
 import { TbBrandXamarin } from "react-icons/tb";
+import { TbBrandReactNative } from "react-icons/tb";
 import { SiKotlin } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { SiIos } from "react-icons/si";
+import { GrSwift } from "react-icons/gr";
+import { ImAndroid } from "react-icons/im";
+
 
 
 const SERVICESB = [
@@ -110,7 +121,7 @@ const SERVICESB = [
 ];
 
 const TECH_STACKSB = [
-  [IoLogoReact,IoLogoAngular,FaSquareJs, RiVuejsLine,TbBrandTypescript,FaShopify,FaMagento,RiPhpLine,DiDotnet],
+  [IoLogoReact,IoLogoAngular, TbBrandNuxt,FaSquareJs, RiVuejsLine,TbBrandTypescript,FaWordpress,FaShopify,FaMagento,RiPhpLine,TbBrandLaravel,IoLogoNodejs,RiPhpLine,DiDotnet,PiFileSql],
   [FaPython, FaPython, FaPython, FaPython],
   [FaLaravel, FaLaravel, FaLaravel],
   [TbSql, TbSql, TbSql],

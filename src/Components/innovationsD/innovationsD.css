@@ -267,24 +267,37 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+ 
 }
 
-.tagD {
-  background: rgba(255, 255, 255, 0.08);
-  color: orange;
-  padding: 0.3rem 0.7rem;
-  font-size: 0.7rem;
-  border-radius: 1rem;
+.project__item-contentD p {
+  font-size: 0.85rem;      /* reduced font size */
+  color: white;
+  max-width: 90%;          /* reduced max width */
+  line-height: 1.4;
 }
+
+
+.tagD {
+  
+  color: white;
+  font-size: 0.7rem;
+ 
+}
+
+.tagD .hashD {
+  color: orange;
+}
+
 
 .eye_iconD {
   position: absolute;
-  top: 20%;
-  left: 90%;
+  top: 60%;
+  left: 95%;
   transform: translate(-50%, -50%);
   background: rgba(255, 165, 0, 0.15);
   padding: 0.4rem;
-  border-radius: 50%;
+  border-radius: 60%;
   font-size: 1rem;
   color: orange;
   cursor: pointer;

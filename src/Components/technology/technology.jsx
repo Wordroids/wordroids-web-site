@@ -6,32 +6,66 @@ import { FaPython } from "react-icons/fa6";
 import { FaLaravel, FaNodeJs, FaPhp, FaReact, FaVuejs, FaJs, FaHtml5 } from "react-icons/fa";
 import { SiDotnet, SiAngular, SiNuxtdotjs, SiTypescript, SiWordpress, SiDrupal, SiJoomla, SiMagento, SiShopify, SiGhost, SiSquarespace, SiWix } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
-import { GiFizzingFlask } from "react-icons/gi";
+import { DiCodeigniter } from "react-icons/di";
+
+//mobile icons
+import { FaFlutter } from "react-icons/fa6";
+import { SiKotlin } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
+import { GrSwift } from "react-icons/gr";
+import { ImAndroid } from "react-icons/im";
+import { IoLogoFirebase } from "react-icons/io5";
+import { RxCodesandboxLogo } from "react-icons/rx";
+
+//frontend icons
+import { TbBrandAdobeXd } from "react-icons/tb";
+import { RiJavascriptLine } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+import { IoLogoReact } from "react-icons/io5";
+import { FaAngular } from "react-icons/fa";
+import { RiVuejsLine } from "react-icons/ri";
+import { IoLogoFigma } from "react-icons/io5";
+import { TbBrandNuxt } from "react-icons/tb";
+
+//cms icons
+import { FaMagento } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
+import { TbBrandWix } from "react-icons/tb";
+import { FaJoomla } from "react-icons/fa";
+
+//devops icons
+import { IoCloud } from "react-icons/io5";
+import { FaAws } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
+import { GiCrossedPistols } from "react-icons/gi";
 
 
-// Icon sets for each category (6 total)
-const web_dev_icons = [
-  { component: FaPython, name: "Python", className: "icon-py" },
-  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
-  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
-  { component: FaPhp, name: "PHP", className: "icon-php" },
-  { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
-  { component: TbSql, name: "SQL", className: "icon-sql" },
-  { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
-  { component: BiLogoDjango, name: "Django", className: "icon-dj" }
+const mobile_dev_icons = [
+  { component: FaFlutter, name: "Flutter", className: "icon-flutter" },
+  { component: SiKotlin, name: "Kotlin", className: "icon-kotlin" },
+  { component: FaJava, name: "Java", className: "icon-java" },
+  { component:  TbBrandReactNative, name: "React", className: "icon-react" },
+  { component:  GrSwift, name: "Swift", className: "icon-swift" },
+  { component:  ImAndroid , name: "Android", className: "icon-android" },
+  { component: IoLogoFirebase , name: "Firebase", className: "icon-firebase" },
+  { component: RxCodesandboxLogo, name: "Xcode", className: "icon-xcode" }
 ];
+
  
 const frontend_dev_icons = [
-  { component: FaPython, name: "Python", className: "icon-py" },
-  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
-  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
-  { component: FaPhp, name: "PHP", className: "icon-php" },
-  { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
-  { component: TbSql, name: "SQL", className: "icon-sql" },
-  { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
-  { component: BiLogoDjango, name: "Django", className: "icon-dj" }
+  { component: TbBrandAdobeXd, name: "XD", className: "icon-xd" },
+  { component: RiJavascriptLine, name: "Javascript", className: "icon-javascript" },
+  { component: TbBrandTypescript, name: "Typescript", className: "icon-typescript" },
+  { component: IoLogoReact, name: "React", className: "icon-react" },
+  { component: FaAngular, name: "Angular", className: "icon-angular" },
+  { component: RiVuejsLine, name: "Vue", className: "icon-vue" },
+  { component: IoLogoFigma, name: "Figma", className: "icon-figma" },
+  { component: TbBrandNuxt, name: "Nuxt", className: "icon-nuxt" }
 ];
 
+//backend icons
 const backend_dev_icons = [
   { component: FaPython, name: "Python", className: "icon-py" },
   { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
@@ -39,43 +73,33 @@ const backend_dev_icons = [
   { component: FaPhp, name: "PHP", className: "icon-php" },
   { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
   { component: TbSql, name: "SQL", className: "icon-sql" },
-  { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
+  { component: DiCodeigniter, name: "Codeigniter", className: "icon-codeigniter" },
   { component: BiLogoDjango, name: "Django", className: "icon-dj" }
 ];
 
 const cms_icons = [
-  { component: FaPython, name: "Python", className: "icon-py" },
-  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
-  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
-  { component: FaPhp, name: "PHP", className: "icon-php" },
-  { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
+  { component: FaMagento, name: "Magento", className: "icon-magento" },
+  { component: FaWordpress, name: "Wordpress", className: "icon-wordpress" },
+  { component:  FaShopify, name: "Shopify", className: "icon-shopify" },
+  { component: TbBrandWix, name: "Wix", className: "icon-wix" },
+  { component: FaJoomla, name: "Joomla", className: "icon-joomla" },
  
 ];
 
 const devops_icons = [
-  { component: FaPython, name: "Python", className: "icon-py" },
-  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
-  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
-  { component: FaPhp, name: "PHP", className: "icon-php" },
+  { component: IoCloud, name: "Cloud", className: "icon-cloud" },
+  { component: FaAws, name: "Aws", className: "icon-aws" },
+  { component: VscAzure, name: "Azure", className: "icon-azure" },
+  { component: GiCrossedPistols, name: "Pistol", className: "icon-pistol" },
  
 ];
 
-const mobile_dev_icons = [
-  { component: FaPython, name: "Python", className: "icon-py" },
-  { component: FaLaravel, name: "Laravel", className: "icon-laravel" },
-  { component: FaNodeJs, name: "Node.js", className: "icon-node" },
-  { component: FaPhp, name: "PHP", className: "icon-php" },
-  { component: SiDotnet, name: "ASP.NET", className: "icon-dotnet" },
-  { component: TbSql, name: "SQL", className: "icon-sql" },
-  { component: GiFizzingFlask, name: "Flask", className: "icon-flask" },
-  { component: BiLogoDjango, name: "Django", className: "icon-dj" }
-];
+
 
 // Slides array in order matching image layout
 const slides = [
   { key: 'backend', label: 'Back End', icons: backend_dev_icons, center: 'Back End\nDevelopment', anchor: '#backend' },
   { key: 'cms', label: 'CMS', icons: cms_icons, center: 'CMS\nPlatforms', anchor: '#cms' },
-  { key: 'webapp', label: 'Web App', icons: web_dev_icons, center: 'Web\nDevelopment', anchor: '#webapp' },
   { key: 'mobileapp', label: 'Mobile App', icons: mobile_dev_icons, center: 'Mobile\nDevelopment', anchor: '#mobileapp' },
   { key: 'frontend', label: 'Front End', icons: frontend_dev_icons, center: 'Front End\nDevelopment', anchor: '#frontend' },
   { key: 'devops', label: 'DevOps', icons: devops_icons, center: 'DevOps', anchor: '#devops' }

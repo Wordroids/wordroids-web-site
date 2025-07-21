@@ -147,11 +147,14 @@ const InnovationsD = () => {
                   <h2>{title}</h2>
                   <p>{description}</p>
                   
-                  <div className="project__tagsD">
+                 <div className="project__tagsD">
                     {tags.map((tag, i) => (
-                      <span key={i} className="tagD">#{tag}</span>
+                      <span key={i} className="tagD">
+                        <span className="hashD">#</span>{tag}
+                      </span>
                     ))}
                   </div>
+
                   <div
                       className="eye_iconD"
                       onClick={() => navigate('/form1')}
